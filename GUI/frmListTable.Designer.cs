@@ -42,7 +42,6 @@
             this.btnSwichTable = new System.Windows.Forms.Button();
             this.dtgvFoodbyId = new System.Windows.Forms.DataGridView();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnNewTable = new System.Windows.Forms.Button();
             this.btnPayMonney = new System.Windows.Forms.Button();
             this.btnOrder = new System.Windows.Forms.Button();
@@ -50,7 +49,6 @@
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvFoodbyId)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -212,14 +210,6 @@
             this.flowLayoutPanel1.Size = new System.Drawing.Size(457, 553);
             this.flowLayoutPanel1.TabIndex = 38;
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Location = new System.Drawing.Point(6, 321);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(100, 50);
-            this.pictureBox1.TabIndex = 44;
-            this.pictureBox1.TabStop = false;
-            // 
             // btnNewTable
             // 
             this.btnNewTable.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
@@ -280,7 +270,6 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.dtgvFoodbyId);
             this.Controls.Add(this.flowLayoutPanel1);
-            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btnNewTable);
             this.Controls.Add(this.btnPayMonney);
             this.Controls.Add(this.btnOrder);
@@ -290,7 +279,6 @@
             this.groupBox1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvFoodbyId)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -307,7 +295,6 @@
         private System.Windows.Forms.Button btnSwichTable;
         private System.Windows.Forms.DataGridView dtgvFoodbyId;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button btnNewTable;
         private System.Windows.Forms.Button btnPayMonney;
         private System.Windows.Forms.Button btnOrder;
