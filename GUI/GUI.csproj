@@ -81,11 +81,65 @@
     <Compile Include="frmHomeStaff.Designer.cs">
       <DependentUpon>frmHomeStaff.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmListBill.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="frmListBill.Designer.cs">
+      <DependentUpon>frmListBill.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmListFood.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="frmListFood.Designer.cs">
+      <DependentUpon>frmListFood.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmListHome.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="frmListHome.Designer.cs">
+      <DependentUpon>frmListHome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmListHomeStaff.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="frmListHomeStaff.Designer.cs">
+      <DependentUpon>frmListHomeStaff.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmListRevenue.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="frmListRevenue.Designer.cs">
+      <DependentUpon>frmListRevenue.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmListStaff.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="frmListStaff.Designer.cs">
+      <DependentUpon>frmListStaff.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmListTable.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="frmListTable.Designer.cs">
+      <DependentUpon>frmListTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmOrder.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmOrder.Designer.cs">
       <DependentUpon>frmOrder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSignUp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSignUp.Designer.cs">
+      <DependentUpon>frmSignUp.cs</DependentUpon>
     </Compile>
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -109,8 +163,35 @@
     <EmbeddedResource Include="frmHomeStaff.resx">
       <DependentUpon>frmHomeStaff.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmListBill.resx">
+      <DependentUpon>frmListBill.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmListFood.resx">
+      <DependentUpon>frmListFood.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmListHome.resx">
+      <DependentUpon>frmListHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmListHomeStaff.resx">
+      <DependentUpon>frmListHomeStaff.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmListRevenue.resx">
+      <DependentUpon>frmListRevenue.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmListStaff.resx">
+      <DependentUpon>frmListStaff.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmListTable.resx">
+      <DependentUpon>frmListTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmOrder.resx">
       <DependentUpon>frmOrder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSignUp.resx">
+      <DependentUpon>frmSignUp.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
