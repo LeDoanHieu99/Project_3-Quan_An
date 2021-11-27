@@ -39,7 +39,6 @@
             this.txtBillId = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.txtTableId = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.bunifuSeparator2 = new Bunifu.Framework.UI.BunifuSeparator();
-            this.bunifuSeparator1 = new Bunifu.Framework.UI.BunifuSeparator();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -166,19 +165,6 @@
             this.bunifuSeparator2.TabIndex = 14;
             this.bunifuSeparator2.Transparency = 255;
             this.bunifuSeparator2.Vertical = true;
-            // 
-            // bunifuSeparator1
-            // 
-            this.bunifuSeparator1.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuSeparator1.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(105)))), ((int)(((byte)(105)))));
-            this.bunifuSeparator1.LineThickness = 1;
-            this.bunifuSeparator1.Location = new System.Drawing.Point(1, 2);
-            this.bunifuSeparator1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.bunifuSeparator1.Name = "bunifuSeparator1";
-            this.bunifuSeparator1.Size = new System.Drawing.Size(271, 43);
-            this.bunifuSeparator1.TabIndex = 13;
-            this.bunifuSeparator1.Transparency = 255;
-            this.bunifuSeparator1.Vertical = false;
             // 
             // label5
             // 
@@ -320,7 +306,7 @@
             this.datetimeGetDay.ForeColor = System.Drawing.Color.White;
             this.datetimeGetDay.Format = System.Windows.Forms.DateTimePickerFormat.Long;
             this.datetimeGetDay.FormatCustom = null;
-            this.datetimeGetDay.Location = new System.Drawing.Point(18, 46);
+            this.datetimeGetDay.Location = new System.Drawing.Point(6, 46);
             this.datetimeGetDay.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.datetimeGetDay.Name = "datetimeGetDay";
             this.datetimeGetDay.Size = new System.Drawing.Size(288, 24);
@@ -353,7 +339,6 @@
             this.Controls.Add(this.txtTableId);
             this.Controls.Add(this.bunifuImageButton1);
             this.Controls.Add(this.bunifuSeparator2);
-            this.Controls.Add(this.bunifuSeparator1);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.panel1);
@@ -382,7 +367,6 @@
         private Bunifu.Framework.UI.BunifuMaterialTextbox txtTableId;
         private Bunifu.Framework.UI.BunifuImageButton bunifuImageButton1;
         private Bunifu.Framework.UI.BunifuSeparator bunifuSeparator2;
-        private Bunifu.Framework.UI.BunifuSeparator bunifuSeparator1;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Panel panel1;
