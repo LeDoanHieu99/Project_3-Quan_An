@@ -139,6 +139,7 @@
             // 
             // pictureBox6
             // 
+            this.pictureBox6.Image = global::GUI.Properties.Resources.forgot;
             this.pictureBox6.Location = new System.Drawing.Point(356, 325);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(45, 46);
@@ -148,6 +149,7 @@
             // 
             // pictureBox5
             // 
+            this.pictureBox5.Image = global::GUI.Properties.Resources.password;
             this.pictureBox5.Location = new System.Drawing.Point(356, 222);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(45, 46);
@@ -157,6 +159,7 @@
             // 
             // pictureBox2
             // 
+            this.pictureBox2.Image = global::GUI.Properties.Resources.login;
             this.pictureBox2.Location = new System.Drawing.Point(356, 126);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(45, 46);
@@ -167,6 +170,7 @@
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.pictureBox1.Image = global::GUI.Properties.Resources.bia1;
             this.pictureBox1.Location = new System.Drawing.Point(3, 1);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox1.Name = "pictureBox1";

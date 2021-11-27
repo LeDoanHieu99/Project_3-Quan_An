@@ -218,5 +218,74 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup />
+  <ItemGroup>
+    <Content Include="Img\60104a06b2c5da9e7ab683b3d6cfdd15.jpg" />
+    <Content Include="Img\a1eb91f96bbbf6c02057a023d1b26671.jpg" />
+    <Content Include="Img\add-user.png" />
+    <Content Include="Img\bia1.png" />
+    <Content Include="Img\bill.png" />
+    <Content Include="Img\booking.png" />
+    <Content Include="Img\burger.png" />
+    <Content Include="Img\cancel.png" />
+    <Content Include="Img\cancel1.png" />
+    <Content Include="Img\cancel2.png" />
+    <Content Include="Img\chart.png" />
+    <Content Include="Img\chart1.jpg" />
+    <Content Include="Img\CheckOutIcon.png" />
+    <Content Include="Img\chef.jfif" />
+    <Content Include="Img\Chef.png" />
+    <Content Include="Img\delivery-man.png" />
+    <Content Include="Img\diagrams.png" />
+    <Content Include="Img\dinner-table.png" />
+    <Content Include="Img\dollar.jpg" />
+    <Content Include="Img\editing.png" />
+    <Content Include="Img\faq.png" />
+    <Content Include="Img\fast-food %283%29.png" />
+    <Content Include="Img\fast-food.png" />
+    <Content Include="Img\forgot.png" />
+    <Content Include="Img\free-delivery.png" />
+    <Content Include="Img\garan.jpg" />
+    <Content Include="Img\garan1.jpg" />
+    <Content Include="Img\góc-90-độ-1024x683.jpg" />
+    <Content Include="Img\Hamburger-gà-cay.png" />
+    <Content Include="Img\Hamburger-gà-cay1.png" />
+    <Content Include="Img\hamburger.jpg" />
+    <Content Include="Img\hamburger1.jpg" />
+    <Content Include="Img\help.png" />
+    <Content Include="Img\hinh-anh-khai-niem-doanh-thu-2.jpg" />
+    <Content Include="Img\home.png" />
+    <Content Include="Img\images__1_-removebg-preview.png" />
+    <Content Include="Img\invoice-factoring-paid-1030x715-1.jpg" />
+    <Content Include="Img\kfc.png" />
+    <Content Include="Img\kfc1.png" />
+    <Content Include="Img\login.png" />
+    <Content Include="Img\logo.jpeg" />
+    <Content Include="Img\loupe.png" />
+    <Content Include="Img\menu.png" />
+    <Content Include="Img\MenuIcon.png" />
+    <Content Include="Img\minus.png" />
+    <Content Include="Img\money-bag.jpg" />
+    <Content Include="Img\money-growth.png" />
+    <Content Include="Img\money.png" />
+    <Content Include="Img\online-payment.png" />
+    <Content Include="Img\password.png" />
+    <Content Include="Img\phuc-vien-quan-nhan-la-gi.jpg" />
+    <Content Include="Img\pngtree-organic-food-logo-fork-and-tree-symbol-healthy-icon-png-image_313491-removebg-preview %282%29.png" />
+    <Content Include="Img\power-button.png" />
+    <Content Include="Img\question.png" />
+    <Content Include="Img\registration.png" />
+    <Content Include="Img\setting-illustration-flat-icon-can-use-for-icon-design-element-ui-web-mobile-app-free-vector.jpg" />
+    <Content Include="Img\settings.png" />
+    <Content Include="Img\settings1.png" />
+    <Content Include="Img\slogan.png" />
+    <Content Include="Img\stickers-people-running-in-gear.jpg.jpg" />
+    <Content Include="Img\switch %281%29.png" />
+    <Content Include="Img\top-15-hinh-anh-mon-an-ngon-viet-nam-khien-ban-khong-the-roi-mat-1.jpg" />
+    <Content Include="Img\trash.png" />
+    <Content Include="Img\tải_xuống-removebg-preview.png" />
+    <Content Include="Img\tải_xuống__1_-removebg-preview.png" />
+    <Content Include="Img\waiter.png" />
+    <Content Include="Img\web-site.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
