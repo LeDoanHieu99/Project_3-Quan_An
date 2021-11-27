@@ -41,8 +41,8 @@
             this.label3 = new System.Windows.Forms.Label();
             this.bunifuCustomLabel1 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.btnAddOrder = new Bunifu.Framework.UI.BunifuThinButton2();
             this.btnClose = new System.Windows.Forms.Button();
+            this.btnAddOrder = new Bunifu.Framework.UI.BunifuThinButton2();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -79,9 +79,9 @@
             this.txtOrderPrice.HintForeColor = System.Drawing.Color.Empty;
             this.txtOrderPrice.HintText = "";
             this.txtOrderPrice.isPassword = false;
-            this.txtOrderPrice.LineFocusedColor = System.Drawing.Color.Blue;
-            this.txtOrderPrice.LineIdleColor = System.Drawing.Color.Gray;
-            this.txtOrderPrice.LineMouseHoverColor = System.Drawing.Color.Blue;
+            this.txtOrderPrice.LineFocusedColor = System.Drawing.Color.DeepSkyBlue;
+            this.txtOrderPrice.LineIdleColor = System.Drawing.Color.DeepSkyBlue;
+            this.txtOrderPrice.LineMouseHoverColor = System.Drawing.Color.DeepSkyBlue;
             this.txtOrderPrice.LineThickness = 3;
             this.txtOrderPrice.Location = new System.Drawing.Point(122, 362);
             this.txtOrderPrice.Margin = new System.Windows.Forms.Padding(4);
@@ -98,9 +98,9 @@
             this.txtNameSraff.HintForeColor = System.Drawing.Color.Empty;
             this.txtNameSraff.HintText = "";
             this.txtNameSraff.isPassword = false;
-            this.txtNameSraff.LineFocusedColor = System.Drawing.Color.Blue;
-            this.txtNameSraff.LineIdleColor = System.Drawing.Color.Gray;
-            this.txtNameSraff.LineMouseHoverColor = System.Drawing.Color.Blue;
+            this.txtNameSraff.LineFocusedColor = System.Drawing.Color.DeepSkyBlue;
+            this.txtNameSraff.LineIdleColor = System.Drawing.Color.DeepSkyBlue;
+            this.txtNameSraff.LineMouseHoverColor = System.Drawing.Color.DeepSkyBlue;
             this.txtNameSraff.LineThickness = 3;
             this.txtNameSraff.Location = new System.Drawing.Point(122, 130);
             this.txtNameSraff.Margin = new System.Windows.Forms.Padding(4);
@@ -171,7 +171,7 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.panel1.BackColor = System.Drawing.Color.DeepSkyBlue;
             this.panel1.Controls.Add(this.btnClose);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
@@ -179,33 +179,9 @@
             this.panel1.Size = new System.Drawing.Size(516, 25);
             this.panel1.TabIndex = 81;
             // 
-            // btnAddOrder
-            // 
-            this.btnAddOrder.ActiveBorderThickness = 1;
-            this.btnAddOrder.ActiveCornerRadius = 20;
-            this.btnAddOrder.ActiveFillColor = System.Drawing.Color.SeaGreen;
-            this.btnAddOrder.ActiveForecolor = System.Drawing.Color.White;
-            this.btnAddOrder.ActiveLineColor = System.Drawing.Color.SeaGreen;
-            this.btnAddOrder.BackColor = System.Drawing.Color.White;
-            this.btnAddOrder.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnAddOrder.BackgroundImage")));
-            this.btnAddOrder.ButtonText = "Add";
-            this.btnAddOrder.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnAddOrder.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAddOrder.ForeColor = System.Drawing.Color.SeaGreen;
-            this.btnAddOrder.IdleBorderThickness = 1;
-            this.btnAddOrder.IdleCornerRadius = 20;
-            this.btnAddOrder.IdleFillColor = System.Drawing.Color.White;
-            this.btnAddOrder.IdleForecolor = System.Drawing.Color.SeaGreen;
-            this.btnAddOrder.IdleLineColor = System.Drawing.Color.SeaGreen;
-            this.btnAddOrder.Location = new System.Drawing.Point(166, 511);
-            this.btnAddOrder.Margin = new System.Windows.Forms.Padding(5);
-            this.btnAddOrder.Name = "btnAddOrder";
-            this.btnAddOrder.Size = new System.Drawing.Size(181, 58);
-            this.btnAddOrder.TabIndex = 90;
-            this.btnAddOrder.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // btnClose
             // 
+            this.btnClose.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnClose.FlatAppearance.BorderSize = 0;
             this.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnClose.Image = ((System.Drawing.Image)(resources.GetObject("btnClose.Image")));
@@ -214,7 +190,32 @@
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(21, 23);
             this.btnClose.TabIndex = 8;
-            this.btnClose.UseVisualStyleBackColor = true;
+            this.btnClose.UseVisualStyleBackColor = false;
+            // 
+            // btnAddOrder
+            // 
+            this.btnAddOrder.ActiveBorderThickness = 1;
+            this.btnAddOrder.ActiveCornerRadius = 20;
+            this.btnAddOrder.ActiveFillColor = System.Drawing.Color.DeepSkyBlue;
+            this.btnAddOrder.ActiveForecolor = System.Drawing.Color.White;
+            this.btnAddOrder.ActiveLineColor = System.Drawing.Color.DeepSkyBlue;
+            this.btnAddOrder.BackColor = System.Drawing.Color.White;
+            this.btnAddOrder.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnAddOrder.BackgroundImage")));
+            this.btnAddOrder.ButtonText = "Add";
+            this.btnAddOrder.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnAddOrder.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddOrder.ForeColor = System.Drawing.Color.DeepSkyBlue;
+            this.btnAddOrder.IdleBorderThickness = 1;
+            this.btnAddOrder.IdleCornerRadius = 20;
+            this.btnAddOrder.IdleFillColor = System.Drawing.Color.White;
+            this.btnAddOrder.IdleForecolor = System.Drawing.Color.DeepSkyBlue;
+            this.btnAddOrder.IdleLineColor = System.Drawing.Color.DeepSkyBlue;
+            this.btnAddOrder.Location = new System.Drawing.Point(166, 508);
+            this.btnAddOrder.Margin = new System.Windows.Forms.Padding(5);
+            this.btnAddOrder.Name = "btnAddOrder";
+            this.btnAddOrder.Size = new System.Drawing.Size(181, 58);
+            this.btnAddOrder.TabIndex = 90;
+            this.btnAddOrder.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // frmOrder
             // 

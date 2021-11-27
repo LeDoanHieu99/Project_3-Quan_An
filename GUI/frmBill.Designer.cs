@@ -79,9 +79,9 @@
             // btnPay
             // 
             this.btnPay.AutoSize = true;
-            this.btnPay.BackColor = System.Drawing.Color.SeaGreen;
-            this.btnPay.color = System.Drawing.Color.SeaGreen;
-            this.btnPay.colorActive = System.Drawing.Color.MediumSeaGreen;
+            this.btnPay.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btnPay.color = System.Drawing.SystemColors.ActiveCaption;
+            this.btnPay.colorActive = System.Drawing.SystemColors.ActiveCaption;
             this.btnPay.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnPay.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPay.ForeColor = System.Drawing.Color.White;
