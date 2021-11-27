@@ -35,7 +35,6 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.txtTongTien = new System.Windows.Forms.TextBox();
             this.txtTotal = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.cbbMergeTable = new System.Windows.Forms.ComboBox();
             this.btnMergeTable = new System.Windows.Forms.Button();
@@ -73,7 +72,6 @@
             // 
             this.groupBox1.BackColor = System.Drawing.Color.White;
             this.groupBox1.Controls.Add(this.pictureBox2);
-            this.groupBox1.Controls.Add(this.txtTongTien);
             this.groupBox1.Controls.Add(this.txtTotal);
             this.groupBox1.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -88,22 +86,13 @@
             // 
             // pictureBox2
             // 
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
             this.pictureBox2.Location = new System.Drawing.Point(16, 32);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(49, 42);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 38;
             this.pictureBox2.TabStop = false;
-            // 
-            // txtTongTien
-            // 
-            this.txtTongTien.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTongTien.Location = new System.Drawing.Point(58, 23);
-            this.txtTongTien.Margin = new System.Windows.Forms.Padding(4);
-            this.txtTongTien.Name = "txtTongTien";
-            this.txtTongTien.ReadOnly = true;
-            this.txtTongTien.Size = new System.Drawing.Size(150, 26);
-            this.txtTongTien.TabIndex = 3;
             // 
             // txtTotal
             // 
@@ -299,7 +288,6 @@
             this.Size = new System.Drawing.Size(1096, 676);
             this.panel1.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvFoodbyId)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -312,7 +300,6 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.TextBox txtTongTien;
         private Bunifu.Framework.UI.BunifuMaterialTextbox txtTotal;
         private System.Windows.Forms.ComboBox cbbMergeTable;
         private System.Windows.Forms.Button btnMergeTable;

@@ -30,7 +30,6 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmListStaff));
             this.btnRemove = new System.Windows.Forms.Button();
-            this.btnAdd = new System.Windows.Forms.Button();
             this.txtPrice = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.txtFoodName = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.txtFoodTypeName = new Bunifu.Framework.UI.BunifuMaterialTextbox();
@@ -47,6 +46,7 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.btnAdd = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -56,6 +56,7 @@
             this.btnRemove.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.btnRemove.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRemove.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRemove.Image = global::GUI.Properties.Resources.trash;
             this.btnRemove.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnRemove.Location = new System.Drawing.Point(897, 231);
             this.btnRemove.Margin = new System.Windows.Forms.Padding(4);
@@ -64,20 +65,6 @@
             this.btnRemove.TabIndex = 17;
             this.btnRemove.Text = "Remove";
             this.btnRemove.UseVisualStyleBackColor = false;
-            // 
-            // btnAdd
-            // 
-            this.btnAdd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.btnAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAdd.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAdd.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAdd.Location = new System.Drawing.Point(897, 73);
-            this.btnAdd.Margin = new System.Windows.Forms.Padding(4);
-            this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(175, 74);
-            this.btnAdd.TabIndex = 19;
-            this.btnAdd.Text = "Add";
-            this.btnAdd.UseVisualStyleBackColor = false;
             // 
             // txtPrice
             // 
@@ -270,6 +257,7 @@
             this.btnEdit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.btnEdit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEdit.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEdit.Image = global::GUI.Properties.Resources.editing;
             this.btnEdit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnEdit.Location = new System.Drawing.Point(897, 152);
             this.btnEdit.Margin = new System.Windows.Forms.Padding(4);
@@ -322,13 +310,28 @@
             this.dataGridView1.Size = new System.Drawing.Size(1049, 371);
             this.dataGridView1.TabIndex = 16;
             // 
+            // btnAdd
+            // 
+            this.btnAdd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.btnAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAdd.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAdd.Image = global::GUI.Properties.Resources.add_user;
+            this.btnAdd.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAdd.Location = new System.Drawing.Point(897, 75);
+            this.btnAdd.Margin = new System.Windows.Forms.Padding(4);
+            this.btnAdd.Name = "btnAdd";
+            this.btnAdd.Size = new System.Drawing.Size(175, 74);
+            this.btnAdd.TabIndex = 19;
+            this.btnAdd.Text = "Add";
+            this.btnAdd.UseVisualStyleBackColor = false;
+            // 
             // frmListStaff
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.Controls.Add(this.btnRemove);
             this.Controls.Add(this.btnAdd);
+            this.Controls.Add(this.btnRemove);
             this.Controls.Add(this.btnSearch);
             this.Controls.Add(this.bunifuTextbox1);
             this.Controls.Add(this.btnEdit);
@@ -346,7 +349,6 @@
         #endregion
 
         private System.Windows.Forms.Button btnRemove;
-        private System.Windows.Forms.Button btnAdd;
         private Bunifu.Framework.UI.BunifuMaterialTextbox txtPrice;
         private Bunifu.Framework.UI.BunifuMaterialTextbox txtFoodName;
         private Bunifu.Framework.UI.BunifuMaterialTextbox txtFoodTypeName;
@@ -363,5 +365,6 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Button btnAdd;
     }
 }
