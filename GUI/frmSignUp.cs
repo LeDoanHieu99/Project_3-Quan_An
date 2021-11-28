@@ -75,13 +75,13 @@ namespace GUI
             if (AcountBll.Instance.IsExistAccount(txtUserName.Text) == true)
             {
                 e.Cancel = true;
-                //errorProvider1.SetError(txtUserName, "Account already exists !!");
+                errorProvider1.SetError(txtUserName, "Account already exists !!");
                 MessageBox.Show("Account already exists !!");
             }
             else
             {
                 e.Cancel = false;
-                //errorProvider1.SetError(txtUserName, null);
+                errorProvider1.SetError(txtUserName, null);
             }
         }
 
@@ -90,13 +90,13 @@ namespace GUI
             if (txtPassword.Text != txtRePassword.Text)
             {
                 e.Cancel = true;
-                //errorProvider1.SetError(txtRePassword, "Password incorrect !!");
+                errorProvider1.SetError(txtRePassword, "Password incorrect !!");
                 MessageBox.Show("Password incorrect !!");
             }
             else
             {
                 e.Cancel = false;
-                //errorProvider1.SetError(txtRePassword, null);
+                errorProvider1.SetError(txtRePassword, null);
             }
         }
     }
