@@ -1,9 +1,4 @@
-﻿/*
- * Program.cs
- * Copyright 2018 by Pham Nguyen Quoc <quocpn1997@gmail.com>
- */
-
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
