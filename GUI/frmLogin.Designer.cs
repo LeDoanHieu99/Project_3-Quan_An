@@ -163,6 +163,7 @@
             this.btnLogin.Size = new System.Drawing.Size(342, 62);
             this.btnLogin.TabIndex = 16;
             this.btnLogin.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
             // 
             // pictureBox5
             // 
