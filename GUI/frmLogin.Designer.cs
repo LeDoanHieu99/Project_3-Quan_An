@@ -131,7 +131,7 @@
             this.btnExit.BackColor = System.Drawing.Color.White;
             this.btnExit.Image = global::GUI.Properties.Resources.cancel1;
             this.btnExit.ImageActive = null;
-            this.btnExit.Location = new System.Drawing.Point(1001, 25);
+            this.btnExit.Location = new System.Drawing.Point(1030, 1);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(37, 25);
             this.btnExit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
