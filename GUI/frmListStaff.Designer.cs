@@ -58,10 +58,10 @@
             this.btnRemove.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRemove.Image = global::GUI.Properties.Resources.trash;
             this.btnRemove.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnRemove.Location = new System.Drawing.Point(897, 231);
+            this.btnRemove.Location = new System.Drawing.Point(938, 268);
             this.btnRemove.Margin = new System.Windows.Forms.Padding(4);
             this.btnRemove.Name = "btnRemove";
-            this.btnRemove.Size = new System.Drawing.Size(175, 74);
+            this.btnRemove.Size = new System.Drawing.Size(189, 74);
             this.btnRemove.TabIndex = 17;
             this.btnRemove.Text = "Remove";
             this.btnRemove.UseVisualStyleBackColor = false;
@@ -189,7 +189,7 @@
             this.btnSearch.IdleFillColor = System.Drawing.Color.DeepSkyBlue;
             this.btnSearch.IdleForecolor = System.Drawing.Color.White;
             this.btnSearch.IdleLineColor = System.Drawing.Color.White;
-            this.btnSearch.Location = new System.Drawing.Point(464, 7);
+            this.btnSearch.Location = new System.Drawing.Point(477, 18);
             this.btnSearch.Margin = new System.Windows.Forms.Padding(5);
             this.btnSearch.Name = "btnSearch";
             this.btnSearch.Size = new System.Drawing.Size(181, 58);
@@ -203,7 +203,7 @@
             this.bunifuTextbox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.bunifuTextbox1.ForeColor = System.Drawing.Color.DeepSkyBlue;
             this.bunifuTextbox1.Icon = ((System.Drawing.Image)(resources.GetObject("bunifuTextbox1.Icon")));
-            this.bunifuTextbox1.Location = new System.Drawing.Point(23, 22);
+            this.bunifuTextbox1.Location = new System.Drawing.Point(36, 33);
             this.bunifuTextbox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.bunifuTextbox1.Name = "bunifuTextbox1";
             this.bunifuTextbox1.Size = new System.Drawing.Size(416, 39);
@@ -259,10 +259,10 @@
             this.btnEdit.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEdit.Image = global::GUI.Properties.Resources.editing;
             this.btnEdit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnEdit.Location = new System.Drawing.Point(897, 152);
+            this.btnEdit.Location = new System.Drawing.Point(938, 189);
             this.btnEdit.Margin = new System.Windows.Forms.Padding(4);
             this.btnEdit.Name = "btnEdit";
-            this.btnEdit.Size = new System.Drawing.Size(175, 74);
+            this.btnEdit.Size = new System.Drawing.Size(189, 74);
             this.btnEdit.TabIndex = 18;
             this.btnEdit.Text = "Edit";
             this.btnEdit.UseVisualStyleBackColor = false;
@@ -282,9 +282,9 @@
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Location = new System.Drawing.Point(23, 73);
+            this.panel1.Location = new System.Drawing.Point(36, 112);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(867, 232);
+            this.panel1.Size = new System.Drawing.Size(877, 232);
             this.panel1.TabIndex = 15;
             // 
             // label4
@@ -304,10 +304,10 @@
             this.dataGridView1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
             this.dataGridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(23, 311);
+            this.dataGridView1.Location = new System.Drawing.Point(36, 372);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(1049, 371);
+            this.dataGridView1.Size = new System.Drawing.Size(1091, 438);
             this.dataGridView1.TabIndex = 16;
             // 
             // btnAdd
@@ -317,10 +317,10 @@
             this.btnAdd.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAdd.Image = global::GUI.Properties.Resources.add_user;
             this.btnAdd.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAdd.Location = new System.Drawing.Point(897, 75);
+            this.btnAdd.Location = new System.Drawing.Point(938, 112);
             this.btnAdd.Margin = new System.Windows.Forms.Padding(4);
             this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(175, 74);
+            this.btnAdd.Size = new System.Drawing.Size(189, 74);
             this.btnAdd.TabIndex = 19;
             this.btnAdd.Text = "Add";
             this.btnAdd.UseVisualStyleBackColor = false;
@@ -338,7 +338,7 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.dataGridView1);
             this.Name = "frmListStaff";
-            this.Size = new System.Drawing.Size(1095, 693);
+            this.Size = new System.Drawing.Size(1155, 825);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
