@@ -45,7 +45,7 @@ namespace BLL
             }
             string query = "EXEC USP_SIGNUP @USerName , @PassWord ";
             int result = DbConnection.Instance.ExecuteNonQuery(query,
-                new object[] { userName, hasPassword });
+                new object[] { userName, passWord });
             return result > 0;
         }
 
