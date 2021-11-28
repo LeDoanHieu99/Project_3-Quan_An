@@ -14,9 +14,10 @@ namespace GUI
         [STAThread]
         static void Main()
         {
+            //1.5.3
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmHome());
+            Application.Run(new frmLogin());
             
         }
     }
