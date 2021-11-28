@@ -16,5 +16,16 @@ namespace GUI
         {
             InitializeComponent();
         }
+
+        private void btnLogin_Click(object sender, EventArgs e)
+        {
+            string userName = txtUserName.Text;
+            string passWord = txtPassword.Text;
+
+            if(rBtnStaff.Checked == true && userName != "admin")
+            {
+                
+            }
+        }
     }
 }
