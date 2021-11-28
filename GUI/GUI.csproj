@@ -286,6 +286,7 @@
     <Content Include="Img\tải_xuống__1_-removebg-preview.png" />
     <Content Include="Img\waiter.png" />
     <Content Include="Img\web-site.png" />
+    <None Include="Resources\góc-90-độ-1024x683.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

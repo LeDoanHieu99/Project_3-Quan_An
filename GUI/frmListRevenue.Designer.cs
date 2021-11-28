@@ -99,7 +99,7 @@
             this.groupBox2.Controls.Add(this.btnNxt);
             this.groupBox2.Controls.Add(this.btnPre);
             this.groupBox2.Controls.Add(this.txtPage);
-            this.groupBox2.Location = new System.Drawing.Point(3, 629);
+            this.groupBox2.Location = new System.Drawing.Point(9, 739);
             this.groupBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -148,14 +148,14 @@
             // 
             chartArea1.Name = "ChartArea1";
             this.chart1.ChartAreas.Add(chartArea1);
-            this.chart1.Location = new System.Drawing.Point(33, 70);
+            this.chart1.Location = new System.Drawing.Point(24, 72);
             this.chart1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.chart1.Name = "chart1";
             this.chart1.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.None;
             series1.ChartArea = "ChartArea1";
             series1.Name = "Series1";
             this.chart1.Series.Add(series1);
-            this.chart1.Size = new System.Drawing.Size(543, 555);
+            this.chart1.Size = new System.Drawing.Size(551, 664);
             this.chart1.TabIndex = 1;
             this.chart1.Text = "chart1";
             // 
@@ -174,10 +174,10 @@
             this.panel_chart.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel_chart.Controls.Add(this.chart1);
             this.panel_chart.Controls.Add(this.label3);
-            this.panel_chart.Location = new System.Drawing.Point(4, 1);
+            this.panel_chart.Location = new System.Drawing.Point(3, 1);
             this.panel_chart.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel_chart.Name = "panel_chart";
-            this.panel_chart.Size = new System.Drawing.Size(602, 669);
+            this.panel_chart.Size = new System.Drawing.Size(614, 785);
             this.panel_chart.TabIndex = 2;
             // 
             // dtgvRevenue
@@ -206,7 +206,7 @@
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dtgvRevenue.DefaultCellStyle = dataGridViewCellStyle3;
             this.dtgvRevenue.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
-            this.dtgvRevenue.Location = new System.Drawing.Point(5, 64);
+            this.dtgvRevenue.Location = new System.Drawing.Point(8, 64);
             this.dtgvRevenue.Margin = new System.Windows.Forms.Padding(4);
             this.dtgvRevenue.MultiSelect = false;
             this.dtgvRevenue.Name = "dtgvRevenue";
@@ -224,14 +224,14 @@
             this.dtgvRevenue.RowTemplate.Height = 24;
             this.dtgvRevenue.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.dtgvRevenue.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dtgvRevenue.Size = new System.Drawing.Size(473, 560);
+            this.dtgvRevenue.Size = new System.Drawing.Size(473, 668);
             this.dtgvRevenue.TabIndex = 8;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(280, 40);
+            this.label2.Location = new System.Drawing.Point(284, 40);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(33, 20);
             this.label2.TabIndex = 12;
@@ -242,7 +242,7 @@
             this.dtp_To.CustomFormat = "dd/MM/yyyy";
             this.dtp_To.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtp_To.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtp_To.Location = new System.Drawing.Point(343, 35);
+            this.dtp_To.Location = new System.Drawing.Point(347, 35);
             this.dtp_To.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dtp_To.Name = "dtp_To";
             this.dtp_To.Size = new System.Drawing.Size(135, 27);
@@ -265,7 +265,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(280, 9);
+            this.label1.Location = new System.Drawing.Point(284, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(53, 20);
             this.label1.TabIndex = 10;
@@ -275,7 +275,7 @@
             // 
             this.groupBox1.Controls.Add(this.cbbStatiticsMode);
             this.groupBox1.Controls.Add(this.label4);
-            this.groupBox1.Location = new System.Drawing.Point(5, 5);
+            this.groupBox1.Location = new System.Drawing.Point(10, 5);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(5);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -296,7 +296,7 @@
             // 
             // splitContainer1
             // 
-            this.splitContainer1.Location = new System.Drawing.Point(3, 10);
+            this.splitContainer1.Location = new System.Drawing.Point(22, 20);
             this.splitContainer1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.splitContainer1.Name = "splitContainer1";
             // 
@@ -315,8 +315,8 @@
             // 
             this.splitContainer1.Panel2.BackColor = System.Drawing.Color.White;
             this.splitContainer1.Panel2.Controls.Add(this.panel_chart);
-            this.splitContainer1.Size = new System.Drawing.Size(1089, 670);
-            this.splitContainer1.SplitterDistance = 482;
+            this.splitContainer1.Size = new System.Drawing.Size(1119, 788);
+            this.splitContainer1.SplitterDistance = 495;
             this.splitContainer1.TabIndex = 16;
             // 
             // dtp_From
@@ -324,7 +324,7 @@
             this.dtp_From.CustomFormat = "dd/MM/yyyy";
             this.dtp_From.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtp_From.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtp_From.Location = new System.Drawing.Point(343, 4);
+            this.dtp_From.Location = new System.Drawing.Point(347, 4);
             this.dtp_From.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dtp_From.Name = "dtp_From";
             this.dtp_From.Size = new System.Drawing.Size(133, 27);
@@ -337,7 +337,7 @@
             this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.splitContainer1);
             this.Name = "frmListRevenue";
-            this.Size = new System.Drawing.Size(1095, 693);
+            this.Size = new System.Drawing.Size(1155, 825);
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();

@@ -60,10 +60,10 @@
             this.panel1.Controls.Add(this.btnMergeTable);
             this.panel1.Controls.Add(this.cbbSwichTable);
             this.panel1.Controls.Add(this.btnSwichTable);
-            this.panel1.Location = new System.Drawing.Point(501, 570);
+            this.panel1.Location = new System.Drawing.Point(534, 669);
             this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(589, 98);
+            this.panel1.Size = new System.Drawing.Size(599, 130);
             this.panel1.TabIndex = 43;
             // 
             // groupBox1
@@ -77,7 +77,7 @@
             this.groupBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupBox1.Size = new System.Drawing.Size(244, 80);
+            this.groupBox1.Size = new System.Drawing.Size(226, 110);
             this.groupBox1.TabIndex = 34;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Total";
@@ -87,7 +87,7 @@
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
             this.pictureBox2.Location = new System.Drawing.Point(16, 32);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(49, 42);
+            this.pictureBox2.Size = new System.Drawing.Size(43, 56);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 38;
             this.pictureBox2.TabStop = false;
@@ -104,17 +104,17 @@
             this.txtTotal.LineIdleColor = System.Drawing.Color.Gray;
             this.txtTotal.LineMouseHoverColor = System.Drawing.Color.Gray;
             this.txtTotal.LineThickness = 3;
-            this.txtTotal.Location = new System.Drawing.Point(84, 33);
+            this.txtTotal.Location = new System.Drawing.Point(77, 50);
             this.txtTotal.Margin = new System.Windows.Forms.Padding(4);
             this.txtTotal.Name = "txtTotal";
-            this.txtTotal.Size = new System.Drawing.Size(124, 33);
+            this.txtTotal.Size = new System.Drawing.Size(138, 33);
             this.txtTotal.TabIndex = 37;
             this.txtTotal.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // cbbMergeTable
             // 
             this.cbbMergeTable.FormattingEnabled = true;
-            this.cbbMergeTable.Location = new System.Drawing.Point(29, 59);
+            this.cbbMergeTable.Location = new System.Drawing.Point(22, 83);
             this.cbbMergeTable.Margin = new System.Windows.Forms.Padding(4);
             this.cbbMergeTable.Name = "cbbMergeTable";
             this.cbbMergeTable.Size = new System.Drawing.Size(153, 24);
@@ -128,10 +128,10 @@
             this.btnMergeTable.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnMergeTable.Image = ((System.Drawing.Image)(resources.GetObject("btnMergeTable.Image")));
             this.btnMergeTable.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnMergeTable.Location = new System.Drawing.Point(190, 50);
+            this.btnMergeTable.Location = new System.Drawing.Point(194, 71);
             this.btnMergeTable.Margin = new System.Windows.Forms.Padding(4);
             this.btnMergeTable.Name = "btnMergeTable";
-            this.btnMergeTable.Size = new System.Drawing.Size(131, 36);
+            this.btnMergeTable.Size = new System.Drawing.Size(138, 40);
             this.btnMergeTable.TabIndex = 32;
             this.btnMergeTable.Text = "  Merge";
             this.btnMergeTable.UseVisualStyleBackColor = false;
@@ -139,7 +139,7 @@
             // cbbSwichTable
             // 
             this.cbbSwichTable.FormattingEnabled = true;
-            this.cbbSwichTable.Location = new System.Drawing.Point(29, 16);
+            this.cbbSwichTable.Location = new System.Drawing.Point(22, 30);
             this.cbbSwichTable.Margin = new System.Windows.Forms.Padding(4);
             this.cbbSwichTable.Name = "cbbSwichTable";
             this.cbbSwichTable.Size = new System.Drawing.Size(153, 24);
@@ -153,10 +153,10 @@
             this.btnSwichTable.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSwichTable.Image = ((System.Drawing.Image)(resources.GetObject("btnSwichTable.Image")));
             this.btnSwichTable.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSwichTable.Location = new System.Drawing.Point(190, 6);
+            this.btnSwichTable.Location = new System.Drawing.Point(194, 18);
             this.btnSwichTable.Margin = new System.Windows.Forms.Padding(4);
             this.btnSwichTable.Name = "btnSwichTable";
-            this.btnSwichTable.Size = new System.Drawing.Size(131, 36);
+            this.btnSwichTable.Size = new System.Drawing.Size(138, 40);
             this.btnSwichTable.TabIndex = 30;
             this.btnSwichTable.Text = "     Transfer";
             this.btnSwichTable.UseVisualStyleBackColor = false;
@@ -183,7 +183,7 @@
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.Black;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dtgvFoodbyId.DefaultCellStyle = dataGridViewCellStyle2;
-            this.dtgvFoodbyId.Location = new System.Drawing.Point(502, 8);
+            this.dtgvFoodbyId.Location = new System.Drawing.Point(534, 25);
             this.dtgvFoodbyId.Margin = new System.Windows.Forms.Padding(4);
             this.dtgvFoodbyId.Name = "dtgvFoodbyId";
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
@@ -196,7 +196,7 @@
             this.dtgvFoodbyId.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.dtgvFoodbyId.RowHeadersVisible = false;
             this.dtgvFoodbyId.RowHeadersWidth = 62;
-            this.dtgvFoodbyId.Size = new System.Drawing.Size(588, 554);
+            this.dtgvFoodbyId.Size = new System.Drawing.Size(599, 622);
             this.dtgvFoodbyId.TabIndex = 39;
             // 
             // flowLayoutPanel1
@@ -204,10 +204,10 @@
             this.flowLayoutPanel1.AutoScroll = true;
             this.flowLayoutPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(213)))), ((int)(((byte)(242)))));
             this.flowLayoutPanel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(21, 9);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(17, 26);
             this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(4);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(457, 553);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(500, 621);
             this.flowLayoutPanel1.TabIndex = 38;
             // 
             // btnNewTable
@@ -218,10 +218,10 @@
             this.btnNewTable.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnNewTable.ForeColor = System.Drawing.Color.Black;
             this.btnNewTable.Image = ((System.Drawing.Image)(resources.GetObject("btnNewTable.Image")));
-            this.btnNewTable.Location = new System.Drawing.Point(21, 570);
+            this.btnNewTable.Location = new System.Drawing.Point(17, 669);
             this.btnNewTable.Margin = new System.Windows.Forms.Padding(4);
             this.btnNewTable.Name = "btnNewTable";
-            this.btnNewTable.Size = new System.Drawing.Size(145, 95);
+            this.btnNewTable.Size = new System.Drawing.Size(163, 130);
             this.btnNewTable.TabIndex = 42;
             this.btnNewTable.Text = "New Table";
             this.btnNewTable.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -235,10 +235,10 @@
             this.btnPayMonney.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnPayMonney.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPayMonney.Image = ((System.Drawing.Image)(resources.GetObject("btnPayMonney.Image")));
-            this.btnPayMonney.Location = new System.Drawing.Point(326, 570);
+            this.btnPayMonney.Location = new System.Drawing.Point(354, 669);
             this.btnPayMonney.Margin = new System.Windows.Forms.Padding(4);
             this.btnPayMonney.Name = "btnPayMonney";
-            this.btnPayMonney.Size = new System.Drawing.Size(152, 95);
+            this.btnPayMonney.Size = new System.Drawing.Size(163, 130);
             this.btnPayMonney.TabIndex = 41;
             this.btnPayMonney.Text = "Payment";
             this.btnPayMonney.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -252,10 +252,10 @@
             this.btnOrder.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnOrder.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnOrder.Image = ((System.Drawing.Image)(resources.GetObject("btnOrder.Image")));
-            this.btnOrder.Location = new System.Drawing.Point(169, 570);
+            this.btnOrder.Location = new System.Drawing.Point(186, 669);
             this.btnOrder.Margin = new System.Windows.Forms.Padding(4);
             this.btnOrder.Name = "btnOrder";
-            this.btnOrder.Size = new System.Drawing.Size(154, 95);
+            this.btnOrder.Size = new System.Drawing.Size(163, 130);
             this.btnOrder.TabIndex = 40;
             this.btnOrder.Text = "Order";
             this.btnOrder.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -274,7 +274,7 @@
             this.Controls.Add(this.btnPayMonney);
             this.Controls.Add(this.btnOrder);
             this.Name = "frmListTable";
-            this.Size = new System.Drawing.Size(1096, 676);
+            this.Size = new System.Drawing.Size(1155, 825);
             this.panel1.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();

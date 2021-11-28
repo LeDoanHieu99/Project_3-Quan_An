@@ -18,7 +18,11 @@ namespace BLL
         private DbConnection() { }
 
         //toan
-        public string connectionSTR = "Data Source=DESKTOP-EQBH9E4;Initial Catalog=QuanLyQuanAn;Integrated Security=True";
+        //public string connectionSTR = "Data Source=DESKTOP-EQBH9E4;Initial Catalog=QuanLyQuanAn;Integrated Security=True";
+        
+        //hieu
+        public string connectionSTR = "Data Source = LAPTOP - TSBMSQNJ\\LEHIEU;Initial Catalog = QuanLyQuanAn; Integrated Security = True";
+        
         public DataTable ExecuteQuery(string query, object[] parameter = null)
         {
             DataTable data = new DataTable();

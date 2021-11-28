@@ -59,17 +59,17 @@
             this.dataGridView1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
             this.dataGridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(23, 396);
+            this.dataGridView1.Location = new System.Drawing.Point(36, 405);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(1049, 371);
+            this.dataGridView1.Size = new System.Drawing.Size(1091, 397);
             this.dataGridView1.TabIndex = 13;
             // 
             // cbbSelect
             // 
             this.cbbSelect.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbbSelect.FormattingEnabled = true;
-            this.cbbSelect.Location = new System.Drawing.Point(23, 351);
+            this.cbbSelect.Location = new System.Drawing.Point(36, 365);
             this.cbbSelect.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cbbSelect.Name = "cbbSelect";
             this.cbbSelect.Size = new System.Drawing.Size(185, 24);
@@ -82,10 +82,10 @@
             this.btnRemove.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRemove.Image = global::GUI.Properties.Resources.trash;
             this.btnRemove.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnRemove.Location = new System.Drawing.Point(897, 271);
+            this.btnRemove.Location = new System.Drawing.Point(933, 271);
             this.btnRemove.Margin = new System.Windows.Forms.Padding(4);
             this.btnRemove.Name = "btnRemove";
-            this.btnRemove.Size = new System.Drawing.Size(175, 74);
+            this.btnRemove.Size = new System.Drawing.Size(194, 74);
             this.btnRemove.TabIndex = 9;
             this.btnRemove.Text = "Remove";
             this.btnRemove.UseVisualStyleBackColor = false;
@@ -97,10 +97,10 @@
             this.btnEdit.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEdit.Image = global::GUI.Properties.Resources.editing;
             this.btnEdit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnEdit.Location = new System.Drawing.Point(897, 193);
+            this.btnEdit.Location = new System.Drawing.Point(933, 193);
             this.btnEdit.Margin = new System.Windows.Forms.Padding(4);
             this.btnEdit.Name = "btnEdit";
-            this.btnEdit.Size = new System.Drawing.Size(175, 74);
+            this.btnEdit.Size = new System.Drawing.Size(194, 74);
             this.btnEdit.TabIndex = 10;
             this.btnEdit.Text = "Edit";
             this.btnEdit.UseVisualStyleBackColor = false;
@@ -112,10 +112,10 @@
             this.btnAdd.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAdd.Image = global::GUI.Properties.Resources.add_user;
             this.btnAdd.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAdd.Location = new System.Drawing.Point(897, 113);
+            this.btnAdd.Location = new System.Drawing.Point(933, 113);
             this.btnAdd.Margin = new System.Windows.Forms.Padding(4);
             this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(175, 74);
+            this.btnAdd.Size = new System.Drawing.Size(194, 74);
             this.btnAdd.TabIndex = 11;
             this.btnAdd.Text = "Add";
             this.btnAdd.UseVisualStyleBackColor = false;
@@ -135,9 +135,9 @@
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Location = new System.Drawing.Point(23, 113);
+            this.panel1.Location = new System.Drawing.Point(36, 113);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(867, 232);
+            this.panel1.Size = new System.Drawing.Size(879, 242);
             this.panel1.TabIndex = 8;
             // 
             // txtPrice
@@ -315,7 +315,7 @@
             this.btnSearch.IdleFillColor = System.Drawing.Color.DeepSkyBlue;
             this.btnSearch.IdleForecolor = System.Drawing.Color.White;
             this.btnSearch.IdleLineColor = System.Drawing.Color.White;
-            this.btnSearch.Location = new System.Drawing.Point(462, 14);
+            this.btnSearch.Location = new System.Drawing.Point(475, 18);
             this.btnSearch.Margin = new System.Windows.Forms.Padding(5);
             this.btnSearch.Name = "btnSearch";
             this.btnSearch.Size = new System.Drawing.Size(181, 58);
@@ -329,7 +329,7 @@
             this.bunifuTextbox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.bunifuTextbox1.ForeColor = System.Drawing.Color.DeepSkyBlue;
             this.bunifuTextbox1.Icon = ((System.Drawing.Image)(resources.GetObject("bunifuTextbox1.Icon")));
-            this.bunifuTextbox1.Location = new System.Drawing.Point(23, 26);
+            this.bunifuTextbox1.Location = new System.Drawing.Point(36, 30);
             this.bunifuTextbox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.bunifuTextbox1.Name = "bunifuTextbox1";
             this.bunifuTextbox1.Size = new System.Drawing.Size(416, 39);
@@ -350,7 +350,7 @@
             this.Controls.Add(this.btnSearch);
             this.Controls.Add(this.bunifuTextbox1);
             this.Name = "frmListFood";
-            this.Size = new System.Drawing.Size(1095, 780);
+            this.Size = new System.Drawing.Size(1155, 825);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

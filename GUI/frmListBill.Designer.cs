@@ -69,7 +69,7 @@
             this.txtTotal.LineIdleColor = System.Drawing.Color.Gray;
             this.txtTotal.LineMouseHoverColor = System.Drawing.Color.Blue;
             this.txtTotal.LineThickness = 3;
-            this.txtTotal.Location = new System.Drawing.Point(726, 624);
+            this.txtTotal.Location = new System.Drawing.Point(767, 735);
             this.txtTotal.Margin = new System.Windows.Forms.Padding(4);
             this.txtTotal.Name = "txtTotal";
             this.txtTotal.Size = new System.Drawing.Size(340, 31);
@@ -88,7 +88,7 @@
             this.txtStatus.LineIdleColor = System.Drawing.Color.Gray;
             this.txtStatus.LineMouseHoverColor = System.Drawing.Color.Blue;
             this.txtStatus.LineThickness = 3;
-            this.txtStatus.Location = new System.Drawing.Point(726, 576);
+            this.txtStatus.Location = new System.Drawing.Point(767, 675);
             this.txtStatus.Margin = new System.Windows.Forms.Padding(4);
             this.txtStatus.Name = "txtStatus";
             this.txtStatus.Size = new System.Drawing.Size(340, 31);
@@ -99,7 +99,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(644, 631);
+            this.label7.Location = new System.Drawing.Point(685, 742);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(56, 24);
             this.label7.TabIndex = 18;
@@ -109,7 +109,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(644, 583);
+            this.label6.Location = new System.Drawing.Point(685, 682);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(65, 24);
             this.label6.TabIndex = 19;
@@ -127,7 +127,7 @@
             this.txtBillId.LineIdleColor = System.Drawing.Color.Gray;
             this.txtBillId.LineMouseHoverColor = System.Drawing.Color.Blue;
             this.txtBillId.LineThickness = 3;
-            this.txtBillId.Location = new System.Drawing.Point(138, 624);
+            this.txtBillId.Location = new System.Drawing.Point(148, 735);
             this.txtBillId.Margin = new System.Windows.Forms.Padding(4);
             this.txtBillId.Name = "txtBillId";
             this.txtBillId.Size = new System.Drawing.Size(340, 31);
@@ -146,7 +146,7 @@
             this.txtTableId.LineIdleColor = System.Drawing.Color.Gray;
             this.txtTableId.LineMouseHoverColor = System.Drawing.Color.Blue;
             this.txtTableId.LineThickness = 3;
-            this.txtTableId.Location = new System.Drawing.Point(138, 576);
+            this.txtTableId.Location = new System.Drawing.Point(148, 675);
             this.txtTableId.Margin = new System.Windows.Forms.Padding(4);
             this.txtTableId.Name = "txtTableId";
             this.txtTableId.Size = new System.Drawing.Size(340, 31);
@@ -158,7 +158,7 @@
             this.bunifuSeparator2.BackColor = System.Drawing.Color.Transparent;
             this.bunifuSeparator2.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(105)))), ((int)(((byte)(105)))));
             this.bunifuSeparator2.LineThickness = 2;
-            this.bunifuSeparator2.Location = new System.Drawing.Point(576, 558);
+            this.bunifuSeparator2.Location = new System.Drawing.Point(617, 657);
             this.bunifuSeparator2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.bunifuSeparator2.Name = "bunifuSeparator2";
             this.bunifuSeparator2.Size = new System.Drawing.Size(61, 116);
@@ -170,7 +170,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(33, 631);
+            this.label5.Location = new System.Drawing.Point(43, 742);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(61, 24);
             this.label5.TabIndex = 11;
@@ -180,7 +180,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(33, 583);
+            this.label4.Location = new System.Drawing.Point(43, 682);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(85, 24);
             this.label4.TabIndex = 12;
@@ -190,9 +190,9 @@
             // 
             this.panel1.Controls.Add(this.dtgvBillDetail);
             this.panel1.Controls.Add(this.label3);
-            this.panel1.Location = new System.Drawing.Point(612, 9);
+            this.panel1.Location = new System.Drawing.Point(653, 10);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(482, 542);
+            this.panel1.Size = new System.Drawing.Size(495, 633);
             this.panel1.TabIndex = 10;
             // 
             // dtgvBillDetail
@@ -216,14 +216,14 @@
             this.dtgvBillDetail.EnableHeadersVisualStyles = false;
             this.dtgvBillDetail.HeaderBgColor = System.Drawing.Color.SeaGreen;
             this.dtgvBillDetail.HeaderForeColor = System.Drawing.Color.SeaGreen;
-            this.dtgvBillDetail.Location = new System.Drawing.Point(5, 37);
+            this.dtgvBillDetail.Location = new System.Drawing.Point(3, 75);
             this.dtgvBillDetail.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dtgvBillDetail.Name = "dtgvBillDetail";
             this.dtgvBillDetail.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.dtgvBillDetail.RowHeadersVisible = false;
             this.dtgvBillDetail.RowHeadersWidth = 62;
             this.dtgvBillDetail.RowTemplate.Height = 24;
-            this.dtgvBillDetail.Size = new System.Drawing.Size(471, 500);
+            this.dtgvBillDetail.Size = new System.Drawing.Size(489, 554);
             this.dtgvBillDetail.TabIndex = 11;
             // 
             // label3
@@ -243,11 +243,11 @@
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.datetimeGetDay);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(3, 9);
+            this.groupBox1.Location = new System.Drawing.Point(13, 10);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupBox1.Size = new System.Drawing.Size(604, 542);
+            this.groupBox1.Size = new System.Drawing.Size(634, 634);
             this.groupBox1.TabIndex = 9;
             // 
             // dtgvBill
@@ -277,7 +277,7 @@
             this.dtgvBill.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.dtgvBill.RowHeadersVisible = false;
             this.dtgvBill.RowTemplate.Height = 24;
-            this.dtgvBill.Size = new System.Drawing.Size(594, 482);
+            this.dtgvBill.Size = new System.Drawing.Size(624, 554);
             this.dtgvBill.TabIndex = 10;
             // 
             // label2
@@ -306,7 +306,7 @@
             this.datetimeGetDay.ForeColor = System.Drawing.Color.White;
             this.datetimeGetDay.Format = System.Windows.Forms.DateTimePickerFormat.Long;
             this.datetimeGetDay.FormatCustom = null;
-            this.datetimeGetDay.Location = new System.Drawing.Point(6, 46);
+            this.datetimeGetDay.Location = new System.Drawing.Point(6, 44);
             this.datetimeGetDay.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.datetimeGetDay.Name = "datetimeGetDay";
             this.datetimeGetDay.Size = new System.Drawing.Size(288, 24);
@@ -318,7 +318,7 @@
             this.bunifuImageButton1.BackColor = System.Drawing.Color.White;
             this.bunifuImageButton1.Image = global::GUI.Properties.Resources.loupe;
             this.bunifuImageButton1.ImageActive = null;
-            this.bunifuImageButton1.Location = new System.Drawing.Point(501, 583);
+            this.bunifuImageButton1.Location = new System.Drawing.Point(511, 682);
             this.bunifuImageButton1.Name = "bunifuImageButton1";
             this.bunifuImageButton1.Size = new System.Drawing.Size(54, 24);
             this.bunifuImageButton1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -344,7 +344,8 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.groupBox1);
             this.Name = "frmListBill";
-            this.Size = new System.Drawing.Size(1095, 676);
+            this.Size = new System.Drawing.Size(1155, 825);
+            this.Load += new System.EventHandler(this.frmListBill_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvBillDetail)).EndInit();
