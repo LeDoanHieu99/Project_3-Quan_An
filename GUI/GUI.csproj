@@ -211,12 +211,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\BUS\BUS.csproj">
-      <Project>{c1b30bd4-58a9-4e71-a848-c6c0a756fdb7}</Project>
-      <Name>BUS</Name>
-    </ProjectReference>
-  </ItemGroup>
   <ItemGroup />
   <ItemGroup>
     <Content Include="Img\60104a06b2c5da9e7ab683b3d6cfdd15.jpg" />
