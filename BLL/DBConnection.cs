@@ -5,18 +5,18 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Data;
 using System.Data.SqlClient;
-
 namespace BLL
 {
-    public class DBConnection
+    public class DbConnection
     {
-        private static DBConnection instance;
-        public static DBConnection Instance
+        private static DbConnection instance;
+        public static DbConnection Instance
         {
-            get { if (instance == null) instance = new DBConnection(); return instance; }
-            private set { DBConnection instance = value; }
+            get { if (instance == null) instance = new DbConnection(); return instance; }
+            private set { DbConnection instance = value; }
         }
-        private DBConnection() { }
+        private DbConnection() { }
+
         //toan
         public string connectionSTR = "Data Source=DESKTOP-EQBH9E4;Initial Catalog=QuanLyQuanAn;Integrated Security=True";
         public DataTable ExecuteQuery(string query, object[] parameter = null)
