@@ -211,7 +211,12 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\BLL\BLL.csproj">
+      <Project>{12614feb-8dc8-4d92-bcf2-ef227e2a2458}</Project>
+      <Name>BLL</Name>
+    </ProjectReference>
+  </ItemGroup>
   <ItemGroup>
     <Content Include="Img\60104a06b2c5da9e7ab683b3d6cfdd15.jpg" />
     <Content Include="Img\a1eb91f96bbbf6c02057a023d1b26671.jpg" />
@@ -252,6 +257,7 @@
     <Content Include="Img\invoice-factoring-paid-1030x715-1.jpg" />
     <Content Include="Img\kfc.png" />
     <Content Include="Img\kfc1.png" />
+    <Content Include="Img\line.png" />
     <Content Include="Img\login.png" />
     <Content Include="Img\logo.jpeg" />
     <Content Include="Img\loupe.png" />

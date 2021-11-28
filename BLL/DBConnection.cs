@@ -75,7 +75,6 @@ namespace BLL
 
                 connection.Close();
             }
-
             return data;
         }
         public int ExecuteScalar(string query, object[] parameter = null)
