@@ -24,7 +24,7 @@ namespace GUI
 
             if(rBtnStaff.Checked == true && userName != "admin")
             {
-                
+                  //public string connectionSTR = "Data Source=DESKTOP-EQBH9E4;Initial Catalog=QuanLyQuanAn;Integrated Security=True";
             }
         }
     }
