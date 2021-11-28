@@ -18,7 +18,7 @@ namespace DTO
         }
 
         //toan
-        //public string connectionSTR = "Data Source=DESKTOP-EQBH9E4;Initial Catalog=QuanLyQuanAn;Integrated Security=True";
+        public string connectionSTR = "Data Source=DESKTOP-EQBH9E4;Initial Catalog=QuanLyQuanAn;Integrated Security=True";
         private DBConnection() { }
 
         public DataTable ExecuteQuery(string query, object[] parameter = null)
