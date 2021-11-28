@@ -41,12 +41,14 @@
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btnMinus = new Bunifu.Framework.UI.BunifuImageButton();
             ((System.ComponentModel.ISupportInitialize)(this.btnExit)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnMinus)).BeginInit();
             this.SuspendLayout();
             // 
             // btnSignUp
@@ -61,6 +63,7 @@
             this.btnSignUp.TabIndex = 19;
             this.btnSignUp.Text = "Sign-Up";
             this.btnSignUp.UseVisualStyleBackColor = false;
+            this.btnSignUp.Click += new System.EventHandler(this.btnSignUp_Click);
             // 
             // rBtnStaff
             // 
@@ -106,6 +109,7 @@
             this.txtPassword.Size = new System.Drawing.Size(398, 46);
             this.txtPassword.TabIndex = 12;
             this.txtPassword.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txtPassword.OnValueChanged += new System.EventHandler(this.txtPassword_OnValueChanged);
             // 
             // txtUserName
             // 
@@ -138,6 +142,7 @@
             this.btnExit.TabIndex = 20;
             this.btnExit.TabStop = false;
             this.btnExit.Zoom = 10;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // btnLogin
             // 
@@ -215,12 +220,27 @@
             this.pictureBox1.TabIndex = 9;
             this.pictureBox1.TabStop = false;
             // 
+            // btnMinus
+            // 
+            this.btnMinus.BackColor = System.Drawing.Color.White;
+            this.btnMinus.Image = ((System.Drawing.Image)(resources.GetObject("btnMinus.Image")));
+            this.btnMinus.ImageActive = null;
+            this.btnMinus.Location = new System.Drawing.Point(992, 10);
+            this.btnMinus.Name = "btnMinus";
+            this.btnMinus.Size = new System.Drawing.Size(32, 25);
+            this.btnMinus.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnMinus.TabIndex = 21;
+            this.btnMinus.TabStop = false;
+            this.btnMinus.Zoom = 10;
+            this.btnMinus.Click += new System.EventHandler(this.btnMinus_Click);
+            // 
             // frmLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1067, 554);
+            this.Controls.Add(this.btnMinus);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.btnSignUp);
             this.Controls.Add(this.rBtnStaff);
@@ -243,6 +263,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnMinus)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -262,5 +283,6 @@
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private Bunifu.Framework.UI.BunifuImageButton btnMinus;
     }
 }
