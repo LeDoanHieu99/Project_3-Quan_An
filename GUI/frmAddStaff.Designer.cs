@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmAddStaff));
-            this.cboSex = new System.Windows.Forms.ComboBox();
+            this.cboGender = new System.Windows.Forms.ComboBox();
             this.txtPosition = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.txtDate = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.txtNameSraff = new Bunifu.Framework.UI.BunifuMaterialTextbox();
@@ -44,13 +44,13 @@
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // cboSex
+            // cboGender
             // 
-            this.cboSex.FormattingEnabled = true;
-            this.cboSex.Location = new System.Drawing.Point(255, 404);
-            this.cboSex.Name = "cboSex";
-            this.cboSex.Size = new System.Drawing.Size(102, 24);
-            this.cboSex.TabIndex = 78;
+            this.cboGender.FormattingEnabled = true;
+            this.cboGender.Location = new System.Drawing.Point(255, 404);
+            this.cboGender.Name = "cboGender";
+            this.cboGender.Size = new System.Drawing.Size(102, 24);
+            this.cboGender.TabIndex = 78;
             // 
             // txtPosition
             // 
@@ -180,6 +180,7 @@
             this.btnClose.Size = new System.Drawing.Size(21, 23);
             this.btnClose.TabIndex = 8;
             this.btnClose.UseVisualStyleBackColor = true;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
             // btnAddStaff
             // 
@@ -205,6 +206,7 @@
             this.btnAddStaff.Size = new System.Drawing.Size(181, 62);
             this.btnAddStaff.TabIndex = 81;
             this.btnAddStaff.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnAddStaff.Click += new System.EventHandler(this.btnAddStaff_Click);
             // 
             // frmAddStaff
             // 
@@ -213,7 +215,7 @@
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(516, 591);
             this.Controls.Add(this.btnAddStaff);
-            this.Controls.Add(this.cboSex);
+            this.Controls.Add(this.cboGender);
             this.Controls.Add(this.txtPosition);
             this.Controls.Add(this.txtDate);
             this.Controls.Add(this.txtNameSraff);
@@ -227,6 +229,7 @@
             this.Name = "frmAddStaff";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmAddStaff";
+            this.Load += new System.EventHandler(this.frmAddStaff_Load);
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -234,7 +237,7 @@
         }
 
         #endregion
-        private System.Windows.Forms.ComboBox cboSex;
+        private System.Windows.Forms.ComboBox cboGender;
         private Bunifu.Framework.UI.BunifuMaterialTextbox txtPosition;
         private Bunifu.Framework.UI.BunifuMaterialTextbox txtDate;
         private Bunifu.Framework.UI.BunifuMaterialTextbox txtNameSraff;
