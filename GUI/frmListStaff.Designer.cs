@@ -29,15 +29,15 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmListStaff));
-            this.btnRemove = new System.Windows.Forms.Button();
-            this.txtPrice = new Bunifu.Framework.UI.BunifuMaterialTextbox();
-            this.txtFoodName = new Bunifu.Framework.UI.BunifuMaterialTextbox();
-            this.txtFoodTypeName = new Bunifu.Framework.UI.BunifuMaterialTextbox();
-            this.txtFoodTypeID = new Bunifu.Framework.UI.BunifuMaterialTextbox();
-            this.txtFoodId = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.btnDelete = new System.Windows.Forms.Button();
+            this.txtStaffRole = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.txtStaffDate = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.txtStaffGender = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.txtNameStaff = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.txtUserId = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.label3 = new System.Windows.Forms.Label();
             this.btnSearch = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.bunifuTextbox1 = new Bunifu.Framework.UI.BunifuTextbox();
+            this.txtSearchStaff = new Bunifu.Framework.UI.BunifuTextbox();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -45,121 +45,122 @@
             this.btnEdit = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dtgvStaff = new System.Windows.Forms.DataGridView();
             this.btnAdd = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgvStaff)).BeginInit();
             this.SuspendLayout();
             // 
-            // btnRemove
+            // btnDelete
             // 
-            this.btnRemove.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.btnRemove.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnRemove.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRemove.Image = global::GUI.Properties.Resources.trash;
-            this.btnRemove.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnRemove.Location = new System.Drawing.Point(938, 268);
-            this.btnRemove.Margin = new System.Windows.Forms.Padding(4);
-            this.btnRemove.Name = "btnRemove";
-            this.btnRemove.Size = new System.Drawing.Size(189, 74);
-            this.btnRemove.TabIndex = 17;
-            this.btnRemove.Text = "Remove";
-            this.btnRemove.UseVisualStyleBackColor = false;
+            this.btnDelete.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.btnDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDelete.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDelete.Image = global::GUI.Properties.Resources.trash;
+            this.btnDelete.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnDelete.Location = new System.Drawing.Point(938, 268);
+            this.btnDelete.Margin = new System.Windows.Forms.Padding(4);
+            this.btnDelete.Name = "btnDelete";
+            this.btnDelete.Size = new System.Drawing.Size(189, 74);
+            this.btnDelete.TabIndex = 17;
+            this.btnDelete.Text = "Delete";
+            this.btnDelete.UseVisualStyleBackColor = false;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
-            // txtPrice
+            // txtStaffRole
             // 
-            this.txtPrice.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtPrice.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.txtPrice.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txtPrice.HintForeColor = System.Drawing.Color.Empty;
-            this.txtPrice.HintText = "";
-            this.txtPrice.isPassword = false;
-            this.txtPrice.LineFocusedColor = System.Drawing.Color.Blue;
-            this.txtPrice.LineIdleColor = System.Drawing.Color.DodgerBlue;
-            this.txtPrice.LineMouseHoverColor = System.Drawing.Color.Blue;
-            this.txtPrice.LineThickness = 3;
-            this.txtPrice.Location = new System.Drawing.Point(573, 84);
-            this.txtPrice.Margin = new System.Windows.Forms.Padding(4);
-            this.txtPrice.Name = "txtPrice";
-            this.txtPrice.Size = new System.Drawing.Size(225, 33);
-            this.txtPrice.TabIndex = 2;
-            this.txtPrice.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txtStaffRole.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtStaffRole.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.txtStaffRole.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtStaffRole.HintForeColor = System.Drawing.Color.Empty;
+            this.txtStaffRole.HintText = "";
+            this.txtStaffRole.isPassword = false;
+            this.txtStaffRole.LineFocusedColor = System.Drawing.Color.Blue;
+            this.txtStaffRole.LineIdleColor = System.Drawing.Color.DodgerBlue;
+            this.txtStaffRole.LineMouseHoverColor = System.Drawing.Color.Blue;
+            this.txtStaffRole.LineThickness = 3;
+            this.txtStaffRole.Location = new System.Drawing.Point(573, 84);
+            this.txtStaffRole.Margin = new System.Windows.Forms.Padding(4);
+            this.txtStaffRole.Name = "txtStaffRole";
+            this.txtStaffRole.Size = new System.Drawing.Size(225, 33);
+            this.txtStaffRole.TabIndex = 2;
+            this.txtStaffRole.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
-            // txtFoodName
+            // txtStaffDate
             // 
-            this.txtFoodName.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtFoodName.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.txtFoodName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txtFoodName.HintForeColor = System.Drawing.Color.Empty;
-            this.txtFoodName.HintText = "";
-            this.txtFoodName.isPassword = false;
-            this.txtFoodName.LineFocusedColor = System.Drawing.Color.Blue;
-            this.txtFoodName.LineIdleColor = System.Drawing.Color.DodgerBlue;
-            this.txtFoodName.LineMouseHoverColor = System.Drawing.Color.Blue;
-            this.txtFoodName.LineThickness = 3;
-            this.txtFoodName.Location = new System.Drawing.Point(573, 17);
-            this.txtFoodName.Margin = new System.Windows.Forms.Padding(4);
-            this.txtFoodName.Name = "txtFoodName";
-            this.txtFoodName.Size = new System.Drawing.Size(225, 33);
-            this.txtFoodName.TabIndex = 2;
-            this.txtFoodName.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txtStaffDate.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtStaffDate.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.txtStaffDate.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtStaffDate.HintForeColor = System.Drawing.Color.Empty;
+            this.txtStaffDate.HintText = "";
+            this.txtStaffDate.isPassword = false;
+            this.txtStaffDate.LineFocusedColor = System.Drawing.Color.Blue;
+            this.txtStaffDate.LineIdleColor = System.Drawing.Color.DodgerBlue;
+            this.txtStaffDate.LineMouseHoverColor = System.Drawing.Color.Blue;
+            this.txtStaffDate.LineThickness = 3;
+            this.txtStaffDate.Location = new System.Drawing.Point(573, 17);
+            this.txtStaffDate.Margin = new System.Windows.Forms.Padding(4);
+            this.txtStaffDate.Name = "txtStaffDate";
+            this.txtStaffDate.Size = new System.Drawing.Size(225, 33);
+            this.txtStaffDate.TabIndex = 2;
+            this.txtStaffDate.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
-            // txtFoodTypeName
+            // txtStaffGender
             // 
-            this.txtFoodTypeName.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtFoodTypeName.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.txtFoodTypeName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txtFoodTypeName.HintForeColor = System.Drawing.Color.Empty;
-            this.txtFoodTypeName.HintText = "";
-            this.txtFoodTypeName.isPassword = false;
-            this.txtFoodTypeName.LineFocusedColor = System.Drawing.Color.Blue;
-            this.txtFoodTypeName.LineIdleColor = System.Drawing.Color.DodgerBlue;
-            this.txtFoodTypeName.LineMouseHoverColor = System.Drawing.Color.Blue;
-            this.txtFoodTypeName.LineThickness = 3;
-            this.txtFoodTypeName.Location = new System.Drawing.Point(176, 156);
-            this.txtFoodTypeName.Margin = new System.Windows.Forms.Padding(4);
-            this.txtFoodTypeName.Name = "txtFoodTypeName";
-            this.txtFoodTypeName.Size = new System.Drawing.Size(238, 33);
-            this.txtFoodTypeName.TabIndex = 1;
-            this.txtFoodTypeName.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txtStaffGender.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtStaffGender.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.txtStaffGender.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtStaffGender.HintForeColor = System.Drawing.Color.Empty;
+            this.txtStaffGender.HintText = "";
+            this.txtStaffGender.isPassword = false;
+            this.txtStaffGender.LineFocusedColor = System.Drawing.Color.Blue;
+            this.txtStaffGender.LineIdleColor = System.Drawing.Color.DodgerBlue;
+            this.txtStaffGender.LineMouseHoverColor = System.Drawing.Color.Blue;
+            this.txtStaffGender.LineThickness = 3;
+            this.txtStaffGender.Location = new System.Drawing.Point(176, 156);
+            this.txtStaffGender.Margin = new System.Windows.Forms.Padding(4);
+            this.txtStaffGender.Name = "txtStaffGender";
+            this.txtStaffGender.Size = new System.Drawing.Size(238, 33);
+            this.txtStaffGender.TabIndex = 1;
+            this.txtStaffGender.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
-            // txtFoodTypeID
+            // txtNameStaff
             // 
-            this.txtFoodTypeID.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtFoodTypeID.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.txtFoodTypeID.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txtFoodTypeID.HintForeColor = System.Drawing.Color.Empty;
-            this.txtFoodTypeID.HintText = "";
-            this.txtFoodTypeID.isPassword = false;
-            this.txtFoodTypeID.LineFocusedColor = System.Drawing.Color.Blue;
-            this.txtFoodTypeID.LineIdleColor = System.Drawing.Color.DodgerBlue;
-            this.txtFoodTypeID.LineMouseHoverColor = System.Drawing.Color.Blue;
-            this.txtFoodTypeID.LineThickness = 3;
-            this.txtFoodTypeID.Location = new System.Drawing.Point(176, 84);
-            this.txtFoodTypeID.Margin = new System.Windows.Forms.Padding(4);
-            this.txtFoodTypeID.Name = "txtFoodTypeID";
-            this.txtFoodTypeID.Size = new System.Drawing.Size(238, 33);
-            this.txtFoodTypeID.TabIndex = 1;
-            this.txtFoodTypeID.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txtNameStaff.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtNameStaff.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.txtNameStaff.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtNameStaff.HintForeColor = System.Drawing.Color.Empty;
+            this.txtNameStaff.HintText = "";
+            this.txtNameStaff.isPassword = false;
+            this.txtNameStaff.LineFocusedColor = System.Drawing.Color.Blue;
+            this.txtNameStaff.LineIdleColor = System.Drawing.Color.DodgerBlue;
+            this.txtNameStaff.LineMouseHoverColor = System.Drawing.Color.Blue;
+            this.txtNameStaff.LineThickness = 3;
+            this.txtNameStaff.Location = new System.Drawing.Point(176, 84);
+            this.txtNameStaff.Margin = new System.Windows.Forms.Padding(4);
+            this.txtNameStaff.Name = "txtNameStaff";
+            this.txtNameStaff.Size = new System.Drawing.Size(238, 33);
+            this.txtNameStaff.TabIndex = 1;
+            this.txtNameStaff.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
-            // txtFoodId
+            // txtUserId
             // 
-            this.txtFoodId.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtFoodId.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.txtFoodId.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txtFoodId.HintForeColor = System.Drawing.Color.Empty;
-            this.txtFoodId.HintText = "";
-            this.txtFoodId.isPassword = false;
-            this.txtFoodId.LineFocusedColor = System.Drawing.Color.Blue;
-            this.txtFoodId.LineIdleColor = System.Drawing.Color.DodgerBlue;
-            this.txtFoodId.LineMouseHoverColor = System.Drawing.Color.Blue;
-            this.txtFoodId.LineThickness = 3;
-            this.txtFoodId.Location = new System.Drawing.Point(176, 17);
-            this.txtFoodId.Margin = new System.Windows.Forms.Padding(4);
-            this.txtFoodId.Name = "txtFoodId";
-            this.txtFoodId.Size = new System.Drawing.Size(238, 33);
-            this.txtFoodId.TabIndex = 1;
-            this.txtFoodId.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txtUserId.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtUserId.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.txtUserId.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtUserId.HintForeColor = System.Drawing.Color.Empty;
+            this.txtUserId.HintText = "";
+            this.txtUserId.isPassword = false;
+            this.txtUserId.LineFocusedColor = System.Drawing.Color.Blue;
+            this.txtUserId.LineIdleColor = System.Drawing.Color.DodgerBlue;
+            this.txtUserId.LineMouseHoverColor = System.Drawing.Color.Blue;
+            this.txtUserId.LineThickness = 3;
+            this.txtUserId.Location = new System.Drawing.Point(176, 17);
+            this.txtUserId.Margin = new System.Windows.Forms.Padding(4);
+            this.txtUserId.Name = "txtUserId";
+            this.txtUserId.Size = new System.Drawing.Size(238, 33);
+            this.txtUserId.TabIndex = 1;
+            this.txtUserId.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // label3
             // 
@@ -195,20 +196,21 @@
             this.btnSearch.Size = new System.Drawing.Size(181, 58);
             this.btnSearch.TabIndex = 14;
             this.btnSearch.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
             // 
-            // bunifuTextbox1
+            // txtSearchStaff
             // 
-            this.bunifuTextbox1.BackColor = System.Drawing.Color.White;
-            this.bunifuTextbox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuTextbox1.BackgroundImage")));
-            this.bunifuTextbox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.bunifuTextbox1.ForeColor = System.Drawing.Color.DeepSkyBlue;
-            this.bunifuTextbox1.Icon = ((System.Drawing.Image)(resources.GetObject("bunifuTextbox1.Icon")));
-            this.bunifuTextbox1.Location = new System.Drawing.Point(36, 33);
-            this.bunifuTextbox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.bunifuTextbox1.Name = "bunifuTextbox1";
-            this.bunifuTextbox1.Size = new System.Drawing.Size(416, 39);
-            this.bunifuTextbox1.TabIndex = 13;
-            this.bunifuTextbox1.text = "";
+            this.txtSearchStaff.BackColor = System.Drawing.Color.White;
+            this.txtSearchStaff.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("txtSearchStaff.BackgroundImage")));
+            this.txtSearchStaff.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.txtSearchStaff.ForeColor = System.Drawing.Color.DeepSkyBlue;
+            this.txtSearchStaff.Icon = ((System.Drawing.Image)(resources.GetObject("txtSearchStaff.Icon")));
+            this.txtSearchStaff.Location = new System.Drawing.Point(36, 33);
+            this.txtSearchStaff.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtSearchStaff.Name = "txtSearchStaff";
+            this.txtSearchStaff.Size = new System.Drawing.Size(416, 39);
+            this.txtSearchStaff.TabIndex = 13;
+            this.txtSearchStaff.text = "";
             // 
             // label6
             // 
@@ -266,16 +268,17 @@
             this.btnEdit.TabIndex = 18;
             this.btnEdit.Text = "Edit";
             this.btnEdit.UseVisualStyleBackColor = false;
+            this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click);
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(213)))), ((int)(((byte)(242)))));
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.panel1.Controls.Add(this.txtPrice);
-            this.panel1.Controls.Add(this.txtFoodName);
-            this.panel1.Controls.Add(this.txtFoodTypeName);
-            this.panel1.Controls.Add(this.txtFoodTypeID);
-            this.panel1.Controls.Add(this.txtFoodId);
+            this.panel1.Controls.Add(this.txtStaffRole);
+            this.panel1.Controls.Add(this.txtStaffDate);
+            this.panel1.Controls.Add(this.txtStaffGender);
+            this.panel1.Controls.Add(this.txtNameStaff);
+            this.panel1.Controls.Add(this.txtUserId);
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.label6);
             this.panel1.Controls.Add(this.label5);
@@ -297,18 +300,19 @@
             this.label4.TabIndex = 0;
             this.label4.Text = "User ID:";
             // 
-            // dataGridView1
+            // dtgvStaff
             // 
-            this.dataGridView1.AllowUserToAddRows = false;
-            this.dataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.dataGridView1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
-            this.dataGridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(36, 372);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(1091, 438);
-            this.dataGridView1.TabIndex = 16;
+            this.dtgvStaff.AllowUserToAddRows = false;
+            this.dtgvStaff.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.dtgvStaff.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
+            this.dtgvStaff.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            this.dtgvStaff.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtgvStaff.Location = new System.Drawing.Point(36, 372);
+            this.dtgvStaff.Name = "dtgvStaff";
+            this.dtgvStaff.RowTemplate.Height = 24;
+            this.dtgvStaff.Size = new System.Drawing.Size(1091, 438);
+            this.dtgvStaff.TabIndex = 16;
+            this.dtgvStaff.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dtgvStaff_CellMouseClick);
             // 
             // btnAdd
             // 
@@ -324,6 +328,7 @@
             this.btnAdd.TabIndex = 19;
             this.btnAdd.Text = "Add";
             this.btnAdd.UseVisualStyleBackColor = false;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // frmListStaff
             // 
@@ -331,32 +336,33 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.btnAdd);
-            this.Controls.Add(this.btnRemove);
+            this.Controls.Add(this.btnDelete);
             this.Controls.Add(this.btnSearch);
-            this.Controls.Add(this.bunifuTextbox1);
+            this.Controls.Add(this.txtSearchStaff);
             this.Controls.Add(this.btnEdit);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dtgvStaff);
             this.Name = "frmListStaff";
             this.Size = new System.Drawing.Size(1155, 825);
+            this.Load += new System.EventHandler(this.frmListStaff_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgvStaff)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Button btnRemove;
-        private Bunifu.Framework.UI.BunifuMaterialTextbox txtPrice;
-        private Bunifu.Framework.UI.BunifuMaterialTextbox txtFoodName;
-        private Bunifu.Framework.UI.BunifuMaterialTextbox txtFoodTypeName;
-        private Bunifu.Framework.UI.BunifuMaterialTextbox txtFoodTypeID;
-        private Bunifu.Framework.UI.BunifuMaterialTextbox txtFoodId;
+        private System.Windows.Forms.Button btnDelete;
+        private Bunifu.Framework.UI.BunifuMaterialTextbox txtStaffRole;
+        private Bunifu.Framework.UI.BunifuMaterialTextbox txtStaffDate;
+        private Bunifu.Framework.UI.BunifuMaterialTextbox txtStaffGender;
+        private Bunifu.Framework.UI.BunifuMaterialTextbox txtNameStaff;
+        private Bunifu.Framework.UI.BunifuMaterialTextbox txtUserId;
         private System.Windows.Forms.Label label3;
         private Bunifu.Framework.UI.BunifuThinButton2 btnSearch;
-        private Bunifu.Framework.UI.BunifuTextbox bunifuTextbox1;
+        private Bunifu.Framework.UI.BunifuTextbox txtSearchStaff;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label2;
@@ -364,7 +370,7 @@
         private System.Windows.Forms.Button btnEdit;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dtgvStaff;
         private System.Windows.Forms.Button btnAdd;
     }
 }

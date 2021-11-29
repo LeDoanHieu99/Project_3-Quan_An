@@ -150,6 +150,7 @@
             this.btnClose.Size = new System.Drawing.Size(21, 23);
             this.btnClose.TabIndex = 8;
             this.btnClose.UseVisualStyleBackColor = false;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
             // btnAddFood
             // 
@@ -175,6 +176,7 @@
             this.btnAddFood.Size = new System.Drawing.Size(181, 62);
             this.btnAddFood.TabIndex = 27;
             this.btnAddFood.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnAddFood.Click += new System.EventHandler(this.btnAddFood_Click);
             // 
             // frmAddFood
             // 
