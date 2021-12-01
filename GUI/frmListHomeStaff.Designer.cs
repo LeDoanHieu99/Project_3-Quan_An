@@ -29,7 +29,11 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmListHomeStaff));
-            this.panelListHomeStaff = new System.Windows.Forms.Panel();
+
+            this.panListHomeStaff = new System.Windows.Forms.Panel();
+
+            
+
             this.label7 = new System.Windows.Forms.Label();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.panel6 = new System.Windows.Forms.Panel();
@@ -59,7 +63,9 @@
             this.btnRevenue = new Bunifu.Framework.UI.BunifuTileButton();
             this.panel10 = new System.Windows.Forms.Panel();
             this.labelTime = new System.Windows.Forms.Label();
-            this.panelListHomeStaff.SuspendLayout();
+
+            this.panListHomeStaff.SuspendLayout();
+
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -71,25 +77,27 @@
             this.panel10.SuspendLayout();
             this.SuspendLayout();
             // 
-            // panelListHomeStaff
+
+            // panListHomeStaff
             // 
-            this.panelListHomeStaff.Controls.Add(this.label7);
-            this.panelListHomeStaff.Controls.Add(this.panel6);
-            this.panelListHomeStaff.Controls.Add(this.panel5);
-            this.panelListHomeStaff.Controls.Add(this.panel3);
-            this.panelListHomeStaff.Controls.Add(this.panel4);
-            this.panelListHomeStaff.Controls.Add(this.panel9);
-            this.panelListHomeStaff.Controls.Add(this.panel8);
-            this.panelListHomeStaff.Controls.Add(this.panel7);
-            this.panelListHomeStaff.Controls.Add(this.panel2);
-            this.panelListHomeStaff.Controls.Add(this.panel1);
-            this.panelListHomeStaff.Controls.Add(this.panel10);
-            this.panelListHomeStaff.Controls.Add(this.labelTime);
-            this.panelListHomeStaff.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelListHomeStaff.Location = new System.Drawing.Point(0, 0);
-            this.panelListHomeStaff.Name = "panelListHomeStaff";
-            this.panelListHomeStaff.Size = new System.Drawing.Size(1159, 820);
-            this.panelListHomeStaff.TabIndex = 0;
+            this.panListHomeStaff.Controls.Add(this.label7);
+            this.panListHomeStaff.Controls.Add(this.panel6);
+            this.panListHomeStaff.Controls.Add(this.panel5);
+            this.panListHomeStaff.Controls.Add(this.panel3);
+            this.panListHomeStaff.Controls.Add(this.panel4);
+            this.panListHomeStaff.Controls.Add(this.panel9);
+            this.panListHomeStaff.Controls.Add(this.panel8);
+            this.panListHomeStaff.Controls.Add(this.panel7);
+            this.panListHomeStaff.Controls.Add(this.panel2);
+            this.panListHomeStaff.Controls.Add(this.panel1);
+            this.panListHomeStaff.Controls.Add(this.panel10);
+            this.panListHomeStaff.Controls.Add(this.labelTime);
+            this.panListHomeStaff.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panListHomeStaff.Location = new System.Drawing.Point(0, 0);
+            this.panListHomeStaff.Name = "panListHomeStaff";
+            this.panListHomeStaff.Size = new System.Drawing.Size(1159, 820);
+            this.panListHomeStaff.TabIndex = 0;
+
             // 
             // label7
             // 
@@ -289,6 +297,7 @@
             this.panel1.TabIndex = 60;
             // 
             // pictureBox1
+
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(192, 41);
@@ -356,6 +365,7 @@
             this.btnBill.Name = "btnBill";
             this.btnBill.Size = new System.Drawing.Size(240, 135);
             this.btnBill.TabIndex = 39;
+            this.btnBill.Click += new System.EventHandler(this.btnBill_Click);
             // 
             // btnTable
             // 
@@ -367,7 +377,7 @@
             this.btnTable.ForeColor = System.Drawing.Color.Black;
             this.btnTable.Image = ((System.Drawing.Image)(resources.GetObject("btnTable.Image")));
             this.btnTable.ImagePosition = -18;
-            this.btnTable.ImageZoom = 65;
+            this.btnTable.ImageZoom = 55;
             this.btnTable.LabelPosition = 25;
             this.btnTable.LabelText = "Table";
             this.btnTable.Location = new System.Drawing.Point(260, 6);
@@ -375,6 +385,7 @@
             this.btnTable.Name = "btnTable";
             this.btnTable.Size = new System.Drawing.Size(240, 135);
             this.btnTable.TabIndex = 37;
+            this.btnTable.Click += new System.EventHandler(this.btnTable_Click);
             // 
             // btnFood
             // 
@@ -394,6 +405,7 @@
             this.btnFood.Name = "btnFood";
             this.btnFood.Size = new System.Drawing.Size(223, 126);
             this.btnFood.TabIndex = 36;
+            this.btnFood.Click += new System.EventHandler(this.btnFood_Click);
             // 
             // btnRevenue
             // 
@@ -413,6 +425,7 @@
             this.btnRevenue.Name = "btnRevenue";
             this.btnRevenue.Size = new System.Drawing.Size(240, 135);
             this.btnRevenue.TabIndex = 40;
+            this.btnRevenue.Click += new System.EventHandler(this.btnRevenue_Click);
             // 
             // panel10
             // 
@@ -428,6 +441,7 @@
             // 
             // labelTime
             // 
+
             this.labelTime.AutoSize = true;
             this.labelTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelTime.Location = new System.Drawing.Point(1010, 9);
@@ -441,12 +455,13 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.Controls.Add(this.panelListHomeStaff);
+
+            this.Controls.Add(this.panListHomeStaff);
             this.Name = "frmListHomeStaff";
             this.Size = new System.Drawing.Size(1159, 820);
-            this.Load += new System.EventHandler(this.frmListHomeStaff_Load);
-            this.panelListHomeStaff.ResumeLayout(false);
-            this.panelListHomeStaff.PerformLayout();
+            this.panListHomeStaff.ResumeLayout(false);
+            this.panListHomeStaff.PerformLayout();
+
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
@@ -466,7 +481,9 @@
 
         #endregion
 
-        private System.Windows.Forms.Panel panelListHomeStaff;
+
+        private System.Windows.Forms.Panel panListHomeStaff;
+
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Panel panel5;

@@ -216,6 +216,10 @@
       <Project>{12614feb-8dc8-4d92-bcf2-ef227e2a2458}</Project>
       <Name>BLL</Name>
     </ProjectReference>
+    <ProjectReference Include="..\DATA\DATA.csproj">
+      <Project>{C2BB0989-B694-49F2-9532-261E4F99E033}</Project>
+      <Name>DATA</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <Content Include="Img\60104a06b2c5da9e7ab683b3d6cfdd15.jpg" />

@@ -211,6 +211,7 @@
             this.txtSearchStaff.Size = new System.Drawing.Size(416, 39);
             this.txtSearchStaff.TabIndex = 13;
             this.txtSearchStaff.text = "";
+            
             // 
             // label6
             // 

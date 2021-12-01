@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmListFood));
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.cbbSelect = new System.Windows.Forms.ComboBox();
+            this.dtgvFood = new System.Windows.Forms.DataGridView();
+            this.cboSelect = new System.Windows.Forms.ComboBox();
             this.btnRemove = new System.Windows.Forms.Button();
             this.btnEdit = new System.Windows.Forms.Button();
             this.btnAdd = new System.Windows.Forms.Button();
@@ -47,33 +47,41 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.btnSearch = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.bunifuTextbox1 = new Bunifu.Framework.UI.BunifuTextbox();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.txtSearch = new Bunifu.Framework.UI.BunifuTextbox();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgvFood)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // dataGridView1
+            // dtgvFood
             // 
-            this.dataGridView1.AllowUserToAddRows = false;
-            this.dataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.dataGridView1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
-            this.dataGridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(36, 405);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(1091, 397);
-            this.dataGridView1.TabIndex = 13;
+            this.dtgvFood.AllowUserToAddRows = false;
+            this.dtgvFood.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.dtgvFood.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
+            this.dtgvFood.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            this.dtgvFood.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtgvFood.Location = new System.Drawing.Point(36, 405);
+            this.dtgvFood.Name = "dtgvFood";
+            this.dtgvFood.ReadOnly = true;
+            this.dtgvFood.RowHeadersVisible = false;
+            this.dtgvFood.RowHeadersWidth = 62;
+            this.dtgvFood.RowTemplate.Height = 24;
+            this.dtgvFood.Size = new System.Drawing.Size(1091, 397);
+            this.dtgvFood.TabIndex = 13;
+            this.dtgvFood.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dtgvFood_CellMouseClick);
             // 
-            // cbbSelect
+            // cboSelect
             // 
-            this.cbbSelect.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbbSelect.FormattingEnabled = true;
-            this.cbbSelect.Location = new System.Drawing.Point(36, 365);
-            this.cbbSelect.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.cbbSelect.Name = "cbbSelect";
-            this.cbbSelect.Size = new System.Drawing.Size(185, 24);
-            this.cbbSelect.TabIndex = 12;
+            this.cboSelect.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboSelect.FormattingEnabled = true;
+            this.cboSelect.Items.AddRange(new object[] {
+            "Category",
+            "Food"});
+            this.cboSelect.Location = new System.Drawing.Point(36, 365);
+            this.cboSelect.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.cboSelect.Name = "cboSelect";
+            this.cboSelect.Size = new System.Drawing.Size(185, 24);
+            this.cboSelect.TabIndex = 12;
+            this.cboSelect.SelectedIndexChanged += new System.EventHandler(this.cboSelect_SelectedIndexChanged);
             // 
             // btnRemove
             // 
@@ -89,6 +97,7 @@
             this.btnRemove.TabIndex = 9;
             this.btnRemove.Text = "Remove";
             this.btnRemove.UseVisualStyleBackColor = false;
+            this.btnRemove.Click += new System.EventHandler(this.btnRemove_Click);
             // 
             // btnEdit
             // 
@@ -104,6 +113,7 @@
             this.btnEdit.TabIndex = 10;
             this.btnEdit.Text = "Edit";
             this.btnEdit.UseVisualStyleBackColor = false;
+            this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click);
             // 
             // btnAdd
             // 
@@ -119,6 +129,7 @@
             this.btnAdd.TabIndex = 11;
             this.btnAdd.Text = "Add";
             this.btnAdd.UseVisualStyleBackColor = false;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // panel1
             // 
@@ -321,37 +332,38 @@
             this.btnSearch.Size = new System.Drawing.Size(181, 58);
             this.btnSearch.TabIndex = 7;
             this.btnSearch.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
             // 
-            // bunifuTextbox1
+            // txtSearch
             // 
-            this.bunifuTextbox1.BackColor = System.Drawing.Color.White;
-            this.bunifuTextbox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuTextbox1.BackgroundImage")));
-            this.bunifuTextbox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.bunifuTextbox1.ForeColor = System.Drawing.Color.DeepSkyBlue;
-            this.bunifuTextbox1.Icon = ((System.Drawing.Image)(resources.GetObject("bunifuTextbox1.Icon")));
-            this.bunifuTextbox1.Location = new System.Drawing.Point(36, 30);
-            this.bunifuTextbox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.bunifuTextbox1.Name = "bunifuTextbox1";
-            this.bunifuTextbox1.Size = new System.Drawing.Size(416, 39);
-            this.bunifuTextbox1.TabIndex = 6;
-            this.bunifuTextbox1.text = "";
+            this.txtSearch.BackColor = System.Drawing.Color.White;
+            this.txtSearch.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("txtSearch.BackgroundImage")));
+            this.txtSearch.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.txtSearch.ForeColor = System.Drawing.Color.DeepSkyBlue;
+            this.txtSearch.Icon = ((System.Drawing.Image)(resources.GetObject("txtSearch.Icon")));
+            this.txtSearch.Location = new System.Drawing.Point(36, 30);
+            this.txtSearch.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtSearch.Name = "txtSearch";
+            this.txtSearch.Size = new System.Drawing.Size(416, 39);
+            this.txtSearch.TabIndex = 6;
+            this.txtSearch.text = "";
             // 
             // frmListFood
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.cbbSelect);
+            this.Controls.Add(this.dtgvFood);
+            this.Controls.Add(this.cboSelect);
             this.Controls.Add(this.btnRemove);
             this.Controls.Add(this.btnEdit);
             this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.btnSearch);
-            this.Controls.Add(this.bunifuTextbox1);
+            this.Controls.Add(this.txtSearch);
             this.Name = "frmListFood";
             this.Size = new System.Drawing.Size(1155, 825);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgvFood)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);
@@ -360,8 +372,8 @@
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.ComboBox cbbSelect;
+        private System.Windows.Forms.DataGridView dtgvFood;
+        private System.Windows.Forms.ComboBox cboSelect;
         private System.Windows.Forms.Button btnRemove;
         private System.Windows.Forms.Button btnEdit;
         private System.Windows.Forms.Button btnAdd;
@@ -378,6 +390,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private Bunifu.Framework.UI.BunifuThinButton2 btnSearch;
-        private Bunifu.Framework.UI.BunifuTextbox bunifuTextbox1;
+        private Bunifu.Framework.UI.BunifuTextbox txtSearch;
     }
 }
