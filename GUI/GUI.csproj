@@ -260,6 +260,7 @@
     <Content Include="Img\line.png" />
     <Content Include="Img\login.png" />
     <Content Include="Img\logo.jpeg" />
+    <Content Include="Img\LogoutIcon.png" />
     <Content Include="Img\loupe.png" />
     <Content Include="Img\menu.png" />
     <Content Include="Img\MenuIcon.png" />
@@ -273,6 +274,7 @@
     <Content Include="Img\pngtree-organic-food-logo-fork-and-tree-symbol-healthy-icon-png-image_313491-removebg-preview %282%29.png" />
     <Content Include="Img\power-button.png" />
     <Content Include="Img\question.png" />
+    <Content Include="Img\QuitIcon.png" />
     <Content Include="Img\registration.png" />
     <Content Include="Img\setting-illustration-flat-icon-can-use-for-icon-design-element-ui-web-mobile-app-free-vector.jpg" />
     <Content Include="Img\settings.png" />
