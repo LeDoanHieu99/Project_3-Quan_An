@@ -135,7 +135,7 @@ namespace GUI
             string name = txtSearchStaff.Text;
             DataTable data = Staff_BLL.Instance.SearchStaffByName(name);
             if (data.Rows.Count == 0 || name == "")
-                MessageBox.Show("Không có thông tin nhân viên cần tìm");
+                  MessageBox.Show("Không có thông tin nhân viên cần tìm");
             else
             {
                 dtgvStaff.DataSource = data;
@@ -167,5 +167,7 @@ namespace GUI
                 txtStaffGender.Text = row.Cells["Giới tính"].Value.ToString();
             }
         }
+
+       
     }
 }

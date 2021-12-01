@@ -44,6 +44,7 @@
             // 
             // cboCategory
             // 
+            this.cboCategory.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboCategory.FormattingEnabled = true;
             this.cboCategory.Location = new System.Drawing.Point(72, 305);
             this.cboCategory.Name = "cboCategory";
@@ -197,6 +198,7 @@
             this.Name = "frmAddFood";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmAddFood";
+            this.Load += new System.EventHandler(this.frmAddFood_Load);
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();

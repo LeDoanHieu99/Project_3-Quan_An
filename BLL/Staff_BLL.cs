@@ -49,7 +49,7 @@ namespace BLL
             if (x > 0) return true;
             return false;
         }
-
+            
         public bool DeleteStaff(int id)
         {
             string query = "DELETE FROM Account WHERE UserId ='" + id + "'";
@@ -61,7 +61,7 @@ namespace BLL
         }
         public DataTable SearchStaffByName(string name)
         {
-            string query = "SELECT UserId as N'Mã nhân viên', Name as N'Họ tên', Birthday as N'Ngày sinh', Role as N'Chức vụ', Gender as N'Giới tính' FROM Account like N'%" + name + "%'";
+            string query = "SELECT UserId as N'Mã nhân viên', Name as N'Họ tên', Birthday as N'Ngày sinh', Role as N'Chức vụ', Gender as N'Giới tính' FROM Account WHERE Name like N'%" + name + "%'";
             DataTable data = new DataTable();
             data = DbConnection.Instance.ExecuteQuery(query);
             return data;
