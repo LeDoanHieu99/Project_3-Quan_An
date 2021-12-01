@@ -42,9 +42,20 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AcountBll.cs" />
+    <Compile Include="BillBLL.cs" />
+    <Compile Include="BillInfoBLL.cs" />
     <Compile Include="DBConnection.cs" />
+    <Compile Include="MenuBLL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RevenueBLL.cs" />
     <Compile Include="Staff_BLL.cs" />
+    <Compile Include="TableBLL.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DATA\DATA.csproj">
+      <Project>{c2bb0989-b694-49f2-9532-261e4f99e033}</Project>
+      <Name>DATA</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
