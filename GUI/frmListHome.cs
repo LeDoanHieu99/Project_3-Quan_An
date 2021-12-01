@@ -17,40 +17,43 @@ namespace GUI
             InitializeComponent();
         }
 
+        private void btnImgFood_Click(object sender, EventArgs e)
+        {
+            frmListFood foods = new frmListFood();
+            this.panListHome.Controls.Add(foods);
+            foods.BringToFront();
+        }
+
+        private void btnImgTable_Click(object sender, EventArgs e)
+        {
+            frmListTable tables = new frmListTable();
+            this.panListHome.Controls.Add(tables);
+            tables.BringToFront();
+        }
+
+        private void btnImgBill_Click(object sender, EventArgs e)
+        {
+            frmListBill bills = new frmListBill();
+            this.panListHome.Controls.Add(bills);
+            bills.BringToFront();
+        }
+
+        private void btnImgRevenue_Click(object sender, EventArgs e)
+        {
+            frmListRevenue revenues = new frmListRevenue();
+            this.panListHome.Controls.Add(revenues);
+            revenues.BringToFront();
+        }
+
+        private void btnImgStaff_Click(object sender, EventArgs e)
+        {
+            frmListStaff staffs = new frmListStaff();
+            this.panListHome.Controls.Add(staffs);
+            staffs.BringToFront();
+        }
+
+
         
-        private void btnFood_Click_1(object sender, EventArgs e)
-        {
-            frmListFood food = new frmListFood();
-            this.panListHome.Controls.Add(food);
-            food.BringToFront();
-        }
 
-        private void btnTable_Click(object sender, EventArgs e)
-        {
-            frmListTable table = new frmListTable();
-            this.panListHome.Controls.Add(table);
-            table.BringToFront();
-        }
-
-        private void btnBill_Click(object sender, EventArgs e)
-        {
-            frmListBill food = new frmListBill();
-            this.panListHome.Controls.Add(food);
-            food.BringToFront();
-        }
-
-        private void btnRevenue_Click(object sender, EventArgs e)
-        {
-            frmListRevenue food = new frmListRevenue();
-            this.panListHome.Controls.Add(food);
-            food.BringToFront();
-        }
-
-        private void btnStaff_Click(object sender, EventArgs e)
-        {
-            frmListStaff food = new frmListStaff();
-            this.panListHome.Controls.Add(food);
-            food.BringToFront();
-        }
     }
 }

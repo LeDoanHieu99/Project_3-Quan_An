@@ -31,12 +31,11 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmListHome));
             this.panListHome = new System.Windows.Forms.Panel();
             this.panel10 = new System.Windows.Forms.Panel();
-            this.btnStaff = new Bunifu.Framework.UI.BunifuTileButton();
-            this.btnSetting = new Bunifu.Framework.UI.BunifuTileButton();
-            this.btnBill = new Bunifu.Framework.UI.BunifuTileButton();
-            this.btnTable = new Bunifu.Framework.UI.BunifuTileButton();
-            this.btnFood = new Bunifu.Framework.UI.BunifuTileButton();
-            this.btnRevenue = new Bunifu.Framework.UI.BunifuTileButton();
+            this.btnImgStaff = new Bunifu.Framework.UI.BunifuTileButton();
+            this.btnImgBill = new Bunifu.Framework.UI.BunifuTileButton();
+            this.btnImgTable = new Bunifu.Framework.UI.BunifuTileButton();
+            this.btnImgFood = new Bunifu.Framework.UI.BunifuTileButton();
+            this.btnImgRevenue = new Bunifu.Framework.UI.BunifuTileButton();
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label3 = new System.Windows.Forms.Label();
@@ -94,135 +93,115 @@
             // 
             // panel10
             // 
-            this.panel10.Controls.Add(this.btnStaff);
-            this.panel10.Controls.Add(this.btnSetting);
-            this.panel10.Controls.Add(this.btnBill);
-            this.panel10.Controls.Add(this.btnTable);
-            this.panel10.Controls.Add(this.btnFood);
-            this.panel10.Controls.Add(this.btnRevenue);
+            this.panel10.Controls.Add(this.btnImgStaff);
+            this.panel10.Controls.Add(this.btnImgBill);
+            this.panel10.Controls.Add(this.btnImgTable);
+            this.panel10.Controls.Add(this.btnImgFood);
+            this.panel10.Controls.Add(this.btnImgRevenue);
             this.panel10.Location = new System.Drawing.Point(232, 45);
             this.panel10.Name = "panel10";
             this.panel10.Size = new System.Drawing.Size(780, 332);
             this.panel10.TabIndex = 58;
             // 
-            // btnStaff
+            // btnImgStaff
             // 
-            this.btnStaff.BackColor = System.Drawing.Color.White;
-            this.btnStaff.color = System.Drawing.Color.White;
-            this.btnStaff.colorActive = System.Drawing.Color.WhiteSmoke;
-            this.btnStaff.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnStaff.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnStaff.ForeColor = System.Drawing.Color.Black;
-            this.btnStaff.Image = ((System.Drawing.Image)(resources.GetObject("btnStaff.Image")));
-            this.btnStaff.ImagePosition = -18;
-            this.btnStaff.ImageZoom = 65;
-            this.btnStaff.LabelPosition = 25;
-            this.btnStaff.LabelText = "Staff";
-            this.btnStaff.Location = new System.Drawing.Point(260, 161);
-            this.btnStaff.Margin = new System.Windows.Forms.Padding(6);
-            this.btnStaff.Name = "btnStaff";
-            this.btnStaff.Size = new System.Drawing.Size(240, 135);
-            this.btnStaff.TabIndex = 38;
-            this.btnStaff.Click += new System.EventHandler(this.btnStaff_Click);
+            this.btnImgStaff.BackColor = System.Drawing.Color.White;
+            this.btnImgStaff.color = System.Drawing.Color.White;
+            this.btnImgStaff.colorActive = System.Drawing.Color.WhiteSmoke;
+            this.btnImgStaff.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnImgStaff.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnImgStaff.ForeColor = System.Drawing.Color.Black;
+            this.btnImgStaff.Image = ((System.Drawing.Image)(resources.GetObject("btnImgStaff.Image")));
+            this.btnImgStaff.ImagePosition = -18;
+            this.btnImgStaff.ImageZoom = 65;
+            this.btnImgStaff.LabelPosition = 25;
+            this.btnImgStaff.LabelText = "Staff";
+            this.btnImgStaff.Location = new System.Drawing.Point(415, 180);
+            this.btnImgStaff.Margin = new System.Windows.Forms.Padding(6);
+            this.btnImgStaff.Name = "btnImgStaff";
+            this.btnImgStaff.Size = new System.Drawing.Size(240, 135);
+            this.btnImgStaff.TabIndex = 38;
+            this.btnImgStaff.Click += new System.EventHandler(this.btnImgStaff_Click);
             // 
-            // btnSetting
+            // btnImgBill
             // 
-            this.btnSetting.BackColor = System.Drawing.Color.White;
-            this.btnSetting.color = System.Drawing.Color.White;
-            this.btnSetting.colorActive = System.Drawing.Color.WhiteSmoke;
-            this.btnSetting.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnSetting.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSetting.ForeColor = System.Drawing.Color.Black;
-            this.btnSetting.Image = ((System.Drawing.Image)(resources.GetObject("btnSetting.Image")));
-            this.btnSetting.ImagePosition = -28;
-            this.btnSetting.ImageZoom = 65;
-            this.btnSetting.LabelPosition = 25;
-            this.btnSetting.LabelText = "Setting";
-            this.btnSetting.Location = new System.Drawing.Point(518, 161);
-            this.btnSetting.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.btnSetting.Name = "btnSetting";
-            this.btnSetting.Size = new System.Drawing.Size(240, 135);
-            this.btnSetting.TabIndex = 6;
+            this.btnImgBill.BackColor = System.Drawing.Color.White;
+            this.btnImgBill.color = System.Drawing.Color.White;
+            this.btnImgBill.colorActive = System.Drawing.Color.WhiteSmoke;
+            this.btnImgBill.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnImgBill.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnImgBill.ForeColor = System.Drawing.Color.Black;
+            this.btnImgBill.Image = ((System.Drawing.Image)(resources.GetObject("btnImgBill.Image")));
+            this.btnImgBill.ImagePosition = -18;
+            this.btnImgBill.ImageZoom = 65;
+            this.btnImgBill.LabelPosition = 25;
+            this.btnImgBill.LabelText = "Bill";
+            this.btnImgBill.Location = new System.Drawing.Point(518, 6);
+            this.btnImgBill.Margin = new System.Windows.Forms.Padding(6);
+            this.btnImgBill.Name = "btnImgBill";
+            this.btnImgBill.Size = new System.Drawing.Size(240, 135);
+            this.btnImgBill.TabIndex = 39;
+            this.btnImgBill.Click += new System.EventHandler(this.btnImgBill_Click);
             // 
-            // btnBill
+            // btnImgTable
             // 
-            this.btnBill.BackColor = System.Drawing.Color.White;
-            this.btnBill.color = System.Drawing.Color.White;
-            this.btnBill.colorActive = System.Drawing.Color.WhiteSmoke;
-            this.btnBill.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnBill.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBill.ForeColor = System.Drawing.Color.Black;
-            this.btnBill.Image = ((System.Drawing.Image)(resources.GetObject("btnBill.Image")));
-            this.btnBill.ImagePosition = -18;
-            this.btnBill.ImageZoom = 65;
-            this.btnBill.LabelPosition = 25;
-            this.btnBill.LabelText = "Bill";
-            this.btnBill.Location = new System.Drawing.Point(518, 6);
-            this.btnBill.Margin = new System.Windows.Forms.Padding(6);
-            this.btnBill.Name = "btnBill";
-            this.btnBill.Size = new System.Drawing.Size(240, 135);
-            this.btnBill.TabIndex = 39;
-            this.btnBill.Click += new System.EventHandler(this.btnBill_Click);
+            this.btnImgTable.BackColor = System.Drawing.Color.White;
+            this.btnImgTable.color = System.Drawing.Color.White;
+            this.btnImgTable.colorActive = System.Drawing.Color.WhiteSmoke;
+            this.btnImgTable.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnImgTable.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnImgTable.ForeColor = System.Drawing.Color.Black;
+            this.btnImgTable.Image = ((System.Drawing.Image)(resources.GetObject("btnImgTable.Image")));
+            this.btnImgTable.ImagePosition = -18;
+            this.btnImgTable.ImageZoom = 55;
+            this.btnImgTable.LabelPosition = 25;
+            this.btnImgTable.LabelText = "Table";
+            this.btnImgTable.Location = new System.Drawing.Point(260, 6);
+            this.btnImgTable.Margin = new System.Windows.Forms.Padding(6);
+            this.btnImgTable.Name = "btnImgTable";
+            this.btnImgTable.Size = new System.Drawing.Size(240, 135);
+            this.btnImgTable.TabIndex = 37;
+            this.btnImgTable.Click += new System.EventHandler(this.btnImgTable_Click);
             // 
-            // btnTable
+            // btnImgFood
             // 
-            this.btnTable.BackColor = System.Drawing.Color.White;
-            this.btnTable.color = System.Drawing.Color.White;
-            this.btnTable.colorActive = System.Drawing.Color.WhiteSmoke;
-            this.btnTable.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnTable.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTable.ForeColor = System.Drawing.Color.Black;
-            this.btnTable.Image = ((System.Drawing.Image)(resources.GetObject("btnTable.Image")));
-            this.btnTable.ImagePosition = -18;
-            this.btnTable.ImageZoom = 55;
-            this.btnTable.LabelPosition = 25;
-            this.btnTable.LabelText = "Table";
-            this.btnTable.Location = new System.Drawing.Point(260, 6);
-            this.btnTable.Margin = new System.Windows.Forms.Padding(6);
-            this.btnTable.Name = "btnTable";
-            this.btnTable.Size = new System.Drawing.Size(240, 135);
-            this.btnTable.TabIndex = 37;
-            this.btnTable.Click += new System.EventHandler(this.btnTable_Click);
+            this.btnImgFood.BackColor = System.Drawing.Color.White;
+            this.btnImgFood.color = System.Drawing.Color.White;
+            this.btnImgFood.colorActive = System.Drawing.Color.WhiteSmoke;
+            this.btnImgFood.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnImgFood.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnImgFood.ForeColor = System.Drawing.Color.Black;
+            this.btnImgFood.Image = ((System.Drawing.Image)(resources.GetObject("btnImgFood.Image")));
+            this.btnImgFood.ImagePosition = -18;
+            this.btnImgFood.ImageZoom = 65;
+            this.btnImgFood.LabelPosition = 25;
+            this.btnImgFood.LabelText = "Food";
+            this.btnImgFood.Location = new System.Drawing.Point(6, 6);
+            this.btnImgFood.Margin = new System.Windows.Forms.Padding(6);
+            this.btnImgFood.Name = "btnImgFood";
+            this.btnImgFood.Size = new System.Drawing.Size(223, 126);
+            this.btnImgFood.TabIndex = 36;
+            this.btnImgFood.Click += new System.EventHandler(this.btnImgFood_Click);
             // 
-            // btnFood
+            // btnImgRevenue
             // 
-            this.btnFood.BackColor = System.Drawing.Color.White;
-            this.btnFood.color = System.Drawing.Color.White;
-            this.btnFood.colorActive = System.Drawing.Color.WhiteSmoke;
-            this.btnFood.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnFood.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnFood.ForeColor = System.Drawing.Color.Black;
-            this.btnFood.Image = ((System.Drawing.Image)(resources.GetObject("btnFood.Image")));
-            this.btnFood.ImagePosition = -18;
-            this.btnFood.ImageZoom = 65;
-            this.btnFood.LabelPosition = 25;
-            this.btnFood.LabelText = "Food";
-            this.btnFood.Location = new System.Drawing.Point(6, 6);
-            this.btnFood.Margin = new System.Windows.Forms.Padding(6);
-            this.btnFood.Name = "btnFood";
-            this.btnFood.Size = new System.Drawing.Size(223, 126);
-            this.btnFood.TabIndex = 36;
-            this.btnFood.Click += new System.EventHandler(this.btnFood_Click_1);
-            // 
-            // btnRevenue
-            // 
-            this.btnRevenue.BackColor = System.Drawing.Color.White;
-            this.btnRevenue.color = System.Drawing.Color.White;
-            this.btnRevenue.colorActive = System.Drawing.Color.WhiteSmoke;
-            this.btnRevenue.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnRevenue.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRevenue.ForeColor = System.Drawing.Color.Black;
-            this.btnRevenue.Image = ((System.Drawing.Image)(resources.GetObject("btnRevenue.Image")));
-            this.btnRevenue.ImagePosition = -18;
-            this.btnRevenue.ImageZoom = 65;
-            this.btnRevenue.LabelPosition = 25;
-            this.btnRevenue.LabelText = "Revenue";
-            this.btnRevenue.Location = new System.Drawing.Point(6, 161);
-            this.btnRevenue.Margin = new System.Windows.Forms.Padding(6);
-            this.btnRevenue.Name = "btnRevenue";
-            this.btnRevenue.Size = new System.Drawing.Size(240, 135);
-            this.btnRevenue.TabIndex = 40;
-            this.btnRevenue.Click += new System.EventHandler(this.btnRevenue_Click);
+            this.btnImgRevenue.BackColor = System.Drawing.Color.White;
+            this.btnImgRevenue.color = System.Drawing.Color.White;
+            this.btnImgRevenue.colorActive = System.Drawing.Color.WhiteSmoke;
+            this.btnImgRevenue.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnImgRevenue.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnImgRevenue.ForeColor = System.Drawing.Color.Black;
+            this.btnImgRevenue.Image = ((System.Drawing.Image)(resources.GetObject("btnImgRevenue.Image")));
+            this.btnImgRevenue.ImagePosition = -18;
+            this.btnImgRevenue.ImageZoom = 65;
+            this.btnImgRevenue.LabelPosition = 25;
+            this.btnImgRevenue.LabelText = "Revenue";
+            this.btnImgRevenue.Location = new System.Drawing.Point(136, 180);
+            this.btnImgRevenue.Margin = new System.Windows.Forms.Padding(6);
+            this.btnImgRevenue.Name = "btnImgRevenue";
+            this.btnImgRevenue.Size = new System.Drawing.Size(240, 135);
+            this.btnImgRevenue.TabIndex = 40;
+            this.btnImgRevenue.Click += new System.EventHandler(this.btnImgRevenue_Click);
             // 
             // panel1
             // 
@@ -493,12 +472,11 @@
 
         private System.Windows.Forms.Panel panListHome;
         private System.Windows.Forms.Panel panel10;
-        private Bunifu.Framework.UI.BunifuTileButton btnStaff;
-        private Bunifu.Framework.UI.BunifuTileButton btnSetting;
-        private Bunifu.Framework.UI.BunifuTileButton btnBill;
-        private Bunifu.Framework.UI.BunifuTileButton btnTable;
-        private Bunifu.Framework.UI.BunifuTileButton btnFood;
-        private Bunifu.Framework.UI.BunifuTileButton btnRevenue;
+        private Bunifu.Framework.UI.BunifuTileButton btnImgStaff;
+        private Bunifu.Framework.UI.BunifuTileButton btnImgBill;
+        private Bunifu.Framework.UI.BunifuTileButton btnImgTable;
+        private Bunifu.Framework.UI.BunifuTileButton btnImgFood;
+        private Bunifu.Framework.UI.BunifuTileButton btnImgRevenue;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label3;

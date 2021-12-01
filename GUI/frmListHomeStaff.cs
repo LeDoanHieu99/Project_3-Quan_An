@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using BLL;
+using System.Data.SqlClient;
 
 namespace GUI
 {
@@ -37,63 +38,32 @@ namespace GUI
             labelTime.Text = today.ToString("F");
         }
 
-        private void btnFood_Click(object sender, EventArgs e)
+        private void btnImgFood_Click(object sender, EventArgs e)
         {
-            
-            frmListFood listFood = new frmListFood();
-            listFood.BringToFront();
+            frmListFood foods = new frmListFood();
+            this.panListHomeStaff.Controls.Add(foods);
+            foods.BringToFront();
         }
 
-        private void btnTable_Click(object sender, EventArgs e)
+        private void btnImgTable_Click(object sender, EventArgs e)
         {
-           
-            frmListTable listTable = new frmListTable();
-            listTable.BringToFront();
+            frmListTable tables = new frmListTable();
+            this.panListHomeStaff.Controls.Add(tables);
+            tables.BringToFront();
         }
 
-        private void btnBill_Click(object sender, EventArgs e)
+        private void btnImgRevenue_Click(object sender, EventArgs e)
         {
-            frmBill bill = new frmBill();
-            bill.BringToFront();
+            frmListRevenue revenues = new frmListRevenue();
+            this.panListHomeStaff.Controls.Add(revenues);
+            revenues.BringToFront();
         }
 
-        private void btnRevenue_Click(object sender, EventArgs e)
+        private void btnImgBill_Click(object sender, EventArgs e)
         {
-            frmListRevenue listRevenue = new frmListRevenue();
-            listRevenue.BringToFront();
-        }
-
-        private void btnSetting_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnFood_Click(object sender, EventArgs e)
-        {
-            frmListFood food = new frmListFood();
-            this.panListHomeStaff.Controls.Add(food);
-            food.BringToFront();
-        }
-
-        private void btnTable_Click(object sender, EventArgs e)
-        {
-            frmListTable food = new frmListTable();
-            this.panListHomeStaff.Controls.Add(food);
-            food.BringToFront();
-        }
-
-        private void btnBill_Click(object sender, EventArgs e)
-        {
-            frmListBill food = new frmListBill();
-            this.panListHomeStaff.Controls.Add(food);
-            food.BringToFront();
-        }
-
-        private void btnRevenue_Click(object sender, EventArgs e)
-        {
-            frmListRevenue food = new frmListRevenue();
-            this.panListHomeStaff.Controls.Add(food);
-            food.BringToFront();
+            frmListBill bills = new frmListBill();
+            this.panListHomeStaff.Controls.Add(bills);
+            bills.BringToFront();
         }
     }
 }
