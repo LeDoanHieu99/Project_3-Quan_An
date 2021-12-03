@@ -46,8 +46,8 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.btnSearch = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.txtSearch = new Bunifu.Framework.UI.BunifuTextbox();
+            this.btnSearchFood = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.txt_SearchFood = new Bunifu.Framework.UI.BunifuTextbox();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvFood)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -308,59 +308,59 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Price:";
             // 
-            // btnSearch
+            // btnSearchFood
             // 
-            this.btnSearch.ActiveBorderThickness = 1;
-            this.btnSearch.ActiveCornerRadius = 20;
-            this.btnSearch.ActiveFillColor = System.Drawing.Color.SeaGreen;
-            this.btnSearch.ActiveForecolor = System.Drawing.Color.White;
-            this.btnSearch.ActiveLineColor = System.Drawing.Color.SeaGreen;
-            this.btnSearch.BackColor = System.Drawing.Color.White;
-            this.btnSearch.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnSearch.BackgroundImage")));
-            this.btnSearch.ButtonText = "Search";
-            this.btnSearch.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnSearch.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSearch.ForeColor = System.Drawing.Color.DeepSkyBlue;
-            this.btnSearch.IdleBorderThickness = 1;
-            this.btnSearch.IdleCornerRadius = 20;
-            this.btnSearch.IdleFillColor = System.Drawing.Color.DeepSkyBlue;
-            this.btnSearch.IdleForecolor = System.Drawing.Color.White;
-            this.btnSearch.IdleLineColor = System.Drawing.Color.White;
-            this.btnSearch.Location = new System.Drawing.Point(475, 18);
-            this.btnSearch.Margin = new System.Windows.Forms.Padding(5);
-            this.btnSearch.Name = "btnSearch";
-            this.btnSearch.Size = new System.Drawing.Size(181, 58);
-            this.btnSearch.TabIndex = 7;
-            this.btnSearch.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
+            this.btnSearchFood.ActiveBorderThickness = 1;
+            this.btnSearchFood.ActiveCornerRadius = 20;
+            this.btnSearchFood.ActiveFillColor = System.Drawing.Color.SeaGreen;
+            this.btnSearchFood.ActiveForecolor = System.Drawing.Color.White;
+            this.btnSearchFood.ActiveLineColor = System.Drawing.Color.SeaGreen;
+            this.btnSearchFood.BackColor = System.Drawing.Color.White;
+            this.btnSearchFood.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnSearchFood.BackgroundImage")));
+            this.btnSearchFood.ButtonText = "Search";
+            this.btnSearchFood.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnSearchFood.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSearchFood.ForeColor = System.Drawing.Color.DeepSkyBlue;
+            this.btnSearchFood.IdleBorderThickness = 1;
+            this.btnSearchFood.IdleCornerRadius = 20;
+            this.btnSearchFood.IdleFillColor = System.Drawing.Color.DeepSkyBlue;
+            this.btnSearchFood.IdleForecolor = System.Drawing.Color.White;
+            this.btnSearchFood.IdleLineColor = System.Drawing.Color.White;
+            this.btnSearchFood.Location = new System.Drawing.Point(478, 23);
+            this.btnSearchFood.Margin = new System.Windows.Forms.Padding(5);
+            this.btnSearchFood.Name = "btnSearchFood";
+            this.btnSearchFood.Size = new System.Drawing.Size(122, 54);
+            this.btnSearchFood.TabIndex = 14;
+            this.btnSearchFood.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnSearchFood.Click += new System.EventHandler(this.bunifuThinButton21_search_Click);
             // 
-            // txtSearch
+            // txt_SearchFood
             // 
-            this.txtSearch.BackColor = System.Drawing.Color.White;
-            this.txtSearch.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("txtSearch.BackgroundImage")));
-            this.txtSearch.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.txtSearch.ForeColor = System.Drawing.Color.DeepSkyBlue;
-            this.txtSearch.Icon = ((System.Drawing.Image)(resources.GetObject("txtSearch.Icon")));
-            this.txtSearch.Location = new System.Drawing.Point(36, 30);
-            this.txtSearch.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.txtSearch.Name = "txtSearch";
-            this.txtSearch.Size = new System.Drawing.Size(416, 39);
-            this.txtSearch.TabIndex = 6;
-            this.txtSearch.text = "";
+            this.txt_SearchFood.BackColor = System.Drawing.Color.White;
+            this.txt_SearchFood.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("txt_SearchFood.BackgroundImage")));
+            this.txt_SearchFood.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.txt_SearchFood.ForeColor = System.Drawing.Color.DeepSkyBlue;
+            this.txt_SearchFood.Icon = ((System.Drawing.Image)(resources.GetObject("txt_SearchFood.Icon")));
+            this.txt_SearchFood.Location = new System.Drawing.Point(36, 30);
+            this.txt_SearchFood.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_SearchFood.Name = "txt_SearchFood";
+            this.txt_SearchFood.Size = new System.Drawing.Size(416, 39);
+            this.txt_SearchFood.TabIndex = 15;
+            this.txt_SearchFood.text = "";
             // 
             // frmListFood
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
+            this.Controls.Add(this.txt_SearchFood);
+            this.Controls.Add(this.btnSearchFood);
             this.Controls.Add(this.dtgvFood);
             this.Controls.Add(this.cboSelect);
             this.Controls.Add(this.btnRemove);
             this.Controls.Add(this.btnEdit);
             this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.btnSearch);
-            this.Controls.Add(this.txtSearch);
             this.Name = "frmListFood";
             this.Size = new System.Drawing.Size(1155, 825);
             ((System.ComponentModel.ISupportInitialize)(this.dtgvFood)).EndInit();
@@ -389,7 +389,7 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private Bunifu.Framework.UI.BunifuThinButton2 btnSearch;
-        private Bunifu.Framework.UI.BunifuTextbox txtSearch;
+        private Bunifu.Framework.UI.BunifuThinButton2 btnSearchFood;
+        private Bunifu.Framework.UI.BunifuTextbox txt_SearchFood;
     }
 }

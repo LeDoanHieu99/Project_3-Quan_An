@@ -138,7 +138,14 @@ namespace GUI
         {
             //frmListHome home = new frmListHome();
             //this.panMainData.Controls.Add(home);
-            //home.BringToFront();
+           // home.BringToFront();
+        }
+
+        private void frmHome_Load(object sender, EventArgs e)
+        {
+            frmListHome home = new frmListHome();
+            this.panMainData.Controls.Add(home);
+            home.BringToFront();
         }
     }
 }

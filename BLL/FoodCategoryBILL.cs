@@ -24,7 +24,7 @@ namespace BLL
         public DataTable LoadFoodCategory()
         {
             DataTable data = new DataTable();
-            data = DbConnection.Instance.ExecuteQuery(" SELECT FoodTypeId as N'Mã loại' ,FoodTypeName as N'Tên loại 'FROM FoodType");
+            data = DbConnection.Instance.ExecuteQuery(" SELECT FoodTypeId as N'ID', FoodTypeName as N'CategorieName' FROM FoodType");
             return data;
         }
 
@@ -81,6 +81,13 @@ namespace BLL
             {
                 return -1;
             }
+        }
+
+        public DataTable GetCategoryMaxId()
+        {
+            DataTable data = new DataTable();         
+            data = DbConnection.Instance.ExecuteQuery("SELECT FoodTypeName FROM FoodType WHERE FoodTypeId = (SELECT MAX(FoodTypeId) FROM FoodType)");
+            return data;
         }
     }
 }

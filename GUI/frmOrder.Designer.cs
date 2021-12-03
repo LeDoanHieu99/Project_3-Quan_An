@@ -29,11 +29,11 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmOrder));
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
+            this.numQuantity = new System.Windows.Forms.NumericUpDown();
             this.cboFood = new System.Windows.Forms.ComboBox();
             this.cboCategory = new System.Windows.Forms.ComboBox();
             this.txtOrderPrice = new Bunifu.Framework.UI.BunifuMaterialTextbox();
-            this.txtNameSraff = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.txtTableId = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -43,17 +43,17 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnClose = new System.Windows.Forms.Button();
             this.btnAddOrder = new Bunifu.Framework.UI.BunifuThinButton2();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numQuantity)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // numericUpDown1
+            // numQuantity
             // 
-            this.numericUpDown1.Location = new System.Drawing.Point(244, 430);
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(72, 22);
-            this.numericUpDown1.TabIndex = 93;
-            this.numericUpDown1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.numQuantity.Location = new System.Drawing.Point(244, 430);
+            this.numQuantity.Name = "numQuantity";
+            this.numQuantity.Size = new System.Drawing.Size(72, 22);
+            this.numQuantity.TabIndex = 93;
+            this.numQuantity.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // cboFood
             // 
@@ -62,6 +62,7 @@
             this.cboFood.Name = "cboFood";
             this.cboFood.Size = new System.Drawing.Size(282, 24);
             this.cboFood.TabIndex = 91;
+            this.cboFood.SelectedIndexChanged += new System.EventHandler(this.cboFood_SelectedIndexChanged);
             // 
             // cboCategory
             // 
@@ -70,6 +71,7 @@
             this.cboCategory.Name = "cboCategory";
             this.cboCategory.Size = new System.Drawing.Size(282, 24);
             this.cboCategory.TabIndex = 92;
+            this.cboCategory.SelectedIndexChanged += new System.EventHandler(this.cboCategory_SelectedIndexChanged);
             // 
             // txtOrderPrice
             // 
@@ -90,24 +92,24 @@
             this.txtOrderPrice.TabIndex = 88;
             this.txtOrderPrice.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
-            // txtNameSraff
+            // txtTableId
             // 
-            this.txtNameSraff.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtNameSraff.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.txtNameSraff.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txtNameSraff.HintForeColor = System.Drawing.Color.Empty;
-            this.txtNameSraff.HintText = "";
-            this.txtNameSraff.isPassword = false;
-            this.txtNameSraff.LineFocusedColor = System.Drawing.Color.DeepSkyBlue;
-            this.txtNameSraff.LineIdleColor = System.Drawing.Color.DeepSkyBlue;
-            this.txtNameSraff.LineMouseHoverColor = System.Drawing.Color.DeepSkyBlue;
-            this.txtNameSraff.LineThickness = 3;
-            this.txtNameSraff.Location = new System.Drawing.Point(122, 130);
-            this.txtNameSraff.Margin = new System.Windows.Forms.Padding(4);
-            this.txtNameSraff.Name = "txtNameSraff";
-            this.txtNameSraff.Size = new System.Drawing.Size(282, 33);
-            this.txtNameSraff.TabIndex = 89;
-            this.txtNameSraff.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txtTableId.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtTableId.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.txtTableId.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtTableId.HintForeColor = System.Drawing.Color.Empty;
+            this.txtTableId.HintText = "";
+            this.txtTableId.isPassword = false;
+            this.txtTableId.LineFocusedColor = System.Drawing.Color.DeepSkyBlue;
+            this.txtTableId.LineIdleColor = System.Drawing.Color.DeepSkyBlue;
+            this.txtTableId.LineMouseHoverColor = System.Drawing.Color.DeepSkyBlue;
+            this.txtTableId.LineThickness = 3;
+            this.txtTableId.Location = new System.Drawing.Point(122, 130);
+            this.txtTableId.Margin = new System.Windows.Forms.Padding(4);
+            this.txtTableId.Name = "txtTableId";
+            this.txtTableId.Size = new System.Drawing.Size(282, 33);
+            this.txtTableId.TabIndex = 89;
+            this.txtTableId.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // label5
             // 
@@ -191,6 +193,7 @@
             this.btnClose.Size = new System.Drawing.Size(21, 23);
             this.btnClose.TabIndex = 8;
             this.btnClose.UseVisualStyleBackColor = false;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
             // btnAddOrder
             // 
@@ -216,6 +219,7 @@
             this.btnAddOrder.Size = new System.Drawing.Size(181, 58);
             this.btnAddOrder.TabIndex = 90;
             this.btnAddOrder.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnAddOrder.Click += new System.EventHandler(this.btnAddOrder_Click);
             // 
             // frmOrder
             // 
@@ -223,12 +227,12 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(516, 591);
-            this.Controls.Add(this.numericUpDown1);
+            this.Controls.Add(this.numQuantity);
             this.Controls.Add(this.cboFood);
             this.Controls.Add(this.cboCategory);
             this.Controls.Add(this.btnAddOrder);
             this.Controls.Add(this.txtOrderPrice);
-            this.Controls.Add(this.txtNameSraff);
+            this.Controls.Add(this.txtTableId);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label2);
@@ -240,7 +244,8 @@
             this.Name = "frmOrder";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmOrder";
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
+            this.Load += new System.EventHandler(this.frmOrder_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.numQuantity)).EndInit();
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -249,12 +254,12 @@
 
         #endregion
 
-        private System.Windows.Forms.NumericUpDown numericUpDown1;
+        private System.Windows.Forms.NumericUpDown numQuantity;
         private System.Windows.Forms.ComboBox cboFood;
         private System.Windows.Forms.ComboBox cboCategory;
         private Bunifu.Framework.UI.BunifuThinButton2 btnAddOrder;
         private Bunifu.Framework.UI.BunifuMaterialTextbox txtOrderPrice;
-        private Bunifu.Framework.UI.BunifuMaterialTextbox txtNameSraff;
+        private Bunifu.Framework.UI.BunifuMaterialTextbox txtTableId;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label2;

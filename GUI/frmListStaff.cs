@@ -130,44 +130,55 @@ namespace GUI
             txtStaffRole.Focus();
         }
 
-        private void btnSearch_Click(object sender, EventArgs e)
+        /*private void btnSearch_Click(object sender, EventArgs e)
         {
             string name = txtSearchStaff.Text;
-            DataTable data = Staff_BLL.Instance.SearchStaffByName(name);
-            if (data.Rows.Count == 0 || name == "")
-                  MessageBox.Show("Không có thông tin nhân viên cần tìm");
-            else
-            {
-                dtgvStaff.DataSource = data;
-                for (int i = 0; i < dtgvStaff.Rows.Count; i++)
-                {
-                    if (i % 2 == 0)
-                    {
-                        dtgvStaff.Rows[i].DefaultCellStyle.BackColor = Color.FromArgb(179, 213, 242);
-                        dtgvStaff.Rows[i].DefaultCellStyle.SelectionBackColor = Color.FromArgb(179, 213, 242);
-                    }
-                    else
-                    {
-                        dtgvStaff.Rows[i].DefaultCellStyle.BackColor = Color.White;
-                        dtgvStaff.Rows[i].DefaultCellStyle.SelectionBackColor = Color.White;
-                    }
-                }
-            }
-        }
+           
+            //DataTable data = new DataTable();
+            //data = Staff_BLL.Instance.SearchStaffByName(name);
+            //if (data.Rows.Count == 0 || name == "")
+             //     MessageBox.Show("Không có thông tin nhân viên cần tìm");
+            //else
+           // {
+                dtgvStaff.DataSource = Staff_BLL.Instance.SearchStaffByName(name); 
+                dtgvStaff.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+                
+            //}
+        }*/
 
         private void dtgvStaff_CellMouseClick(object sender, DataGridViewCellMouseEventArgs e)
         {
             if (e.RowIndex >= 0)
             {
                 DataGridViewRow row = dtgvStaff.Rows[e.RowIndex];
-                txtUserId.Text = row.Cells["Mã nhân viên"].Value.ToString();
-                txtNameStaff.Text = row.Cells["Họ tên"].Value.ToString();
-                txtStaffDate.Text = row.Cells["Ngày sinh"].Value.ToString();                           
-                txtStaffRole.Text = row.Cells["Chức vụ"].Value.ToString();
-                txtStaffGender.Text = row.Cells["Giới tính"].Value.ToString();
+                txtUserId.Text = row.Cells[0].Value.ToString();
+                txtNameStaff.Text = row.Cells[1].Value.ToString();
+                txtStaffDate.Text = row.Cells[2].Value.ToString();                           
+                txtStaffRole.Text = row.Cells[3].Value.ToString();
+                txtStaffGender.Text = row.Cells[4].Value.ToString();
             }
         }
 
-       
+        /*private void button1_Click(object sender, EventArgs e)
+        {
+            string name = textBox1_Search.Text;
+            dtgvStaff.DataSource = Staff_BLL.Instance.SearchStaffByName(name);
+        }*/
+
+        private void btnSearchStaff_Click(object sender, EventArgs e)
+        {
+            string m = txt_SearchStaff.text;
+            DataTable data = Staff_BLL.Instance.SearchStaffByName(m);
+            if (data.Rows.Count == 0 || txt_SearchStaff.text == "")
+            {
+                MessageBox.Show("Không có nhân viên cần tìm kiếm");
+            }
+            else
+            {
+                dtgvStaff.DataSource = data;
+                dtgvStaff.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            }
+            txt_SearchStaff.Text = "";
+        }
     }
 }

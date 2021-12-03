@@ -1,4 +1,4 @@
-﻿using System;
+﻿    using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -32,7 +32,7 @@ namespace GUI
         {
             if (txtFoodName.Text == "" || txtFoodPrice.Text == "" || cboCategory.SelectedItem == null)
             {
-                //MessageBox.Show("Vui lòng nhập đầy đủ thông11 tin");
+                MessageBox.Show("Vui lòng nhập đầy đủ thông tin");
                 return;
             }
             try
@@ -83,6 +83,15 @@ namespace GUI
         private void frmAddFood_Load(object sender, EventArgs e)
         {
             LoadFoodCategory();
+        }
+
+        private void btnAddCategorie_Click(object sender, EventArgs e)
+        {
+            frmAddCategorie frmAddCategorie = new frmAddCategorie();
+            frmAddCategorie.ShowDialog();
+            LoadFoodCategory();
+
+           // txtFoodID.Text = (FoodDAO.Instance.GetMaxIdFood() + 1).ToString();
         }
     }
 }

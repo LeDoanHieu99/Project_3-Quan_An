@@ -147,35 +147,37 @@ namespace GUI
             }
         }
 
-        private void btnSearch_Click(object sender, EventArgs e)
+        /* private void btnSearch_Click(object sender, EventArgs e)
+         {
+             string f = txtSearch.Text;
+             DataTable data = FoodBILL.Instance.SearchFoodByName(f);           
+             if (data.Rows.Count == 0)
+             {
+                 MessageBox.Show("Không có món ăn cần tìm kiếm");
+             }
+             else
+             {
+                 dtgvFood.DataSource = data;
+
+             }
+            // txtSearch.Text = "";
+         }*/
+
+        private void bunifuThinButton21_search_Click(object sender, EventArgs e)
         {
-            string names = txtSearch.Text;
-            DataTable data = FoodBILL.Instance.SearchFoodByName(names);           
-            if (data.Rows.Count == 0)
+            string m = txt_SearchFood.text;
+            DataTable data = FoodBILL.Instance.SearchFoodByName(m);
+            if (data.Rows.Count == 0 || txt_SearchFood.text == "")
             {
                 MessageBox.Show("Không có món ăn cần tìm kiếm");
             }
             else
             {
                 dtgvFood.DataSource = data;
-                for (int i = 0; i < dtgvFood.Rows.Count; i++)
-                {
-                    if (i % 2 == 0)
-                    {
-                        dtgvFood.Rows[i].DefaultCellStyle.BackColor = Color.FromArgb(179, 213, 242);
-                        dtgvFood.Rows[i].DefaultCellStyle.SelectionBackColor = Color.FromArgb(179, 213, 242);
-                    }
-                    else
-                    {
-                        dtgvFood.Rows[i].DefaultCellStyle.BackColor = Color.White;
-                        dtgvFood.Rows[i].DefaultCellStyle.SelectionBackColor = Color.White;
-                    }
-                }
+                dtgvFood.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             }
-            txtSearch.Text = "";
+            txt_SearchFood.Text = "";
         }
-
-
     }
 }
 
