@@ -74,7 +74,7 @@ namespace GUI
                 case 1:
                     fromDate = dtp_From.Value.Month.ToString();
                     toDate = dtp_To.Value.Month.ToString();
-                    dtgvRevenue.DataSource = RevenueBLL.Instance.LoadRevenue_ByMonth(fromDate, toDate, selectRows, exceptRows);
+                    dtgvRevenue.DataSource = RevenueBLL.Instance.(fromDate, toDate, selectRows, exceptRows);
                     dtgvRevenue.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
                     dtgvRevenue.Columns["Month"].DisplayIndex = 0;
                     dtgvRevenue.Columns["Year"].DisplayIndex = 1;
