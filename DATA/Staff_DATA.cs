@@ -26,7 +26,7 @@ namespace DATA
                 this.date = date;
                 this.position = position;
             }
-            catch (FormatException e)
+            catch (FormatException ex)
             {
 
             }
@@ -135,7 +135,7 @@ namespace DATA
                 }
                 return true;
             }
-            catch (FormatException e)
+            catch (FormatException ex)
             {
                 return false;
             }
