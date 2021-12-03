@@ -31,7 +31,7 @@ namespace BLL
 
         public DataTable LoadStaff()
         {
-            return DbConnection.Instance.ExecuteQuery("SELECT UserId as N'Mã nhân viên', Name as N'Họ tên', Birthday as N'Ngày sinh', Role as N'Chức vụ', Gender as N'Giới tính' FROM Account"); 
+            return DbConnection.Instance.ExecuteQuery("SELECT UserId as N'ID', Name , Birthday , Role , Gender FROM Account"); 
         }
 
         public bool InsertStaff(string name, string position, string gender, DateTime dates)
@@ -61,11 +61,11 @@ namespace BLL
         }
         public DataTable SearchStaffByName(string name)
         {
-            string query = "SELECT UserId as N'Mã nhân viên', Name as N'Họ tên', Birthday as N'Ngày sinh', Role as N'Chức vụ', Gender as N'Giới tính' FROM Account WHERE Name like N'%" + name + "%'";
-            DataTable data = new DataTable();
-            data = DbConnection.Instance.ExecuteQuery(query);
-            return data;
-
+            // string query = "SELECT UserId as N'Mã nhân viên', Name as N'Họ tên', Birthday as N'Ngày sinh', Role as N'Chức vụ', Gender as N'Giới tính' FROM Account WHERE Name like N'%" + name + "%'";
+            //DataTable data = new DataTable();
+            //data = DbConnection.Instance.ExecuteQuery(query);
+            //return data;
+            return DbConnection.Instance.ExecuteQuery("SELECT UserId as N'ID', Name , Birthday , Role , Gender FROM Account WHERE Name like N'%" + name + "%'");
         }
 
     }

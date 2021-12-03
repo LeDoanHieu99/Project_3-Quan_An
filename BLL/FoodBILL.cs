@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Data;
+using DATA;
 
 namespace BLL
 {
@@ -26,7 +27,7 @@ namespace BLL
         public DataTable LoadFood()
         {
             DataTable data = new DataTable();
-            string query = "SELECT FoodId as N'Mã thức ăn',FoodName as N'Tên thức ăn', Price as N'Giá',Food.FoodTypeId as N'Mã loại',FoodTypeName as N'Tên loại' FROM Food,FoodType WHERE Food.FoodTypeId = FoodType.FoodTypeId";
+            string query = "SELECT FoodId as N'ID',FoodName , Price , Food.FoodTypeId as N'CategorieId',FoodTypeName as N'CategorieName' FROM Food,FoodType WHERE Food.FoodTypeId = FoodType.FoodTypeId";
             data = DbConnection.Instance.ExecuteQuery(query);
             return data;
         }
@@ -54,16 +55,15 @@ namespace BLL
         }
         public DataTable SearchFoodByName(string name)
         {
-            string query = "SELECT FoodId as N'Mã thức ăn',FoodName as N'Tên thức ăn', Price as N'Giá', Food.FoodTypeId as N'Mã loại',FoodTypeName as N'Tên loại' FROM Food,FoodType WHERE Food.FoodTypeId = FoodType.FoodTypeId"; 
+            string query = "SELECT FoodId as N'ID',FoodName , Price , Food.FoodTypeId as N'CategorieId',FoodTypeName as N'CategorieName' FROM Food,FoodType WHERE Food.FoodTypeId = FoodType.FoodTypeId AND FoodName like N'%" + name + "%'"; 
              DataTable data = new DataTable();
             data = DbConnection.Instance.ExecuteQuery(query);
             return data;
         }
 
-        /*
-        public List<Food> GetFoodByCategoryID(int categoryId)
+        public List<FoodData> GetFoodByCategoryID(int categoryId)
         {
-            List<Food> list = new List<Food>();
+            List<FoodData> list = new List<FoodData>();
 
             string query = "SELECT * FROM Food WHERE FoodTypeId = " + categoryId;
 
@@ -71,13 +71,12 @@ namespace BLL
 
             foreach (DataRow item in data.Rows)
             {
-                Food food = new Food(item);
+                FoodData food = new FoodData(item);
                 list.Add(food);
             }
 
             return list;
         
-        }
-        */
+        }      
     }
 }

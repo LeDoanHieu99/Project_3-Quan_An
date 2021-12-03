@@ -37,8 +37,9 @@
             this.label1 = new System.Windows.Forms.Label();
             this.bunifuCustomLabel1 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.btnClose = new System.Windows.Forms.Button();
+            this.btnAddCategorie = new Bunifu.Framework.UI.BunifuThinButton2();
             this.btnAddFood = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.btnClose = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -46,9 +47,9 @@
             // 
             this.cboCategory.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboCategory.FormattingEnabled = true;
-            this.cboCategory.Location = new System.Drawing.Point(72, 305);
+            this.cboCategory.Location = new System.Drawing.Point(72, 308);
             this.cboCategory.Name = "cboCategory";
-            this.cboCategory.Size = new System.Drawing.Size(379, 24);
+            this.cboCategory.Size = new System.Drawing.Size(277, 24);
             this.cboCategory.TabIndex = 24;
             // 
             // txtFoodPrice
@@ -139,19 +140,31 @@
             this.panel1.Size = new System.Drawing.Size(516, 25);
             this.panel1.TabIndex = 17;
             // 
-            // btnClose
+            // btnAddCategorie
             // 
-            this.btnClose.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnClose.FlatAppearance.BorderSize = 0;
-            this.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnClose.Image = ((System.Drawing.Image)(resources.GetObject("btnClose.Image")));
-            this.btnClose.Location = new System.Drawing.Point(494, 1);
-            this.btnClose.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(21, 23);
-            this.btnClose.TabIndex = 8;
-            this.btnClose.UseVisualStyleBackColor = false;
-            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
+            this.btnAddCategorie.ActiveBorderThickness = 1;
+            this.btnAddCategorie.ActiveCornerRadius = 20;
+            this.btnAddCategorie.ActiveFillColor = System.Drawing.Color.SeaGreen;
+            this.btnAddCategorie.ActiveForecolor = System.Drawing.Color.White;
+            this.btnAddCategorie.ActiveLineColor = System.Drawing.Color.SeaGreen;
+            this.btnAddCategorie.BackColor = System.Drawing.Color.White;
+            this.btnAddCategorie.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnAddCategorie.BackgroundImage")));
+            this.btnAddCategorie.ButtonText = "New";
+            this.btnAddCategorie.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnAddCategorie.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddCategorie.ForeColor = System.Drawing.Color.DeepSkyBlue;
+            this.btnAddCategorie.IdleBorderThickness = 1;
+            this.btnAddCategorie.IdleCornerRadius = 20;
+            this.btnAddCategorie.IdleFillColor = System.Drawing.Color.White;
+            this.btnAddCategorie.IdleForecolor = System.Drawing.Color.DeepSkyBlue;
+            this.btnAddCategorie.IdleLineColor = System.Drawing.Color.DeepSkyBlue;
+            this.btnAddCategorie.Location = new System.Drawing.Point(361, 297);
+            this.btnAddCategorie.Margin = new System.Windows.Forms.Padding(5);
+            this.btnAddCategorie.Name = "btnAddCategorie";
+            this.btnAddCategorie.Size = new System.Drawing.Size(84, 45);
+            this.btnAddCategorie.TabIndex = 28;
+            this.btnAddCategorie.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnAddCategorie.Click += new System.EventHandler(this.btnAddCategorie_Click);
             // 
             // btnAddFood
             // 
@@ -179,12 +192,27 @@
             this.btnAddFood.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnAddFood.Click += new System.EventHandler(this.btnAddFood_Click);
             // 
+            // btnClose
+            // 
+            this.btnClose.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnClose.FlatAppearance.BorderSize = 0;
+            this.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnClose.Image = ((System.Drawing.Image)(resources.GetObject("btnClose.Image")));
+            this.btnClose.Location = new System.Drawing.Point(494, 1);
+            this.btnClose.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnClose.Name = "btnClose";
+            this.btnClose.Size = new System.Drawing.Size(21, 23);
+            this.btnClose.TabIndex = 8;
+            this.btnClose.UseVisualStyleBackColor = false;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
+            // 
             // frmAddFood
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(516, 591);
+            this.Controls.Add(this.btnAddCategorie);
             this.Controls.Add(this.btnAddFood);
             this.Controls.Add(this.cboCategory);
             this.Controls.Add(this.txtFoodPrice);
@@ -217,5 +245,6 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button btnClose;
         private Bunifu.Framework.UI.BunifuThinButton2 btnAddFood;
+        private Bunifu.Framework.UI.BunifuThinButton2 btnAddCategorie;
     }
 }

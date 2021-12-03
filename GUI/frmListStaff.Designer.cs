@@ -36,8 +36,6 @@
             this.txtNameStaff = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.txtUserId = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.label3 = new System.Windows.Forms.Label();
-            this.btnSearch = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.txtSearchStaff = new Bunifu.Framework.UI.BunifuTextbox();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -47,6 +45,8 @@
             this.label4 = new System.Windows.Forms.Label();
             this.dtgvStaff = new System.Windows.Forms.DataGridView();
             this.btnAdd = new System.Windows.Forms.Button();
+            this.txt_SearchStaff = new Bunifu.Framework.UI.BunifuTextbox();
+            this.btnSearchStaff = new Bunifu.Framework.UI.BunifuThinButton2();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvStaff)).BeginInit();
             this.SuspendLayout();
@@ -172,47 +172,6 @@
             this.label3.Size = new System.Drawing.Size(0, 25);
             this.label3.TabIndex = 0;
             // 
-            // btnSearch
-            // 
-            this.btnSearch.ActiveBorderThickness = 1;
-            this.btnSearch.ActiveCornerRadius = 20;
-            this.btnSearch.ActiveFillColor = System.Drawing.Color.SeaGreen;
-            this.btnSearch.ActiveForecolor = System.Drawing.Color.White;
-            this.btnSearch.ActiveLineColor = System.Drawing.Color.SeaGreen;
-            this.btnSearch.BackColor = System.Drawing.Color.White;
-            this.btnSearch.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnSearch.BackgroundImage")));
-            this.btnSearch.ButtonText = "Search";
-            this.btnSearch.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnSearch.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSearch.ForeColor = System.Drawing.Color.DeepSkyBlue;
-            this.btnSearch.IdleBorderThickness = 1;
-            this.btnSearch.IdleCornerRadius = 20;
-            this.btnSearch.IdleFillColor = System.Drawing.Color.DeepSkyBlue;
-            this.btnSearch.IdleForecolor = System.Drawing.Color.White;
-            this.btnSearch.IdleLineColor = System.Drawing.Color.White;
-            this.btnSearch.Location = new System.Drawing.Point(477, 18);
-            this.btnSearch.Margin = new System.Windows.Forms.Padding(5);
-            this.btnSearch.Name = "btnSearch";
-            this.btnSearch.Size = new System.Drawing.Size(181, 58);
-            this.btnSearch.TabIndex = 14;
-            this.btnSearch.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
-            // 
-            // txtSearchStaff
-            // 
-            this.txtSearchStaff.BackColor = System.Drawing.Color.White;
-            this.txtSearchStaff.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("txtSearchStaff.BackgroundImage")));
-            this.txtSearchStaff.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.txtSearchStaff.ForeColor = System.Drawing.Color.DeepSkyBlue;
-            this.txtSearchStaff.Icon = ((System.Drawing.Image)(resources.GetObject("txtSearchStaff.Icon")));
-            this.txtSearchStaff.Location = new System.Drawing.Point(36, 33);
-            this.txtSearchStaff.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.txtSearchStaff.Name = "txtSearchStaff";
-            this.txtSearchStaff.Size = new System.Drawing.Size(416, 39);
-            this.txtSearchStaff.TabIndex = 13;
-            this.txtSearchStaff.text = "";
-            
-            // 
             // label6
             // 
             this.label6.AutoSize = true;
@@ -331,15 +290,55 @@
             this.btnAdd.UseVisualStyleBackColor = false;
             this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
+            // txt_SearchStaff
+            // 
+            this.txt_SearchStaff.BackColor = System.Drawing.Color.White;
+            this.txt_SearchStaff.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("txt_SearchStaff.BackgroundImage")));
+            this.txt_SearchStaff.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.txt_SearchStaff.ForeColor = System.Drawing.Color.DeepSkyBlue;
+            this.txt_SearchStaff.Icon = ((System.Drawing.Image)(resources.GetObject("txt_SearchStaff.Icon")));
+            this.txt_SearchStaff.Location = new System.Drawing.Point(36, 32);
+            this.txt_SearchStaff.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_SearchStaff.Name = "txt_SearchStaff";
+            this.txt_SearchStaff.Size = new System.Drawing.Size(395, 39);
+            this.txt_SearchStaff.TabIndex = 23;
+            this.txt_SearchStaff.text = "";
+            // 
+            // btnSearchStaff
+            // 
+            this.btnSearchStaff.ActiveBorderThickness = 1;
+            this.btnSearchStaff.ActiveCornerRadius = 20;
+            this.btnSearchStaff.ActiveFillColor = System.Drawing.Color.SeaGreen;
+            this.btnSearchStaff.ActiveForecolor = System.Drawing.Color.White;
+            this.btnSearchStaff.ActiveLineColor = System.Drawing.Color.SeaGreen;
+            this.btnSearchStaff.BackColor = System.Drawing.Color.White;
+            this.btnSearchStaff.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnSearchStaff.BackgroundImage")));
+            this.btnSearchStaff.ButtonText = "Search";
+            this.btnSearchStaff.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnSearchStaff.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSearchStaff.ForeColor = System.Drawing.Color.DeepSkyBlue;
+            this.btnSearchStaff.IdleBorderThickness = 1;
+            this.btnSearchStaff.IdleCornerRadius = 20;
+            this.btnSearchStaff.IdleFillColor = System.Drawing.Color.DeepSkyBlue;
+            this.btnSearchStaff.IdleForecolor = System.Drawing.Color.White;
+            this.btnSearchStaff.IdleLineColor = System.Drawing.Color.White;
+            this.btnSearchStaff.Location = new System.Drawing.Point(453, 25);
+            this.btnSearchStaff.Margin = new System.Windows.Forms.Padding(5);
+            this.btnSearchStaff.Name = "btnSearchStaff";
+            this.btnSearchStaff.Size = new System.Drawing.Size(139, 54);
+            this.btnSearchStaff.TabIndex = 22;
+            this.btnSearchStaff.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnSearchStaff.Click += new System.EventHandler(this.btnSearchStaff_Click);
+            // 
             // frmListStaff
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
+            this.Controls.Add(this.txt_SearchStaff);
+            this.Controls.Add(this.btnSearchStaff);
             this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.btnDelete);
-            this.Controls.Add(this.btnSearch);
-            this.Controls.Add(this.txtSearchStaff);
             this.Controls.Add(this.btnEdit);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.dtgvStaff);
@@ -362,8 +361,6 @@
         private Bunifu.Framework.UI.BunifuMaterialTextbox txtNameStaff;
         private Bunifu.Framework.UI.BunifuMaterialTextbox txtUserId;
         private System.Windows.Forms.Label label3;
-        private Bunifu.Framework.UI.BunifuThinButton2 btnSearch;
-        private Bunifu.Framework.UI.BunifuTextbox txtSearchStaff;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label2;
@@ -373,5 +370,7 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.DataGridView dtgvStaff;
         private System.Windows.Forms.Button btnAdd;
+        private Bunifu.Framework.UI.BunifuTextbox txt_SearchStaff;
+        private Bunifu.Framework.UI.BunifuThinButton2 btnSearchStaff;
     }
 }
