@@ -17,7 +17,7 @@ namespace GUI
             //1.5.3
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmHomeStaff());
+            Application.Run(new frmHome());
             
         }
     }

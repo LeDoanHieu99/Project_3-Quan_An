@@ -33,7 +33,7 @@
             this.cboFood = new System.Windows.Forms.ComboBox();
             this.cboCategory = new System.Windows.Forms.ComboBox();
             this.txtOrderPrice = new Bunifu.Framework.UI.BunifuMaterialTextbox();
-            this.txtNameSraff = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.txtTableName = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -90,24 +90,24 @@
             this.txtOrderPrice.TabIndex = 88;
             this.txtOrderPrice.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
-            // txtNameSraff
+            // txtTableName
             // 
-            this.txtNameSraff.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtNameSraff.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.txtNameSraff.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txtNameSraff.HintForeColor = System.Drawing.Color.Empty;
-            this.txtNameSraff.HintText = "";
-            this.txtNameSraff.isPassword = false;
-            this.txtNameSraff.LineFocusedColor = System.Drawing.Color.DeepSkyBlue;
-            this.txtNameSraff.LineIdleColor = System.Drawing.Color.DeepSkyBlue;
-            this.txtNameSraff.LineMouseHoverColor = System.Drawing.Color.DeepSkyBlue;
-            this.txtNameSraff.LineThickness = 3;
-            this.txtNameSraff.Location = new System.Drawing.Point(122, 130);
-            this.txtNameSraff.Margin = new System.Windows.Forms.Padding(4);
-            this.txtNameSraff.Name = "txtNameSraff";
-            this.txtNameSraff.Size = new System.Drawing.Size(282, 33);
-            this.txtNameSraff.TabIndex = 89;
-            this.txtNameSraff.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txtTableName.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtTableName.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.txtTableName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtTableName.HintForeColor = System.Drawing.Color.Empty;
+            this.txtTableName.HintText = "";
+            this.txtTableName.isPassword = false;
+            this.txtTableName.LineFocusedColor = System.Drawing.Color.DeepSkyBlue;
+            this.txtTableName.LineIdleColor = System.Drawing.Color.DeepSkyBlue;
+            this.txtTableName.LineMouseHoverColor = System.Drawing.Color.DeepSkyBlue;
+            this.txtTableName.LineThickness = 3;
+            this.txtTableName.Location = new System.Drawing.Point(122, 130);
+            this.txtTableName.Margin = new System.Windows.Forms.Padding(4);
+            this.txtTableName.Name = "txtTableName";
+            this.txtTableName.Size = new System.Drawing.Size(282, 33);
+            this.txtTableName.TabIndex = 89;
+            this.txtTableName.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // label5
             // 
@@ -228,7 +228,7 @@
             this.Controls.Add(this.cboCategory);
             this.Controls.Add(this.btnAddOrder);
             this.Controls.Add(this.txtOrderPrice);
-            this.Controls.Add(this.txtNameSraff);
+            this.Controls.Add(this.txtTableName);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label2);
@@ -254,7 +254,7 @@
         private System.Windows.Forms.ComboBox cboCategory;
         private Bunifu.Framework.UI.BunifuThinButton2 btnAddOrder;
         private Bunifu.Framework.UI.BunifuMaterialTextbox txtOrderPrice;
-        private Bunifu.Framework.UI.BunifuMaterialTextbox txtNameSraff;
+        private Bunifu.Framework.UI.BunifuMaterialTextbox txtTableName;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label2;

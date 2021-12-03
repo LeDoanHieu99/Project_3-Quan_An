@@ -151,9 +151,9 @@
             this.txtUserId.HintForeColor = System.Drawing.Color.Empty;
             this.txtUserId.HintText = "";
             this.txtUserId.isPassword = false;
-            this.txtUserId.LineFocusedColor = System.Drawing.Color.Blue;
+            this.txtUserId.LineFocusedColor = System.Drawing.Color.DodgerBlue;
             this.txtUserId.LineIdleColor = System.Drawing.Color.DodgerBlue;
-            this.txtUserId.LineMouseHoverColor = System.Drawing.Color.Blue;
+            this.txtUserId.LineMouseHoverColor = System.Drawing.Color.DodgerBlue;
             this.txtUserId.LineThickness = 3;
             this.txtUserId.Location = new System.Drawing.Point(176, 17);
             this.txtUserId.Margin = new System.Windows.Forms.Padding(4);
@@ -211,7 +211,6 @@
             this.txtSearchStaff.Size = new System.Drawing.Size(416, 39);
             this.txtSearchStaff.TabIndex = 13;
             this.txtSearchStaff.text = "";
-            
             // 
             // label6
             // 
