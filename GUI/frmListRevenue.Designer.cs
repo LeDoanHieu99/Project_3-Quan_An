@@ -76,6 +76,7 @@
             this.btnLast.Size = new System.Drawing.Size(59, 36);
             this.btnLast.TabIndex = 26;
             this.btnLast.UseVisualStyleBackColor = true;
+            this.btnLast.Click += new System.EventHandler(this.btnLast_Click);
             // 
             // btnPre
             // 
@@ -90,6 +91,7 @@
             this.btnPre.Size = new System.Drawing.Size(44, 33);
             this.btnPre.TabIndex = 25;
             this.btnPre.UseVisualStyleBackColor = false;
+            this.btnPre.Click += new System.EventHandler(this.btnPre_Click);
             // 
             // groupBox2
             // 
@@ -119,6 +121,7 @@
             this.btnFirst.Size = new System.Drawing.Size(57, 36);
             this.btnFirst.TabIndex = 29;
             this.btnFirst.UseVisualStyleBackColor = true;
+            this.btnFirst.Click += new System.EventHandler(this.btnFirst_Click);
             // 
             // btnNxt
             // 
@@ -132,6 +135,7 @@
             this.btnNxt.Size = new System.Drawing.Size(44, 33);
             this.btnNxt.TabIndex = 27;
             this.btnNxt.UseVisualStyleBackColor = true;
+            this.btnNxt.Click += new System.EventHandler(this.btnNxt_Click);
             // 
             // txtPage
             // 
@@ -143,6 +147,7 @@
             this.txtPage.Size = new System.Drawing.Size(145, 30);
             this.txtPage.TabIndex = 28;
             this.txtPage.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtPage.TextChanged += new System.EventHandler(this.txtPage_TextChanged);
             // 
             // chart1
             // 
@@ -247,6 +252,7 @@
             this.dtp_To.Name = "dtp_To";
             this.dtp_To.Size = new System.Drawing.Size(135, 27);
             this.dtp_To.TabIndex = 13;
+            this.dtp_To.ValueChanged += new System.EventHandler(this.dtp_To_ValueChanged);
             // 
             // cbbStatiticsMode
             // 
@@ -260,6 +266,7 @@
             this.cbbStatiticsMode.Name = "cbbStatiticsMode";
             this.cbbStatiticsMode.Size = new System.Drawing.Size(156, 28);
             this.cbbStatiticsMode.TabIndex = 7;
+            this.cbbStatiticsMode.SelectedIndexChanged += new System.EventHandler(this.cbbStatiticsMode_SelectedIndexChanged);
             // 
             // label1
             // 
@@ -329,6 +336,7 @@
             this.dtp_From.Name = "dtp_From";
             this.dtp_From.Size = new System.Drawing.Size(133, 27);
             this.dtp_From.TabIndex = 11;
+            this.dtp_From.ValueChanged += new System.EventHandler(this.dtp_From_ValueChanged);
             // 
             // frmListRevenue
             // 

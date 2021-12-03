@@ -33,7 +33,9 @@
             this.cboFood = new System.Windows.Forms.ComboBox();
             this.cboCategory = new System.Windows.Forms.ComboBox();
             this.txtOrderPrice = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+
             this.txtTableId = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -92,6 +94,7 @@
             this.txtOrderPrice.TabIndex = 88;
             this.txtOrderPrice.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
+
             // txtTableId
             // 
             this.txtTableId.Cursor = System.Windows.Forms.Cursors.IBeam;
@@ -110,6 +113,7 @@
             this.txtTableId.Size = new System.Drawing.Size(282, 33);
             this.txtTableId.TabIndex = 89;
             this.txtTableId.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+
             // 
             // label5
             // 
@@ -232,7 +236,9 @@
             this.Controls.Add(this.cboCategory);
             this.Controls.Add(this.btnAddOrder);
             this.Controls.Add(this.txtOrderPrice);
+
             this.Controls.Add(this.txtTableId);
+
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label2);
@@ -259,7 +265,9 @@
         private System.Windows.Forms.ComboBox cboCategory;
         private Bunifu.Framework.UI.BunifuThinButton2 btnAddOrder;
         private Bunifu.Framework.UI.BunifuMaterialTextbox txtOrderPrice;
+
         private Bunifu.Framework.UI.BunifuMaterialTextbox txtTableId;
+
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label2;

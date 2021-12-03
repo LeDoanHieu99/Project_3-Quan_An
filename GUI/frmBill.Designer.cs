@@ -451,9 +451,9 @@
             this.label11.Location = new System.Drawing.Point(308, 122);
             this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(56, 24);
+            this.label11.Size = new System.Drawing.Size(119, 24);
             this.label11.TabIndex = 13;
-            this.label11.Text = "Total:";
+            this.label11.Text = "Total Money:";
             // 
             // label10
             // 

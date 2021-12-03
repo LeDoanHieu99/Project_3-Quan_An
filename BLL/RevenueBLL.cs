@@ -35,7 +35,10 @@ namespace BLL
         public DataTable LoadRevenue_ByMonth(string fromDate, string toDate, int selectRows, int exceptRows)
         {
             string query = ";with RevenueShow as (SELECT TOP 100 PERCENT MONTH(DatePayment) as 'Month', YEAR(DatePayment) as 'Year', "
+
                                 + "sum(Total) as 'Revenue' from Bill where Total > 0 "
+
+
                                 + "AND MONTH(DatePayment) >= '" + fromDate + "' AND MONTH(DatePayment) <= '" + toDate + "' "
                                 + "group by MONTH(DatePayment), YEAR(DatePayment) "
                                 + "order by MONTH(DatePayment), YEAR(DatePayment) asc) "

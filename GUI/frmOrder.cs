@@ -1,4 +1,6 @@
-﻿using System;
+﻿using BLL;
+using DATA;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -14,6 +16,7 @@ namespace GUI
 {
     public partial class frmOrder : Form
     {
+
         int tableId = 0;
         public frmOrder()
         {
