@@ -7,16 +7,16 @@ using System.Data;
 
 namespace BLL
 {
-    public class RevenueBLLS
+    public class BLL_Revenue
     {
-        private static RevenueBLLS instance;
-        public static RevenueBLLS Instance
+        private static BLL_Revenue instance;
+        public static BLL_Revenue Instance
         {
-            get { if (instance == null) instance = new RevenueBLLS(); return RevenueBLLS.instance; }
-            private set { RevenueBLLS.instance = value; }
+            get { if (instance == null) instance = new BLL_Revenue(); return BLL_Revenue.instance; }
+            private set { BLL_Revenue.instance = value; }
         }
 
-        private RevenueBLLS()
+        private BLL_Revenue()
         {
 
         }
