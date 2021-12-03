@@ -9,15 +9,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using BLL;
-using DATA;
+using System.Data.SqlClient;
 
 namespace GUI
 {
     public partial class frmOrder : Form
     {
 
-        int tableId = 0;
+        int tableId = 1;
         public frmOrder()
         {
             InitializeComponent();
@@ -26,8 +25,8 @@ namespace GUI
         public frmOrder(int tableID, string tablename)
         {
             InitializeComponent();
-            this.tableId = tableID;
-            txtTableId.Text = tablename;
+            //this.tableId = tableID;
+           // txtTableId.Text = tablename;
 
             LoadFoodCategory();
         }
@@ -116,5 +115,7 @@ namespace GUI
             int Prices = food.prices;
             txtOrderPrice.Text = Prices.ToString();
         }
+
+        
     }
 }
