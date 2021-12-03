@@ -34,17 +34,17 @@ namespace GUI
                 case 0:
                     fromDate = dtp_From.Value.ToShortDateString();
                     toDate = dtp_To.Value.ToShortDateString();
-                    sumRecord = RevenueBLL.Instance.GetNumBillList_ByDay(fromDate, toDate);
+                    sumRecord = RevenueBLLS.Instance.GetNumBillList_ByDay(fromDate, toDate);
                     break;
                 case 1:
                     fromDate = dtp_From.Value.Month.ToString();
                     toDate = dtp_To.Value.Month.ToString();
-                    sumRecord = RevenueBLL.Instance.GetNumBillList_ByMonth(fromDate, toDate);
+                    sumRecord = RevenueBLLS.Instance.GetNumBillList_ByMonth(fromDate, toDate);
                     break;
                 case 2:
                     fromDate = dtp_From.Value.Year.ToString();
                     toDate = dtp_To.Value.Year.ToString();
-                    sumRecord = RevenueBLL.Instance.GetNumBillList_ByYear(fromDate, toDate);
+                    sumRecord = RevenueBLLS.Instance.GetNumBillList_ByYear(fromDate, toDate);
                     break;
                 default: break;
             }
@@ -64,7 +64,7 @@ namespace GUI
                 case 0:
                     fromDate = dtp_From.Value.ToShortDateString();
                     toDate = dtp_To.Value.ToShortDateString();
-                    dtgvRevenue.DataSource = RevenueBLL.Instance.LoadRevenue_ByDay(fromDate, toDate, selectRows, exceptRows);
+                    dtgvRevenue.DataSource = RevenueBLLS.Instance.LoadRevenue_ByDay(fromDate, toDate, selectRows, exceptRows);
                     dtgvRevenue.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
                     dtgvRevenue.Columns["Day"].DisplayIndex = 0;
                     dtgvRevenue.Columns["Month"].DisplayIndex = 1;
@@ -74,7 +74,7 @@ namespace GUI
                 case 1:
                     fromDate = dtp_From.Value.Month.ToString();
                     toDate = dtp_To.Value.Month.ToString();
-                    dtgvRevenue.DataSource = RevenueBLL.Instance.LoadRevenue_ByMonth(fromDate, toDate, selectRows, exceptRows);
+                    dtgvRevenue.DataSource = RevenueBLLS.Instance.LoadRevenue_ByMonth(fromDate, toDate, selectRows, exceptRows);
                     dtgvRevenue.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
                     dtgvRevenue.Columns["Month"].DisplayIndex = 0;
                     dtgvRevenue.Columns["Year"].DisplayIndex = 1;
@@ -83,7 +83,7 @@ namespace GUI
                 case 2:
                     fromDate = dtp_From.Value.Year.ToString();
                     toDate = dtp_To.Value.Year.ToString();
-                    dtgvRevenue.DataSource = RevenueBLL.Instance.LoadRevenue_ByYear(fromDate, toDate, selectRows, exceptRows);
+                    dtgvRevenue.DataSource = RevenueBLLS.Instance.LoadRevenue_ByYear(fromDate, toDate, selectRows, exceptRows);
                     dtgvRevenue.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
                     dtgvRevenue.Columns["Year"].DisplayIndex = 0;
                     dtgvRevenue.Columns["Revenue"].DisplayIndex = 1;
