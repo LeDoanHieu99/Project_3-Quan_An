@@ -50,6 +50,10 @@
             this.label1 = new System.Windows.Forms.Label();
             this.datetimeGetDay = new Bunifu.Framework.UI.BunifuDatepicker();
             this.bunifuImageButton1 = new Bunifu.Framework.UI.BunifuImageButton();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.panel5 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvBillDetail)).BeginInit();
             this.groupBox1.SuspendLayout();
@@ -142,9 +146,9 @@
             this.txtTableId.HintForeColor = System.Drawing.Color.Empty;
             this.txtTableId.HintText = "";
             this.txtTableId.isPassword = false;
-            this.txtTableId.LineFocusedColor = System.Drawing.Color.Blue;
-            this.txtTableId.LineIdleColor = System.Drawing.Color.Gray;
-            this.txtTableId.LineMouseHoverColor = System.Drawing.Color.Blue;
+            this.txtTableId.LineFocusedColor = System.Drawing.Color.DeepSkyBlue;
+            this.txtTableId.LineIdleColor = System.Drawing.Color.DeepSkyBlue;
+            this.txtTableId.LineMouseHoverColor = System.Drawing.Color.DeepSkyBlue;
             this.txtTableId.LineThickness = 3;
             this.txtTableId.Location = new System.Drawing.Point(148, 675);
             this.txtTableId.Margin = new System.Windows.Forms.Padding(4);
@@ -279,6 +283,7 @@
             this.dtgvBill.RowTemplate.Height = 24;
             this.dtgvBill.Size = new System.Drawing.Size(624, 554);
             this.dtgvBill.TabIndex = 10;
+            this.dtgvBill.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dtgvBill_CellMouseClick);
             // 
             // label2
             // 
@@ -300,18 +305,19 @@
             // 
             // datetimeGetDay
             // 
-            this.datetimeGetDay.BackColor = System.Drawing.Color.Silver;
+            this.datetimeGetDay.BackColor = System.Drawing.Color.DeepSkyBlue;
             this.datetimeGetDay.BorderRadius = 0;
             this.datetimeGetDay.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.datetimeGetDay.ForeColor = System.Drawing.Color.White;
-            this.datetimeGetDay.Format = System.Windows.Forms.DateTimePickerFormat.Long;
+            this.datetimeGetDay.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.datetimeGetDay.FormatCustom = null;
             this.datetimeGetDay.Location = new System.Drawing.Point(6, 44);
             this.datetimeGetDay.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.datetimeGetDay.Name = "datetimeGetDay";
-            this.datetimeGetDay.Size = new System.Drawing.Size(288, 24);
+            this.datetimeGetDay.Size = new System.Drawing.Size(251, 24);
             this.datetimeGetDay.TabIndex = 0;
             this.datetimeGetDay.Value = new System.DateTime(2021, 11, 25, 22, 37, 32, 423);
+            this.datetimeGetDay.onValueChanged += new System.EventHandler(this.datetimeGetDay_onValueChanged);
             // 
             // bunifuImageButton1
             // 
@@ -325,12 +331,53 @@
             this.bunifuImageButton1.TabIndex = 15;
             this.bunifuImageButton1.TabStop = false;
             this.bunifuImageButton1.Zoom = 10;
+            this.bunifuImageButton1.Click += new System.EventHandler(this.bunifuImageButton1_Click);
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.panel3.Location = new System.Drawing.Point(148, 704);
+            this.panel3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(350, 2);
+            this.panel3.TabIndex = 88;
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.panel2.Location = new System.Drawing.Point(148, 764);
+            this.panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(350, 2);
+            this.panel2.TabIndex = 89;
+            // 
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.panel4.Location = new System.Drawing.Point(767, 704);
+            this.panel4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(340, 2);
+            this.panel4.TabIndex = 90;
+            // 
+            // panel5
+            // 
+            this.panel5.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.panel5.Location = new System.Drawing.Point(767, 764);
+            this.panel5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(340, 2);
+            this.panel5.TabIndex = 91;
             // 
             // frmListBill
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
+            this.Controls.Add(this.panel5);
+            this.Controls.Add(this.panel4);
+            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.panel3);
             this.Controls.Add(this.txtTotal);
             this.Controls.Add(this.txtStatus);
             this.Controls.Add(this.label7);
@@ -378,5 +425,9 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private Bunifu.Framework.UI.BunifuDatepicker datetimeGetDay;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Panel panel5;
     }
 }
