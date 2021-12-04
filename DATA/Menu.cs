@@ -14,6 +14,7 @@ namespace DATA
         private int price;
         private int totalMoney;
 
+
         public string FoodName { get => foodName; set => foodName = value; }
         public int Quantity { get => quantity; set => quantity = value; }
         public int Price { get => price; set => price = value; }
@@ -26,5 +27,6 @@ namespace DATA
             price = (int)row["Price"];
             totalMoney = (int)row["Total Money"];
         }
+
     }
 }

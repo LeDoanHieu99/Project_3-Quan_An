@@ -50,5 +50,6 @@ namespace BLL
             data = DbConnection.Instance.ExecuteQuery(query);
             return data;
         }
+
     }
 }
