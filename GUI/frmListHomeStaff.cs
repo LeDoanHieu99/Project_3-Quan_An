@@ -23,7 +23,7 @@ namespace GUI
 
         public void LoadRevenueToday()
         {
-            int RevenueToday = RevenueBLL.Instance.GetRevenueToDay();
+            int RevenueToday = BLL_Revenue.Instance.GetRevenueToDay();
             lblRevenueToday.Text = string.Format("{0:n0}", RevenueToday);
         }
 
