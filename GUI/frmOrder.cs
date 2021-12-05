@@ -25,8 +25,8 @@ namespace GUI
         public frmOrder(int tableID, string tablename)
         {
             InitializeComponent();
-            //this.tableId = tableID;
-           // txtTableId.Text = tablename;
+            this.tableId = tableID;
+            txtTableId.Text = tablename;
 
             LoadFoodCategory();
         }

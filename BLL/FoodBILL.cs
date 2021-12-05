@@ -55,7 +55,7 @@ namespace BLL
         }
         public DataTable SearchFoodByName(string name)
         {
-            string query = "SELECT FoodId as N'ID',FoodName , Price , Food.FoodTypeId as N'CategorieId',FoodTypeName as N'CategorieName' FROM Food,FoodType WHERE Food.FoodTypeId = FoodType.FoodTypeId AND FoodName like N'%" + name + "%'"; 
+            string query = "SELECT FoodId as N'ID',FoodName , Price , Food.FoodTypeId as 'CategorieId',FoodTypeName as 'CategorieName' FROM Food,FoodType WHERE Food.FoodTypeId = FoodType.FoodTypeId AND FoodName like N'%" + name + "%'"; 
              DataTable data = new DataTable();
             data = DbConnection.Instance.ExecuteQuery(query);
             return data;

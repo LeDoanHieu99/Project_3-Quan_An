@@ -14,12 +14,6 @@ namespace DATA
         private int price;
         private int totalMoney;
 
-
-        public string FoodName { get => foodName; set => foodName = value; }
-        public int Quantity { get => quantity; set => quantity = value; }
-        public int Price { get => price; set => price = value; }
-        public int TotalMoney { get => totalMoney; set => totalMoney = value; }
-
         public Menu(DataRow row)
         {
             foodName = (string)row["Food Name"];
@@ -27,6 +21,14 @@ namespace DATA
             price = (int)row["Price"];
             totalMoney = (int)row["Total Money"];
         }
+
+
+        public string FoodName { get => foodName; set => foodName = value; }
+        public int Quantity { get => quantity; set => quantity = value; }
+        public int Price { get => price; set => price = value; }
+        public int TotalMoney { get => totalMoney; set => totalMoney = value; }
+
+       
 
     }
 }
