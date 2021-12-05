@@ -53,15 +53,15 @@ namespace GUI
             try
             {
                 DataGridViewRow row = dtgvBill.Rows[0];
-                if (row.Cells["Mã hoá đơn"].Value != null)
+                if (row.Cells[0].Value != null)
                 {
-                    int mahoadon = Convert.ToInt32(row.Cells["Mã hoá đơn"].Value.ToString());
+                    int mahoadon = Convert.ToInt32(row.Cells[0].Value.ToString());
                     dtgvBillDetail.DataSource = BillBLL.Instance.GetListHistoryMenusById(mahoadon);
                 }
             }
             catch (Exception ex)
             {
-
+                //MessageBox.Show("Bill not exist");
             }
 
 
@@ -120,9 +120,9 @@ namespace GUI
                 dtgvBill.DataSource = BillBLL.Instance.SearchBillByIdTable(tableId);
                 dtgvBill.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
                 DataGridViewRow row = dtgvBill.Rows[0];
-                if (row.Cells["Bill Id"].Value != null)
+                if (row.Cells[0].Value != null)
                 {
-                    int billId = Convert.ToInt32(row.Cells["Bill Id"].Value.ToString());
+                    int billId = Convert.ToInt32(row.Cells[0].Value.ToString());
                     dtgvBillDetail.DataSource = BillBLL.Instance.GetListHistoryMenusById(billId);
                     for (int i = 0; i < dtgvBill.Rows.Count; i++)
                     {
@@ -138,8 +138,6 @@ namespace GUI
                         }
                     }
                 }
-
-
             }
             catch (Exception ex)
             {
@@ -155,12 +153,12 @@ namespace GUI
                 if (e.RowIndex >= 0)
                 {
                     DataGridViewRow row = dtgvBill.Rows[e.RowIndex];
-                    txtBillId.Text = row.Cells["Bill Id"].Value.ToString();
-                    txtTableId.Text = row.Cells["Table Id"].Value.ToString();
-                    txtStatus.Text = row.Cells["Status"].Value.ToString();
-                    txtTotal.Text = row.Cells["Total Money"].Value.ToString();
-                    int mahoadon = Convert.ToInt32(txtBillId.Text);
-                    dtgvBillDetail.DataSource = BillBLL.Instance.GetListHistoryMenusById(mahoadon);
+                    txtBillId.Text = row.Cells[0].Value.ToString();
+                    txtTableId.Text = row.Cells[1].Value.ToString();
+                    txtStatus.Text = row.Cells[2].Value.ToString();
+                    txtTotal.Text = row.Cells[3].Value.ToString();
+                    int billIds = Convert.ToInt32(txtBillId.Text);
+                    dtgvBillDetail.DataSource = BillBLL.Instance.GetListHistoryMenusById(billIds);
                 }
             }
             catch (FormatException ex)
