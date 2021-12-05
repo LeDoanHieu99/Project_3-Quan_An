@@ -42,7 +42,7 @@ namespace BLL
                 " from Food as ta,BillDetails as ct,Bill as hd " +
                 "where ta.FoodId=ct.FoodId and ct.BillId=hd.BillId" +
                 " and hd.TableId=" + tableId + " and hd.Status='Unpaid'" +
-                " group by TA.FoodName";
+                " group by ta.FoodName";
             data = DbConnection.Instance.ExecuteQuery(query);
             return data;
         }

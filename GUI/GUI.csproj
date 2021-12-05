@@ -291,6 +291,7 @@
     <Content Include="Img\online-payment.png" />
     <Content Include="Img\password.png" />
     <Content Include="Img\phuc-vien-quan-nhan-la-gi.jpg" />
+    <None Include="Img\png-clipart-computer-icons-salad-food-food-icon-food-heart-thumbnail.png" />
     <Content Include="Img\pngtree-organic-food-logo-fork-and-tree-symbol-healthy-icon-png-image_313491-removebg-preview %282%29.png" />
     <Content Include="Img\power-button.png" />
     <Content Include="Img\question.png" />
