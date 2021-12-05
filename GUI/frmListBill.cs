@@ -34,24 +34,24 @@ namespace GUI
         public void LoadBill()
         {
             string date = datetimeGetDay.Value.ToShortDateString();
-            dtgvBill.DataSource = BillBLL.Instance.GetBillByDate(date);
-            dtgvBill.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
-            for (int i = 0; i < dtgvBill.Rows.Count; i++)
+            dtgvBill1.DataSource = BillBLL.Instance.GetBillByDate(date);
+            dtgvBill1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            for (int i = 0; i < dtgvBill1.Rows.Count; i++)
             {
                 if (i % 2 == 0)
                 {
-                    dtgvBill.Rows[i].DefaultCellStyle.BackColor = Color.FromArgb(179, 213, 242);
-                    dtgvBill.Rows[i].DefaultCellStyle.SelectionBackColor = Color.FromArgb(179, 213, 242);
+                    dtgvBill1.Rows[i].DefaultCellStyle.BackColor = Color.FromArgb(179, 213, 242);
+                    dtgvBill1.Rows[i].DefaultCellStyle.SelectionBackColor = Color.FromArgb(179, 213, 242);
                 }
                 else
                 {
-                    dtgvBill.Rows[i].DefaultCellStyle.BackColor = Color.White;
-                    dtgvBill.Rows[i].DefaultCellStyle.SelectionBackColor = Color.White;
+                    dtgvBill1.Rows[i].DefaultCellStyle.BackColor = Color.White;
+                    dtgvBill1.Rows[i].DefaultCellStyle.SelectionBackColor = Color.White;
                 }
             }
             try
             {
-                DataGridViewRow row = dtgvBill.Rows[0];
+                DataGridViewRow row = dtgvBill1.Rows[0];
                 if (row.Cells[0].Value != null)
                 {
                     int billIds = Convert.ToInt32(row.Cells[0].Value.ToString());
@@ -107,46 +107,27 @@ namespace GUI
             LoadBill();
         }
 
-        private void DtimeGetDay_ValueChanged(object sender, EventArgs e)
-        {
-            string date = DtimeGetDay.Value.ToShortDateString();
-            dtgvBill.DataSource = BillBLL.Instance.GetBillByDate(date);
-            dtgvBill.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
-            for (int i = 0; i < dtgvBill.Rows.Count; i++)
-            {
-                if (i % 2 == 0)
-                {
-                    dtgvBillDetail.Rows[i].DefaultCellStyle.BackColor = Color.FromArgb(179, 213, 242);
-                    dtgvBillDetail.Rows[i].DefaultCellStyle.SelectionBackColor = Color.FromArgb(179, 213, 242);
-                }
-                else
-                {
-                    dtgvBillDetail.Rows[i].DefaultCellStyle.BackColor = Color.White;
-                    dtgvBillDetail.Rows[i].DefaultCellStyle.SelectionBackColor = Color.White;
-                }
-            }
-        }
         private void btnImgSearch_Click(object sender, EventArgs e)
         {
             try
             {
                 int tableId = Convert.ToInt32(txtTableId.Text);
-                dtgvBill.DataSource = BillBLL.Instance.SearchBillByIdTable(tableId);
-                dtgvBill.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
-                DataGridViewRow row = dtgvBill.Rows[0];
+                dtgvBill1.DataSource = BillBLL.Instance.SearchBillByIdTable(tableId);
+                dtgvBill1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+                DataGridViewRow row = dtgvBill1.Rows[0];
                 if (row.Cells[0].Value != null)
                 {
-                    for (int i = 0; i < dtgvBill.Rows.Count; i++)
+                    for (int i = 0; i < dtgvBill1.Rows.Count; i++)
                     {
                         if (i % 2 == 0)
                         {
-                            dtgvBill.Rows[i].DefaultCellStyle.BackColor = Color.FromArgb(179, 213, 242);
-                            dtgvBill.Rows[i].DefaultCellStyle.SelectionBackColor = Color.FromArgb(179, 213, 242);
+                            dtgvBill1.Rows[i].DefaultCellStyle.BackColor = Color.FromArgb(179, 213, 242);
+                            dtgvBill1.Rows[i].DefaultCellStyle.SelectionBackColor = Color.FromArgb(179, 213, 242);
                         }
                         else
                         {
-                            dtgvBill.Rows[i].DefaultCellStyle.BackColor = Color.White;
-                            dtgvBill.Rows[i].DefaultCellStyle.SelectionBackColor = Color.White;
+                            dtgvBill1.Rows[i].DefaultCellStyle.BackColor = Color.White;
+                            dtgvBill1.Rows[i].DefaultCellStyle.SelectionBackColor = Color.White;
                         }
                     }
                     int billId = Convert.ToInt32(row.Cells[0].Value.ToString());
@@ -175,30 +156,65 @@ namespace GUI
 
         private void btnImgCountFood_Click(object sender, EventArgs e)
         {
-            dtgvBill.DataSource = BillBLL.Instance.CountFood();
-            dtgvBill.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
-            for (int i = 0; i < dtgvBill.Rows.Count; i++)
+            dtgvBill1.DataSource = BillBLL.Instance.CountFood();
+            dtgvBill1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            for (int i = 0; i < dtgvBill1.Rows.Count; i++)
             {
                 if (i % 2 == 0)
                 {
-                    dtgvBill.Rows[i].DefaultCellStyle.BackColor = Color.FromArgb(179, 213, 242);
-                    dtgvBill.Rows[i].DefaultCellStyle.SelectionBackColor = Color.FromArgb(179, 213, 242);
+                    dtgvBill1.Rows[i].DefaultCellStyle.BackColor = Color.FromArgb(179, 213, 242);
+                    dtgvBill1.Rows[i].DefaultCellStyle.SelectionBackColor = Color.FromArgb(179, 213, 242);
                 }
                 else
                 {
-                    dtgvBill.Rows[i].DefaultCellStyle.BackColor = Color.White;
-                    dtgvBill.Rows[i].DefaultCellStyle.SelectionBackColor = Color.White;
+                    dtgvBill1.Rows[i].DefaultCellStyle.BackColor = Color.White;
+                    dtgvBill1.Rows[i].DefaultCellStyle.SelectionBackColor = Color.White;
                 }
             }
         }
 
         private void dtgvBill_CellMouseClick(object sender, DataGridViewCellMouseEventArgs e)
         {
+            //try
+            //{
+            //    if (e.RowIndex >= 0)
+            //    {
+            //        DataGridViewRow row = dtgvBill1.Rows[e.RowIndex];
+            //        txtBillId.Text = row.Cells[0].Value.ToString();
+            //        txtTableId.Text = row.Cells[1].Value.ToString();
+            //        txtStatus.Text = row.Cells[2].Value.ToString();
+            //        txtTotal.Text = row.Cells[3].Value.ToString();
+            //        int billIds = Convert.ToInt32(txtBillId.Text);
+            //        dtgvBillDetail.DataSource = BillBLL.Instance.GetListHistoryMenusById(billIds);
+            //        dtgvBillDetail.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            //        for (int i = 0; i < dtgvBillDetail.Rows.Count; i++)
+            //        {
+            //            if (i % 2 == 0)
+            //            {
+            //                dtgvBillDetail.Rows[i].DefaultCellStyle.BackColor = Color.FromArgb(179, 213, 242);
+            //                dtgvBillDetail.Rows[i].DefaultCellStyle.SelectionBackColor = Color.FromArgb(179, 213, 242);
+            //            }
+            //            else
+            //            {
+            //                dtgvBillDetail.Rows[i].DefaultCellStyle.BackColor = Color.White;
+            //                dtgvBillDetail.Rows[i].DefaultCellStyle.SelectionBackColor = Color.White;
+            //            }
+            //        }
+            //    }
+            //}
+            //catch (FormatException ex)
+            //{
+            //    MessageBox.Show("You have not entered anything yet !!");
+            //}
+        }
+
+        private void dtgvBill1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
             try
             {
                 if (e.RowIndex >= 0)
                 {
-                    DataGridViewRow row = dtgvBill.Rows[e.RowIndex];
+                    DataGridViewRow row = dtgvBill1.Rows[e.RowIndex];
                     txtBillId.Text = row.Cells[0].Value.ToString();
                     txtTableId.Text = row.Cells[1].Value.ToString();
                     txtStatus.Text = row.Cells[2].Value.ToString();
@@ -226,27 +242,5 @@ namespace GUI
                 MessageBox.Show("You have not entered anything yet !!");
             }
         }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            
-            dtgvBill.DataSource = BillBLL.Instance.CountFood();
-            dtgvBill.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
-            for (int i = 0; i < dtgvBill.Rows.Count; i++)
-            {
-                if (i % 2 == 0)
-                {
-                    dtgvBill.Rows[i].DefaultCellStyle.BackColor = Color.FromArgb(179, 213, 242);
-                    dtgvBill.Rows[i].DefaultCellStyle.SelectionBackColor = Color.FromArgb(179, 213, 242);
-                }
-                else
-                {
-                    dtgvBill.Rows[i].DefaultCellStyle.BackColor = Color.White;
-                    dtgvBill.Rows[i].DefaultCellStyle.SelectionBackColor = Color.White;
-                }
-            }
-        }
-
-       
     }
 }

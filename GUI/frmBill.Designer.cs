@@ -79,16 +79,16 @@
             // btnPay
             // 
             this.btnPay.AutoSize = true;
-            this.btnPay.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.btnPay.color = System.Drawing.SystemColors.ActiveCaption;
-            this.btnPay.colorActive = System.Drawing.SystemColors.ActiveCaption;
+            this.btnPay.BackColor = System.Drawing.Color.Bisque;
+            this.btnPay.color = System.Drawing.Color.Bisque;
+            this.btnPay.colorActive = System.Drawing.Color.Bisque;
             this.btnPay.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnPay.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPay.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPay.ForeColor = System.Drawing.Color.Black;
             this.btnPay.Image = global::GUI.Properties.Resources.CheckOutIcon;
             this.btnPay.ImagePosition = 0;
             this.btnPay.ImageZoom = 45;
-            this.btnPay.LabelPosition = 28;
+            this.btnPay.LabelPosition = 30;
             this.btnPay.LabelText = "Check Out";
             this.btnPay.Location = new System.Drawing.Point(514, 556);
             this.btnPay.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
