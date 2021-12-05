@@ -69,7 +69,7 @@ namespace GUI
                     dtgvRevenue.Columns["Day"].DisplayIndex = 0;
                     dtgvRevenue.Columns["Month"].DisplayIndex = 1;
                     dtgvRevenue.Columns["Year"].DisplayIndex = 2;
-                    dtgvRevenue.Columns["Revenue"].DisplayIndex = 3;
+                    dtgvRevenue.Columns["Total Money"].DisplayIndex = 3;
                     break;
                 case 1:
                     fromDate = dtp_From.Value.Month.ToString();
@@ -78,7 +78,7 @@ namespace GUI
                     dtgvRevenue.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
                     dtgvRevenue.Columns["Month"].DisplayIndex = 0;
                     dtgvRevenue.Columns["Year"].DisplayIndex = 1;
-                    dtgvRevenue.Columns["Revenue"].DisplayIndex = 2;
+                    dtgvRevenue.Columns["Total Money"].DisplayIndex = 2;
                     break;
                 case 2:
                     fromDate = dtp_From.Value.Year.ToString();
@@ -86,7 +86,7 @@ namespace GUI
                     dtgvRevenue.DataSource = BLL_Revenue.Instance.LoadRevenue_ByYear(fromDate, toDate, selectRows, exceptRows);
                     dtgvRevenue.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
                     dtgvRevenue.Columns["Year"].DisplayIndex = 0;
-                    dtgvRevenue.Columns["Revenue"].DisplayIndex = 1;
+                    dtgvRevenue.Columns["Total Money"].DisplayIndex = 1;
                     break;
                 default: break;
             }
@@ -123,8 +123,7 @@ namespace GUI
                 // and fill in all the values from the dgv to the chart:
                 for (int i = 0; i < dtgvRevenue.Rows.Count; i++)
                 {
-                    S.Points.AddXY(string.Format(x_axis_format, dtgvRevenue[0, i].Value, dtgvRevenue[1, i].Value),
-                                dtgvRevenue[dtgvRevenue.Columns.Count - 1, i].Value);
+                    S.Points.AddXY(string.Format(x_axis_format, dtgvRevenue[0, i].Value, dtgvRevenue[1, i].Value), dtgvRevenue[dtgvRevenue.Columns.Count - 1, i].Value);
                     S["PointWidth"] = "0.2";
                     S.IsValueShownAsLabel = true;
                 }
@@ -136,8 +135,7 @@ namespace GUI
                 // and fill in all the values from the dgv to the chart:
                 for (int i = 0; i < dtgvRevenue.Rows.Count; i++)
                 {
-                    S.Points.AddXY(string.Format(x_axis_format, dtgvRevenue[0, i].Value),
-                                dtgvRevenue[dtgvRevenue.Columns.Count - 1, i].Value);
+                    S.Points.AddXY(string.Format(x_axis_format, dtgvRevenue[0, i].Value), dtgvRevenue[dtgvRevenue.Columns.Count - 1, i].Value);
                     S["PointWidth"] = "0.5";
                     S.IsValueShownAsLabel = true;
                 }
