@@ -79,7 +79,7 @@
             // btnPay
             // 
             this.btnPay.AutoSize = true;
-            this.btnPay.BackColor = System.Drawing.Color.Bisque;
+            this.btnPay.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.btnPay.color = System.Drawing.SystemColors.ActiveCaption;
             this.btnPay.colorActive = System.Drawing.SystemColors.ActiveCaption;
             this.btnPay.Cursor = System.Windows.Forms.Cursors.Hand;

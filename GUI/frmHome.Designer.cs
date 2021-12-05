@@ -30,19 +30,18 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmHome));
             this.TabPanel = new System.Windows.Forms.Panel();
+            this.quitButton = new Bunifu.Framework.UI.BunifuTileButton();
+            this.logoutButton = new Bunifu.Framework.UI.BunifuTileButton();
             this.btnStaff = new System.Windows.Forms.Button();
             this.btnRevenue = new System.Windows.Forms.Button();
             this.btnBill = new System.Windows.Forms.Button();
             this.btnTable = new System.Windows.Forms.Button();
             this.btnFood = new System.Windows.Forms.Button();
-            this.panMove = new System.Windows.Forms.Panel();
             this.btnHome = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panMainData = new System.Windows.Forms.Panel();
             this.btnHide = new System.Windows.Forms.Button();
             this.btnClose = new System.Windows.Forms.Button();
-            this.quitButton = new Bunifu.Framework.UI.BunifuTileButton();
-            this.logoutButton = new Bunifu.Framework.UI.BunifuTileButton();
             this.TabPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -58,7 +57,6 @@
             this.TabPanel.Controls.Add(this.btnBill);
             this.TabPanel.Controls.Add(this.btnTable);
             this.TabPanel.Controls.Add(this.btnFood);
-            this.TabPanel.Controls.Add(this.panMove);
             this.TabPanel.Controls.Add(this.btnHome);
             this.TabPanel.Controls.Add(this.pictureBox1);
             this.TabPanel.Dock = System.Windows.Forms.DockStyle.Left;
@@ -67,9 +65,51 @@
             this.TabPanel.Size = new System.Drawing.Size(311, 862);
             this.TabPanel.TabIndex = 2;
             // 
+            // quitButton
+            // 
+            this.quitButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.quitButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(199)))), ((int)(((byte)(242)))));
+            this.quitButton.color = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(199)))), ((int)(((byte)(242)))));
+            this.quitButton.colorActive = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(199)))), ((int)(((byte)(242)))));
+            this.quitButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.quitButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.quitButton.ForeColor = System.Drawing.Color.White;
+            this.quitButton.Image = ((System.Drawing.Image)(resources.GetObject("quitButton.Image")));
+            this.quitButton.ImagePosition = 6;
+            this.quitButton.ImageZoom = 25;
+            this.quitButton.LabelPosition = 20;
+            this.quitButton.LabelText = "Quit";
+            this.quitButton.Location = new System.Drawing.Point(153, 212);
+            this.quitButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.quitButton.Name = "quitButton";
+            this.quitButton.Size = new System.Drawing.Size(117, 56);
+            this.quitButton.TabIndex = 11;
+            this.quitButton.Click += new System.EventHandler(this.quitButton_Click);
+            // 
+            // logoutButton
+            // 
+            this.logoutButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.logoutButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(199)))), ((int)(((byte)(242)))));
+            this.logoutButton.color = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(199)))), ((int)(((byte)(242)))));
+            this.logoutButton.colorActive = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(199)))), ((int)(((byte)(242)))));
+            this.logoutButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.logoutButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.logoutButton.ForeColor = System.Drawing.Color.White;
+            this.logoutButton.Image = ((System.Drawing.Image)(resources.GetObject("logoutButton.Image")));
+            this.logoutButton.ImagePosition = 6;
+            this.logoutButton.ImageZoom = 25;
+            this.logoutButton.LabelPosition = 20;
+            this.logoutButton.LabelText = "Logout";
+            this.logoutButton.Location = new System.Drawing.Point(39, 212);
+            this.logoutButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.logoutButton.Name = "logoutButton";
+            this.logoutButton.Size = new System.Drawing.Size(106, 56);
+            this.logoutButton.TabIndex = 12;
+            this.logoutButton.Click += new System.EventHandler(this.logoutButton_Click);
+            // 
             // btnStaff
             // 
-            this.btnStaff.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnStaff.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnStaff.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnStaff.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnStaff.ForeColor = System.Drawing.Color.White;
@@ -78,7 +118,7 @@
             this.btnStaff.Location = new System.Drawing.Point(0, 764);
             this.btnStaff.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnStaff.Name = "btnStaff";
-            this.btnStaff.Size = new System.Drawing.Size(309, 95);
+            this.btnStaff.Size = new System.Drawing.Size(309, 96);
             this.btnStaff.TabIndex = 5;
             this.btnStaff.Text = "Staff";
             this.btnStaff.UseVisualStyleBackColor = true;
@@ -153,15 +193,6 @@
             this.btnFood.UseVisualStyleBackColor = true;
             this.btnFood.Click += new System.EventHandler(this.btnFood_Click);
             // 
-            // panMove
-            // 
-            this.panMove.BackColor = System.Drawing.Color.White;
-            this.panMove.Location = new System.Drawing.Point(0, 296);
-            this.panMove.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.panMove.Name = "panMove";
-            this.panMove.Size = new System.Drawing.Size(11, 88);
-            this.panMove.TabIndex = 2;
-            // 
             // btnHome
             // 
             this.btnHome.Dock = System.Windows.Forms.DockStyle.Top;
@@ -196,7 +227,7 @@
             // 
             this.panMainData.BackColor = System.Drawing.SystemColors.Control;
             this.panMainData.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panMainData.Location = new System.Drawing.Point(317, 30);
+            this.panMainData.Location = new System.Drawing.Point(316, 30);
             this.panMainData.Margin = new System.Windows.Forms.Padding(4);
             this.panMainData.Name = "panMainData";
             this.panMainData.Size = new System.Drawing.Size(1159, 830);
@@ -229,48 +260,6 @@
             this.btnClose.UseVisualStyleBackColor = true;
             this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
-            // quitButton
-            // 
-            this.quitButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.quitButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(199)))), ((int)(((byte)(242)))));
-            this.quitButton.color = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(199)))), ((int)(((byte)(242)))));
-            this.quitButton.colorActive = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(199)))), ((int)(((byte)(242)))));
-            this.quitButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.quitButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.quitButton.ForeColor = System.Drawing.Color.White;
-            this.quitButton.Image = ((System.Drawing.Image)(resources.GetObject("quitButton.Image")));
-            this.quitButton.ImagePosition = 6;
-            this.quitButton.ImageZoom = 25;
-            this.quitButton.LabelPosition = 20;
-            this.quitButton.LabelText = "Quit";
-            this.quitButton.Location = new System.Drawing.Point(153, 212);
-            this.quitButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.quitButton.Name = "quitButton";
-            this.quitButton.Size = new System.Drawing.Size(117, 56);
-            this.quitButton.TabIndex = 11;
-            this.quitButton.Click += new System.EventHandler(this.quitButton_Click);
-            // 
-            // logoutButton
-            // 
-            this.logoutButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.logoutButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(199)))), ((int)(((byte)(242)))));
-            this.logoutButton.color = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(199)))), ((int)(((byte)(242)))));
-            this.logoutButton.colorActive = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(199)))), ((int)(((byte)(242)))));
-            this.logoutButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.logoutButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.logoutButton.ForeColor = System.Drawing.Color.White;
-            this.logoutButton.Image = ((System.Drawing.Image)(resources.GetObject("logoutButton.Image")));
-            this.logoutButton.ImagePosition = 6;
-            this.logoutButton.ImageZoom = 25;
-            this.logoutButton.LabelPosition = 20;
-            this.logoutButton.LabelText = "Logout";
-            this.logoutButton.Location = new System.Drawing.Point(39, 212);
-            this.logoutButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.logoutButton.Name = "logoutButton";
-            this.logoutButton.Size = new System.Drawing.Size(106, 56);
-            this.logoutButton.TabIndex = 12;
-            this.logoutButton.Click += new System.EventHandler(this.logoutButton_Click);
-            // 
             // frmHome
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -302,7 +291,6 @@
         private System.Windows.Forms.Button btnBill;
         private System.Windows.Forms.Button btnTable;
         private System.Windows.Forms.Button btnFood;
-        private System.Windows.Forms.Panel panMove;
         private System.Windows.Forms.Button btnHome;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel panMainData;

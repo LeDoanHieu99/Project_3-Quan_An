@@ -95,7 +95,7 @@
             // txtTotal
             // 
             this.txtTotal.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtTotal.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.txtTotal.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTotal.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtTotal.HintForeColor = System.Drawing.Color.Empty;
             this.txtTotal.HintText = "";
@@ -104,7 +104,7 @@
             this.txtTotal.LineIdleColor = System.Drawing.Color.Gray;
             this.txtTotal.LineMouseHoverColor = System.Drawing.Color.Gray;
             this.txtTotal.LineThickness = 3;
-            this.txtTotal.Location = new System.Drawing.Point(77, 50);
+            this.txtTotal.Location = new System.Drawing.Point(76, 41);
             this.txtTotal.Margin = new System.Windows.Forms.Padding(4);
             this.txtTotal.Name = "txtTotal";
             this.txtTotal.Size = new System.Drawing.Size(138, 33);

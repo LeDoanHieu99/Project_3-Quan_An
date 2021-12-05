@@ -40,7 +40,7 @@ namespace GUI
             List<Table> tabeList = TableBLL.Instance.GetListTable();
             foreach (Table table in tabeList)
             {
-                Button btn = new Button() { Width = 100, Height = 100 };
+                Button btn = new Button() { Width = 115, Height = 115};
                 btn.Text = table.TableName + "\n" + table.Status;
                 btn.Tag = table;
                 
@@ -98,13 +98,11 @@ namespace GUI
             {
                 if (i % 2 == 0)
                 {
-                    dtgvFoodbyId.Rows[i].DefaultCellStyle.BackColor = Color.FromArgb(179, 213, 242);
-                    dtgvFoodbyId.Rows[i].DefaultCellStyle.SelectionBackColor = Color.FromArgb(179, 213, 242);
+                    dtgvFoodbyId.Rows[i].DefaultCellStyle.BackColor = Color.FromArgb(179, 213, 242);                  
                 }
                 else
                 {
-                    dtgvFoodbyId.Rows[i].DefaultCellStyle.BackColor = Color.White;
-                    dtgvFoodbyId.Rows[i].DefaultCellStyle.SelectionBackColor = Color.White;
+                    dtgvFoodbyId.Rows[i].DefaultCellStyle.BackColor = Color.White;                   
                 }
             }
             int totalMoney = 0;
@@ -112,7 +110,7 @@ namespace GUI
             {
                 totalMoney += i.TotalMoney;
             }
-            txtTotal.Text = totalMoney.ToString();
+            txtTotal.Text = string.Format("{0:n0}", totalMoney);// totalMoney.ToString();
 
         }
 
