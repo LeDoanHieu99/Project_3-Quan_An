@@ -231,6 +231,7 @@
             this.Name = "frmHomeStaff";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmHomeStaff";
+            this.Load += new System.EventHandler(this.frmHomeStaff_Load);
             this.TabPanel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);

@@ -90,5 +90,12 @@ namespace GUI
         {
             this.Close();
         }
+
+        private void frmHomeStaff_Load(object sender, EventArgs e)
+        {
+            frmListHomeStaff home = new frmListHomeStaff();
+            this.panMainData.Controls.Add(home);
+            home.BringToFront();
+        }
     }
 }

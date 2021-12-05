@@ -30,8 +30,8 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmListHome));
             this.panListHome = new System.Windows.Forms.Panel();
-            this.label10 = new System.Windows.Forms.Label();
             this.panel10 = new System.Windows.Forms.Panel();
+            this.label10 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
@@ -96,16 +96,6 @@
             this.panListHome.Size = new System.Drawing.Size(1159, 820);
             this.panListHome.TabIndex = 0;
             // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(351, 118);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(64, 23);
-            this.label10.TabIndex = 59;
-            this.label10.Text = "Table";
-            // 
             // panel10
             // 
             this.panel10.Controls.Add(this.label10);
@@ -122,6 +112,16 @@
             this.panel10.Name = "panel10";
             this.panel10.Size = new System.Drawing.Size(780, 332);
             this.panel10.TabIndex = 58;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(351, 118);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(64, 23);
+            this.label10.TabIndex = 59;
+            this.label10.Text = "Table";
             // 
             // label12
             // 
@@ -192,7 +192,7 @@
             this.btnImgBill.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnImgBill.ForeColor = System.Drawing.Color.Black;
             this.btnImgBill.Image = ((System.Drawing.Image)(resources.GetObject("btnImgBill.Image")));
-            this.btnImgBill.ImagePosition = -18;
+            this.btnImgBill.ImagePosition = -20;
             this.btnImgBill.ImageZoom = 65;
             this.btnImgBill.LabelPosition = 25;
             this.btnImgBill.LabelText = "";
@@ -213,7 +213,7 @@
             this.btnImgTable.ForeColor = System.Drawing.Color.Black;
             this.btnImgTable.Image = ((System.Drawing.Image)(resources.GetObject("btnImgTable.Image")));
             this.btnImgTable.ImagePosition = -18;
-            this.btnImgTable.ImageZoom = 55;
+            this.btnImgTable.ImageZoom = 58;
             this.btnImgTable.LabelPosition = 25;
             this.btnImgTable.LabelText = "";
             this.btnImgTable.Location = new System.Drawing.Point(260, 6);
@@ -233,13 +233,13 @@
             this.btnImgFood.ForeColor = System.Drawing.Color.Black;
             this.btnImgFood.Image = ((System.Drawing.Image)(resources.GetObject("btnImgFood.Image")));
             this.btnImgFood.ImagePosition = -18;
-            this.btnImgFood.ImageZoom = 70;
+            this.btnImgFood.ImageZoom = 75;
             this.btnImgFood.LabelPosition = 25;
             this.btnImgFood.LabelText = "";
             this.btnImgFood.Location = new System.Drawing.Point(6, 6);
             this.btnImgFood.Margin = new System.Windows.Forms.Padding(6);
             this.btnImgFood.Name = "btnImgFood";
-            this.btnImgFood.Size = new System.Drawing.Size(223, 126);
+            this.btnImgFood.Size = new System.Drawing.Size(223, 135);
             this.btnImgFood.TabIndex = 36;
             this.btnImgFood.Click += new System.EventHandler(this.btnImgFood_Click);
             // 

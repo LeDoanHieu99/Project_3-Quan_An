@@ -17,25 +17,18 @@ namespace GUI
         public frmListHomeStaff()
         {
             InitializeComponent();
-            LoadRevenueToday();
-            LoadCountBillToDay();
         }
 
-        public void LoadRevenueToday()
-        {
-            int RevenueToday = BLL_Revenue.Instance.GetRevenueToDay();
-            lblRevenueToday.Text = string.Format("{0:n0}", RevenueToday);
-        }
-
-        public void LoadCountBillToDay()
-        {
-            lblCountOrder.Text = BillBLL.Instance.GetCountBillToDay().ToString();
-        }
-
-        private void frmListHomeStaff_Load(object sender, EventArgs e)
+        private void frmListHomeStaff_Load_1(object sender, EventArgs e)
         {
             DateTime today = DateTime.Now;
             labelTime.Text = today.ToString("F");
+
+            int RevenueToday = BLL_Revenue.Instance.GetRevenueToDay();
+            lblRevenueToday.Text = string.Format("{0:n0}", RevenueToday);
+
+            lblCountOrder.Text = BillBLL.Instance.GetCountBillToDay().ToString();
+
         }
 
         private void btnImgFood_Click(object sender, EventArgs e)
@@ -70,9 +63,8 @@ namespace GUI
             bills.BringToFront();
         }
 
-        private void frmListHomeStaff_Load_1(object sender, EventArgs e)
-        {
+        
 
-        }
+      
     }
 }

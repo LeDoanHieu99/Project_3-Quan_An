@@ -28,7 +28,7 @@ namespace BLL
                 hasPassword += item;
             }
             string query = "USP_Login @userName , @passWord ";
-            DataTable dataTable = DbConnection.Instance.ExecuteQuery(query, new object[] { userName, passWord });
+            DataTable dataTable = DbConnection.Instance.ExecuteQuery(query, new object[] { userName, hasPassword });
             if (dataTable.Rows.Count > 0) return true;
             else return false;
 
@@ -45,7 +45,21 @@ namespace BLL
             }
             string query = "EXEC USP_SIGNUP @USerName , @PassWord ";
             int result = DbConnection.Instance.ExecuteNonQuery(query,
-                new object[] { userName, passWord });
+                new object[] { userName, hasPassword });
+            return result > 0;
+        }
+
+        public bool UpdateAccount(int userIds, string passwords)
+        {
+            byte[] temp = ASCIIEncoding.ASCII.GetBytes(passwords);
+            byte[] hasData = new MD5CryptoServiceProvider().ComputeHash(temp);
+            string hasPassword = "";
+            foreach (byte item in hasData)
+            {
+                hasPassword += item;
+            }
+            string query = "UPDATE Account SET PassWord ='" + hasPassword + "' WHERE UserId = '" + userIds + "'";
+            int result = DbConnection.Instance.ExecuteNonQuery(query);
             return result > 0;
         }
 

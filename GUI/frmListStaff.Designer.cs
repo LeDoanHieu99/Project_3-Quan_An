@@ -47,6 +47,7 @@
             this.btnAdd = new System.Windows.Forms.Button();
             this.txt_SearchStaff = new Bunifu.Framework.UI.BunifuTextbox();
             this.btnSearchStaff = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.btnResetPass = new Bunifu.Framework.UI.BunifuThinButton2();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvStaff)).BeginInit();
             this.SuspendLayout();
@@ -172,7 +173,6 @@
             this.label3.Size = new System.Drawing.Size(0, 25);
             this.label3.TabIndex = 0;
             // 
-
             // label6
             // 
             this.label6.AutoSize = true;
@@ -235,6 +235,7 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(213)))), ((int)(((byte)(242)))));
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel1.Controls.Add(this.btnResetPass);
             this.panel1.Controls.Add(this.txtStaffRole);
             this.panel1.Controls.Add(this.txtStaffDate);
             this.panel1.Controls.Add(this.txtStaffGender);
@@ -309,9 +310,9 @@
             // 
             this.btnSearchStaff.ActiveBorderThickness = 1;
             this.btnSearchStaff.ActiveCornerRadius = 20;
-            this.btnSearchStaff.ActiveFillColor = System.Drawing.Color.SeaGreen;
+            this.btnSearchStaff.ActiveFillColor = System.Drawing.Color.DeepSkyBlue;
             this.btnSearchStaff.ActiveForecolor = System.Drawing.Color.White;
-            this.btnSearchStaff.ActiveLineColor = System.Drawing.Color.SeaGreen;
+            this.btnSearchStaff.ActiveLineColor = System.Drawing.Color.DeepSkyBlue;
             this.btnSearchStaff.BackColor = System.Drawing.Color.White;
             this.btnSearchStaff.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnSearchStaff.BackgroundImage")));
             this.btnSearchStaff.ButtonText = "Search";
@@ -330,6 +331,32 @@
             this.btnSearchStaff.TabIndex = 22;
             this.btnSearchStaff.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnSearchStaff.Click += new System.EventHandler(this.btnSearchStaff_Click);
+            // 
+            // btnResetPass
+            // 
+            this.btnResetPass.ActiveBorderThickness = 1;
+            this.btnResetPass.ActiveCornerRadius = 20;
+            this.btnResetPass.ActiveFillColor = System.Drawing.Color.DeepSkyBlue;
+            this.btnResetPass.ActiveForecolor = System.Drawing.Color.White;
+            this.btnResetPass.ActiveLineColor = System.Drawing.Color.DeepSkyBlue;
+            this.btnResetPass.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(213)))), ((int)(((byte)(242)))));
+            this.btnResetPass.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnResetPass.BackgroundImage")));
+            this.btnResetPass.ButtonText = "Reset Password";
+            this.btnResetPass.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnResetPass.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnResetPass.ForeColor = System.Drawing.Color.DeepSkyBlue;
+            this.btnResetPass.IdleBorderThickness = 1;
+            this.btnResetPass.IdleCornerRadius = 20;
+            this.btnResetPass.IdleFillColor = System.Drawing.Color.DeepSkyBlue;
+            this.btnResetPass.IdleForecolor = System.Drawing.Color.White;
+            this.btnResetPass.IdleLineColor = System.Drawing.Color.White;
+            this.btnResetPass.Location = new System.Drawing.Point(640, 144);
+            this.btnResetPass.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnResetPass.Name = "btnResetPass";
+            this.btnResetPass.Size = new System.Drawing.Size(158, 57);
+            this.btnResetPass.TabIndex = 22;
+            this.btnResetPass.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnResetPass.Click += new System.EventHandler(this.btnResetPass_Click);
             // 
             // frmListStaff
             // 
@@ -373,5 +400,6 @@
         private System.Windows.Forms.Button btnAdd;
         private Bunifu.Framework.UI.BunifuTextbox txt_SearchStaff;
         private Bunifu.Framework.UI.BunifuThinButton2 btnSearchStaff;
+        private Bunifu.Framework.UI.BunifuThinButton2 btnResetPass;
     }
 }
