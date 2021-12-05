@@ -16,7 +16,7 @@ namespace DATA
 
         public Menu(DataRow row)
         {
-            foodName = (string)row["Food Name"];
+            foodName = (string)row["FoodName"];
             quantity = (int)row["Quantity"];
             price = (int)row["Price"];
             totalMoney = (int)row["Total Money"];
