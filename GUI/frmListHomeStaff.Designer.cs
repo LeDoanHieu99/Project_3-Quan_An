@@ -53,15 +53,15 @@
             this.label2 = new System.Windows.Forms.Label();
             this.lblRevenueToday = new System.Windows.Forms.Label();
             this.panel10 = new System.Windows.Forms.Panel();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.btnImgBill = new Bunifu.Framework.UI.BunifuTileButton();
             this.btnImgTable = new Bunifu.Framework.UI.BunifuTileButton();
             this.btnImgFood = new Bunifu.Framework.UI.BunifuTileButton();
             this.btnImgRevenue = new Bunifu.Framework.UI.BunifuTileButton();
             this.labelTime = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
             this.panListHomeStaff.SuspendLayout();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
@@ -337,6 +337,46 @@
             this.panel10.Size = new System.Drawing.Size(780, 326);
             this.panel10.TabIndex = 70;
             // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Location = new System.Drawing.Point(162, 109);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(60, 23);
+            this.label11.TabIndex = 60;
+            this.label11.Text = "Food";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(467, 112);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(64, 23);
+            this.label6.TabIndex = 60;
+            this.label6.Text = "Table";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(153, 291);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(98, 23);
+            this.label10.TabIndex = 60;
+            this.label10.Text = "Revenue";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(480, 291);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(34, 23);
+            this.label1.TabIndex = 60;
+            this.label1.Text = "Bill";
+            // 
             // btnImgBill
             // 
             this.btnImgBill.BackColor = System.Drawing.Color.White;
@@ -366,8 +406,8 @@
             this.btnImgTable.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnImgTable.ForeColor = System.Drawing.Color.Black;
             this.btnImgTable.Image = ((System.Drawing.Image)(resources.GetObject("btnImgTable.Image")));
-            this.btnImgTable.ImagePosition = -18;
-            this.btnImgTable.ImageZoom = 50;
+            this.btnImgTable.ImagePosition = -20;
+            this.btnImgTable.ImageZoom = 60;
             this.btnImgTable.LabelPosition = 40;
             this.btnImgTable.LabelText = "";
             this.btnImgTable.Location = new System.Drawing.Point(375, 15);
@@ -426,46 +466,6 @@
             this.labelTime.Size = new System.Drawing.Size(46, 18);
             this.labelTime.TabIndex = 62;
             this.labelTime.Text = "label7";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(480, 291);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(34, 23);
-            this.label1.TabIndex = 60;
-            this.label1.Text = "Bill";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(467, 109);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(64, 23);
-            this.label6.TabIndex = 60;
-            this.label6.Text = "Table";
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(153, 291);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(98, 23);
-            this.label10.TabIndex = 60;
-            this.label10.Text = "Revenue";
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(162, 109);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(60, 23);
-            this.label11.TabIndex = 60;
-            this.label11.Text = "Food";
             // 
             // frmListHomeStaff
             // 

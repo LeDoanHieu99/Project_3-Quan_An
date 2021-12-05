@@ -81,7 +81,7 @@ namespace GUI
             else
             {
                 e.Cancel = false;
-                errorProvider1.SetError(txtUserName, null);
+               // errorProvider1.SetError(txtUserName, null);
             }
         }
 
@@ -96,7 +96,7 @@ namespace GUI
             else
             {
                 e.Cancel = false;
-                errorProvider1.SetError(txtRePassword, null);
+               // errorProvider1.SetError(txtRePassword, null);
             }
         }
     }

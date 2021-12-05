@@ -30,9 +30,9 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmAddCategorie));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.txtTypeName = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.btnCancel = new Bunifu.Framework.UI.BunifuThinButton2();
             this.btnAddCategorie = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.txtTypeName = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -47,6 +47,25 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(306, 145);
             this.panel1.TabIndex = 0;
+            // 
+            // txtTypeName
+            // 
+            this.txtTypeName.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtTypeName.Font = new System.Drawing.Font("Century Gothic", 12F);
+            this.txtTypeName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtTypeName.HintForeColor = System.Drawing.Color.Empty;
+            this.txtTypeName.HintText = "TypeName";
+            this.txtTypeName.isPassword = false;
+            this.txtTypeName.LineFocusedColor = System.Drawing.Color.DeepSkyBlue;
+            this.txtTypeName.LineIdleColor = System.Drawing.Color.DeepSkyBlue;
+            this.txtTypeName.LineMouseHoverColor = System.Drawing.Color.DeepSkyBlue;
+            this.txtTypeName.LineThickness = 3;
+            this.txtTypeName.Location = new System.Drawing.Point(32, 12);
+            this.txtTypeName.Margin = new System.Windows.Forms.Padding(4);
+            this.txtTypeName.Name = "txtTypeName";
+            this.txtTypeName.Size = new System.Drawing.Size(240, 46);
+            this.txtTypeName.TabIndex = 34;
+            this.txtTypeName.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // btnCancel
             // 
@@ -64,8 +83,8 @@
             this.btnCancel.IdleBorderThickness = 1;
             this.btnCancel.IdleCornerRadius = 20;
             this.btnCancel.IdleFillColor = System.Drawing.Color.White;
-            this.btnCancel.IdleForecolor = System.Drawing.Color.Green;
-            this.btnCancel.IdleLineColor = System.Drawing.Color.Green;
+            this.btnCancel.IdleForecolor = System.Drawing.Color.DeepSkyBlue;
+            this.btnCancel.IdleLineColor = System.Drawing.Color.DeepSkyBlue;
             this.btnCancel.Location = new System.Drawing.Point(165, 78);
             this.btnCancel.Margin = new System.Windows.Forms.Padding(5);
             this.btnCancel.Name = "btnCancel";
@@ -99,25 +118,6 @@
             this.btnAddCategorie.TabIndex = 35;
             this.btnAddCategorie.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnAddCategorie.Click += new System.EventHandler(this.btnAddCategorie_Click);
-            // 
-            // txtTypeName
-            // 
-            this.txtTypeName.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtTypeName.Font = new System.Drawing.Font("Century Gothic", 12F);
-            this.txtTypeName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txtTypeName.HintForeColor = System.Drawing.Color.Empty;
-            this.txtTypeName.HintText = "TypeName";
-            this.txtTypeName.isPassword = false;
-            this.txtTypeName.LineFocusedColor = System.Drawing.Color.DeepSkyBlue;
-            this.txtTypeName.LineIdleColor = System.Drawing.Color.DeepSkyBlue;
-            this.txtTypeName.LineMouseHoverColor = System.Drawing.Color.DeepSkyBlue;
-            this.txtTypeName.LineThickness = 3;
-            this.txtTypeName.Location = new System.Drawing.Point(32, 12);
-            this.txtTypeName.Margin = new System.Windows.Forms.Padding(4);
-            this.txtTypeName.Name = "txtTypeName";
-            this.txtTypeName.Size = new System.Drawing.Size(240, 46);
-            this.txtTypeName.TabIndex = 34;
-            this.txtTypeName.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // frmAddCategorie
             // 

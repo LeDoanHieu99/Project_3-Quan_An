@@ -180,5 +180,27 @@ namespace GUI
             }
             txt_SearchStaff.Text = "";
         }
+
+        private void btnResetPass_Click(object sender, EventArgs e)
+        {
+            if (txtUserId.Text == "" || txtNameStaff.Text == "")
+            {
+                MessageBox.Show("Please enter full information !!");
+            }
+            else
+            {
+                try
+                {
+                    int userid = Convert.ToInt32(txtUserId.Text);
+                    frmUpdatePassword password = new frmUpdatePassword();
+                    password.ShowDialog();
+                    LoadStaff();
+                }
+                catch (FormatException ex)
+                {
+                    MessageBox.Show("The information is incorrect, please check again !!");
+                }
+            }
+        }
     }
 }

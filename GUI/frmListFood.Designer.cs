@@ -312,9 +312,9 @@
             // 
             this.btnSearchFood.ActiveBorderThickness = 1;
             this.btnSearchFood.ActiveCornerRadius = 20;
-            this.btnSearchFood.ActiveFillColor = System.Drawing.Color.SeaGreen;
+            this.btnSearchFood.ActiveFillColor = System.Drawing.Color.DeepSkyBlue;
             this.btnSearchFood.ActiveForecolor = System.Drawing.Color.White;
-            this.btnSearchFood.ActiveLineColor = System.Drawing.Color.SeaGreen;
+            this.btnSearchFood.ActiveLineColor = System.Drawing.Color.DeepSkyBlue;
             this.btnSearchFood.BackColor = System.Drawing.Color.White;
             this.btnSearchFood.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnSearchFood.BackgroundImage")));
             this.btnSearchFood.ButtonText = "Search";
