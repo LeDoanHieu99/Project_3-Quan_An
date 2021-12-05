@@ -16,7 +16,7 @@ namespace GUI
     public partial class frmOrder : Form
     {
 
-        int tableId = 1;
+        int tableId = 0;
         public frmOrder()
         {
             InitializeComponent();

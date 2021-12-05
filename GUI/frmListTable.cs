@@ -107,7 +107,6 @@ namespace GUI
                     dtgvFoodbyId.Rows[i].DefaultCellStyle.SelectionBackColor = Color.White;
                 }
             }
-
             int totalMoney = 0;
             foreach (var i in menus)
             {
