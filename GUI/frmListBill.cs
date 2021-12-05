@@ -8,6 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using BLL;
+using DATA;
+using Menu = DATA.Menu;
 
 namespace GUI
 {
@@ -19,21 +21,22 @@ namespace GUI
             LoadBill();
         }
 
-        //int TongTien(int MABAN)
-        //{
+        int TongTien(int MABAN)
+        {
 
-        //    List<Menu> menus = MenuBLL.Instance.GetListMenusById(MABAN);
-
-
-        //    int tongtien = 0;
-        //    foreach (var i in menus)
-        //    {
-        //        tongtien += i.Thanhtien;
-        //    }
-        //    return tongtien;  //bi loi
+            List<Menu> menus =  MenuBLL.Instance.GetListMenusById(MABAN) ;
 
 
-        //}
+            int tongtien = 0;
+            foreach (var i in menus)
+            {
+                tongtien += i.TotalMoney;
+            }
+            return tongtien;  //bi loi
+
+
+        }
+
         public void LoadBill()
         {
             string date = datetimeGetDay.Value.ToShortDateString();

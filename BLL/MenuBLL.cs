@@ -22,13 +22,9 @@ namespace BLL
         }
         public List<Menu> GetListMenusById(int tableId)
         {
-            string query = "select ta.FoodName as 'Food Name',ct.Quantity as 'Quantity'," +
-                "ta.Price as 'Price',ct.Quantity*ta.Price as 'Total Money'" +
-                " from Food as ta,BillDetails as ct,Bill as hd " +
-                "where ta.FoodId=ct.FoodId and ct.BillId=hd.BillId" +
-                " and hd.TableId=" + tableId + " and hd.Status= 'Unpaid'";
+            string query = "USP_GetListMenuByIdTable @tableId";
             List<Menu> menus = new List<Menu>();
-            DataTable data = DbConnection.Instance.ExecuteQuery(query);
+            DataTable data = DbConnection.Instance.ExecuteQuery(query, new object[] { tableId });
             foreach (DataRow dataRow in data.Rows)
             {
                 Menu menu = new Menu(dataRow);
@@ -41,7 +37,7 @@ namespace BLL
         public DataTable LoadBillByIdTable(int tableId)
         {
             DataTable data = new DataTable();
-            string query = "select ta.FoodName as 'Food Name',sum(ct.Quantity) as as 'Quantity'," +
+            string query = "select ta.FoodName as 'Food Name',sum(ct.Quantity) as'Quantity'," +
                 "sum(ta.Price) as 'Price',sum(ct.Quantity*ta.Price) as 'Total Money'" +
                 " from Food as ta,BillDetails as ct,Bill as hd " +
                 "where ta.FoodId=ct.FoodId and ct.BillId=hd.BillId" +
@@ -53,3 +49,14 @@ namespace BLL
 
     }
 }
+
+
+/*
+ select ta.FoodName as 'Food Name',ct.Quantity as 'Quantity'," +
+                "ta.Price as 'Price',ct.Quantity*ta.Price as 'Total Money'" +
+                " from Food as ta,BillDetails as ct,Bill as hd " +
+                "where ta.FoodId=ct.FoodId and ct.BillId=hd.BillId" +
+                " and hd.TableId=" + tableId + " and hd.Status= 'Unpaid'
+     
+     */
+

@@ -12,7 +12,7 @@ namespace GUI
 {
     public partial class frmBill : Form
     {
-        public frmBill()
+        public frmBill(int tableId)
         {
             InitializeComponent();
         }

@@ -8,7 +8,6 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
-
 using DATA;
 using BLL;
 using Menu = DATA.Menu;
@@ -31,6 +30,7 @@ namespace GUI
             {
                 TableBLL.Instance.AddTable();
                 LoadTable();
+                LoadComboboxTableName();
             }
         }
 
@@ -43,7 +43,7 @@ namespace GUI
                 Button btn = new Button() { Width = 100, Height = 100 };
                 btn.Text = table.TableName + "\n" + table.Status;
                 btn.Tag = table;
-
+                
                 btn.Click += btn_Click;
                 btn.Leave += btn_Leave;
                 this.flowLayoutPanel1.Controls.Add(btn);
@@ -153,13 +153,13 @@ namespace GUI
                 if (billId != -1)
                 {
 
-                    //this.Hide();
-                    //frmBill f = new frmBill(table.TableId);
-                    //f.ShowDialog();
+                    this.Hide();
+                    frmBill f = new frmBill(table.TableId);
+                    f.ShowDialog();
 
-                    //LoadTable();
-                    //LoadBill(table.TableId);
-                    //this.Show();
+                    LoadTable();
+                    LoadBill(table.TableId);
+                    this.Show();
                 }
             }
         }

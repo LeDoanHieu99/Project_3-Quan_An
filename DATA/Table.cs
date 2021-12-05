@@ -9,27 +9,27 @@ namespace DATA
 {
     public class Table
     {
-        private int tableId;
-        private string tableName;
-        private string status;
+        private int tableIds;
+        private string tableNames;
+        private string statuss;
         public Table(DataRow data)
         {
-            this.TableId = (int)data["TableId"];
-            this.Status = (string)data["Status"];
-            this.TableName = (string)data["TableName"];
+            this.tableIds = (int)data["TableId"];
+            this.statuss = (string)data["Status"];
+            this.tableNames = (string)data["TableName"];
 
         }
         public Table(int tableId, string status)
         {
-            this.tableId = tableId;
+            this.tableIds = tableId;
 
-            this.status = status;
+            this.statuss = status;
         }
 
 
-        public int TableId { get => tableId; set => tableId = value; }
-        public string TableName { get => tableName; set => tableName = value; }
-        public string Status { get => status; set => status = value; }
+        public int TableId { get => tableIds; set => tableIds = value; }
+        public string TableName { get => tableNames; set => tableNames = value; }
+        public string Status { get => statuss; set => statuss = value; }
         public static bool IsValidateSwitchTable(Table tablemoving, Table tablemovedto)
         {
             string[] liststatus = new String[] { "Empty", "Already someone" };
@@ -37,24 +37,24 @@ namespace DATA
             {
                 return false;
             }
-            if (tablemoving.tableId <= 0 | tablemovedto.tableId <= 0)
+            if (tablemoving.tableIds <= 0 | tablemovedto.tableIds <= 0)
             {
                 return false;
             }
-            if (Array.IndexOf(liststatus, tablemoving.status) == -1)
+            if (Array.IndexOf(liststatus, tablemoving.statuss) == -1)
             {
                 return false;
             }
-            if (Array.IndexOf(liststatus, tablemovedto.status) == -1)
+            if (Array.IndexOf(liststatus, tablemovedto.statuss) == -1)
             {
                 return false;
             }
 
-            if (tablemoving.status == "Empty")
+            if (tablemoving.statuss == "Empty")
             {
                 return false;
             }
-            if (tablemoving.tableId == tablemovedto.tableId)
+            if (tablemoving.tableIds == tablemovedto.tableIds)
             {
 
                 return false;
@@ -73,24 +73,24 @@ namespace DATA
             {
                 return false;
             }
-            if (tablemoving.tableId <= 0 | tablemovedto.tableId <= 0)
+            if (tablemoving.tableIds <= 0 | tablemovedto.tableIds <= 0)
             {
                 return false;
             }
-            if (Array.IndexOf(liststatus, tablemoving.status) == -1)
+            if (Array.IndexOf(liststatus, tablemoving.statuss) == -1)
             {
                 return false;
             }
-            if (Array.IndexOf(liststatus, tablemovedto.status) == -1)
+            if (Array.IndexOf(liststatus, tablemovedto.statuss) == -1)
             {
                 return false;
             }
 
-            if (tablemoving.status == "Empty")
+            if (tablemoving.statuss == "Empty")
             {
                 return false;
             }
-            if (tablemoving.tableId == tablemovedto.tableId)
+            if (tablemoving.tableIds == tablemovedto.tableIds)
             {
 
                 return false;
