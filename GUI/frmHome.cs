@@ -147,5 +147,17 @@ namespace GUI
             this.panMainData.Controls.Add(home);
             home.BringToFront();
         }
+
+        private void logoutButton_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            new frmLogin().ShowDialog();
+            this.Close();
+        }
+
+        private void quitButton_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

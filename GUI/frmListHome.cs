@@ -51,9 +51,5 @@ namespace GUI
             this.panListHome.Controls.Add(staffs);
             staffs.BringToFront();
         }
-
-
-        
-
     }
 }

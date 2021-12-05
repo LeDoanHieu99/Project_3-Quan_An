@@ -58,7 +58,7 @@ namespace GUI
             }
         }
 
-        private void btn_Click(object sender, EventArgs e) //xem lai cho nay 
+        private void btn_Click(object sender, EventArgs e) 
         {
 
             int TableId = ((Table)(sender as Button).Tag).TableId;

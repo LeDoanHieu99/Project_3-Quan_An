@@ -68,7 +68,7 @@ namespace GUI
         {
             if (txtUserId.Text == "" || txtNameStaff.Text == "" || txtStaffGender.Text == "" || txtStaffDate.Text == "" || txtStaffRole.Text == "")
             {
-                MessageBox.Show("Vui lòng nhập đầy đủ thông tin");
+                MessageBox.Show("Please enter full information !!");
             }
             else
             {
@@ -81,18 +81,18 @@ namespace GUI
                     DateTime dates = Convert.ToDateTime(txtStaffDate.Text);
                     if (Staff_BLL.Instance.UpdateStaff(userid, name, position, gender, dates) == true)
                     {
-                        MessageBox.Show("Cập nhật thành công thành công !");
+                        MessageBox.Show("Successfully updated information successfully !!");
                         LoadStaff();
                     }
                     else
                     {
-                        MessageBox.Show("Mã nhân viên không tồn tại");
+                        MessageBox.Show("Employee code does not exist !!");
                     }
 
                 }
                 catch (FormatException ex)
                 {
-                    MessageBox.Show("Một số thông tin không chính xác, vui lòng kiểm tra lại");
+                    MessageBox.Show("The information is incorrect, please check again !!");
                 }
             }
             txtUserId.Focus();
@@ -106,7 +106,7 @@ namespace GUI
         {
             if (txtUserId.Text == "")
             {
-                MessageBox.Show("Mã nhân viên không được trống");
+                MessageBox.Show("Employee ID cannot be empty !!");
 
             }
             else
@@ -114,12 +114,12 @@ namespace GUI
                 int id = Convert.ToInt32(txtUserId.Text);
                 if (Staff_BLL.Instance.DeleteStaff(id) == true)
                 {
-                    MessageBox.Show("xóa thành công !");
+                    MessageBox.Show("Successful delete !!");
                     LoadStaff();
                 }
                 else
                 {
-                    MessageBox.Show("Mã nhân viên không tồn tại");
+                    MessageBox.Show("Employee code does not exist !!");
                 }
 
             }
@@ -171,7 +171,7 @@ namespace GUI
             DataTable data = Staff_BLL.Instance.SearchStaffByName(m);
             if (data.Rows.Count == 0 || txt_SearchStaff.text == "")
             {
-                MessageBox.Show("Không có nhân viên cần tìm kiếm");
+                MessageBox.Show("There are no employees to search !!");
             }
             else
             {

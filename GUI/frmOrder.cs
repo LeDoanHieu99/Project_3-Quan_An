@@ -42,7 +42,7 @@ namespace GUI
             List<FoodData> listFood = FoodBILL.Instance.GetFoodByCategoryID(id);
             if (listFood.Count == 0)
             {
-                MessageBox.Show("Loại này chưa có món");
+                MessageBox.Show("This type of food has no dishes !!");
                 cboCategory.SelectedIndex = 0;
                 LoadFoodListByCategoryID(1);
             }
@@ -62,7 +62,7 @@ namespace GUI
             int number = (int)numQuantity.Value;
             if (number <= 0)
             {
-                MessageBox.Show("Số lượng món tối thiểu là 1");
+                MessageBox.Show("Minimum order quantity is 1 !!");
                 return;
             }
             //Khi bàn chưa có hoá đơn
@@ -74,7 +74,7 @@ namespace GUI
                 BillBLL.Instance.UpdateDayOrder(billId);
                 if (BillInfoBLL.Instance.InsertBillInfo(billId, foodId, number) == true)
                 {
-                    MessageBox.Show("successfully");
+                    MessageBox.Show("Successfully !!");
                 }
 
 
@@ -85,7 +85,7 @@ namespace GUI
                 if (BillInfoBLL.Instance.InsertBillInfo(billId, foodId, number) == true)
                 {
 
-                    MessageBox.Show("successfully");
+                    MessageBox.Show("Successfully !!");
                 }
             }
         }

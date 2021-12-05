@@ -52,9 +52,9 @@
             // 
             this.btnCancel.ActiveBorderThickness = 1;
             this.btnCancel.ActiveCornerRadius = 20;
-            this.btnCancel.ActiveFillColor = System.Drawing.Color.SeaGreen;
+            this.btnCancel.ActiveFillColor = System.Drawing.Color.DeepSkyBlue;
             this.btnCancel.ActiveForecolor = System.Drawing.Color.White;
-            this.btnCancel.ActiveLineColor = System.Drawing.Color.SeaGreen;
+            this.btnCancel.ActiveLineColor = System.Drawing.Color.DeepSkyBlue;
             this.btnCancel.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnCancel.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnCancel.BackgroundImage")));
             this.btnCancel.ButtonText = "Cancel";
@@ -86,12 +86,12 @@
             this.btnAddCategorie.ButtonText = "Add";
             this.btnAddCategorie.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnAddCategorie.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAddCategorie.ForeColor = System.Drawing.Color.Green;
+            this.btnAddCategorie.ForeColor = System.Drawing.Color.DeepSkyBlue;
             this.btnAddCategorie.IdleBorderThickness = 1;
             this.btnAddCategorie.IdleCornerRadius = 20;
             this.btnAddCategorie.IdleFillColor = System.Drawing.Color.White;
-            this.btnAddCategorie.IdleForecolor = System.Drawing.Color.Green;
-            this.btnAddCategorie.IdleLineColor = System.Drawing.Color.Green;
+            this.btnAddCategorie.IdleForecolor = System.Drawing.Color.DeepSkyBlue;
+            this.btnAddCategorie.IdleLineColor = System.Drawing.Color.DeepSkyBlue;
             this.btnAddCategorie.Location = new System.Drawing.Point(42, 78);
             this.btnAddCategorie.Margin = new System.Windows.Forms.Padding(5);
             this.btnAddCategorie.Name = "btnAddCategorie";
@@ -109,7 +109,7 @@
             this.txtTypeName.HintText = "TypeName";
             this.txtTypeName.isPassword = false;
             this.txtTypeName.LineFocusedColor = System.Drawing.Color.DeepSkyBlue;
-            this.txtTypeName.LineIdleColor = System.Drawing.Color.Green;
+            this.txtTypeName.LineIdleColor = System.Drawing.Color.DeepSkyBlue;
             this.txtTypeName.LineMouseHoverColor = System.Drawing.Color.DeepSkyBlue;
             this.txtTypeName.LineThickness = 3;
             this.txtTypeName.Location = new System.Drawing.Point(32, 12);

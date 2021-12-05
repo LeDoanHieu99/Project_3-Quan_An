@@ -81,7 +81,7 @@ namespace GUI
         {
             if (txtFoodId.Text == "" || txtFoodName.Text == "" || txtPrice.Text == "" || txtFoodTypeID.Text == "")
             {
-                MessageBox.Show("Vui lòng nhập đầy đủ thông tin");
+                MessageBox.Show("Please enter full information !!");
             }
             else
             {
@@ -93,21 +93,21 @@ namespace GUI
                     int categoryId = Convert.ToInt32(txtFoodId.Text);
                     if (FoodBILL.Instance.UpdateFood(foodId, foodName, price, categoryId) == true)
                     {
-                        MessageBox.Show("Cập nhật món ăn thành công");
+                        MessageBox.Show("Update successful !!");
                         dtgvFood.DataSource = FoodBILL.Instance.LoadFood();
                     }
                     else
                     {
-                        MessageBox.Show("Mã món ăn không tồn tại");
+                        MessageBox.Show("The dish code does not exist !!");
                     }
                 }
                 catch (FormatException ex)
                 {
-                    MessageBox.Show("Một số thông tin không hợp lệ");
+                    MessageBox.Show("Invalid information !!");
                 }
                 catch (SqlException ex)
                 {
-                    MessageBox.Show("Mã món ăn không được trùng");
+                    MessageBox.Show("The dish code cannot match !!");
                 }
             }
             this.dtgvFood.DataSource = FoodBILL.Instance.LoadFood();
@@ -118,7 +118,7 @@ namespace GUI
         {
             if (txtFoodId.Text == "")
             {
-                MessageBox.Show("Không được để trống thông tin");
+                MessageBox.Show("Information cannot be left blank !!");
             }
             else
             {
@@ -127,7 +127,7 @@ namespace GUI
                     int foodId = Convert.ToInt32(txtFoodId.Text);
                     if (FoodBILL.Instance.DeleteFood(foodId) == true)
                     {
-                        MessageBox.Show("Xoá món ăn thành công");
+                        MessageBox.Show("Delete the dish successfully !!");
                         this.dtgvFood.DataSource = FoodBILL.Instance.LoadFood();
                         Display(dtgvFood);
                         //Khi xóa xong các textbox trở thành rỗng
@@ -141,7 +141,7 @@ namespace GUI
                 }
                 catch (SqlException ex)
                 {
-                    MessageBox.Show("Không thể xoá món ăn này do mã món ăn đang tồn tại chi tiết hoá đơn");
+                    MessageBox.Show("Can't delete this dish because the item code is existing invoice details !!");
                 }
 
             }
@@ -169,7 +169,7 @@ namespace GUI
             DataTable data = FoodBILL.Instance.SearchFoodByName(m);
             if (data.Rows.Count == 0 || txt_SearchFood.text == "")
             {
-                MessageBox.Show("Không có món ăn cần tìm kiếm");
+                MessageBox.Show("No dishes to look for !!");
             }
             else
             {

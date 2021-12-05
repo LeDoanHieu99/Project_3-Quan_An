@@ -79,12 +79,12 @@
             // btnPay
             // 
             this.btnPay.AutoSize = true;
-            this.btnPay.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btnPay.BackColor = System.Drawing.Color.Bisque;
             this.btnPay.color = System.Drawing.SystemColors.ActiveCaption;
             this.btnPay.colorActive = System.Drawing.SystemColors.ActiveCaption;
             this.btnPay.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnPay.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPay.ForeColor = System.Drawing.Color.White;
+            this.btnPay.ForeColor = System.Drawing.Color.Black;
             this.btnPay.Image = global::GUI.Properties.Resources.CheckOutIcon;
             this.btnPay.ImagePosition = 0;
             this.btnPay.ImageZoom = 45;
@@ -93,8 +93,9 @@
             this.btnPay.Location = new System.Drawing.Point(514, 556);
             this.btnPay.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnPay.Name = "btnPay";
-            this.btnPay.Size = new System.Drawing.Size(132, 90);
+            this.btnPay.Size = new System.Drawing.Size(136, 90);
             this.btnPay.TabIndex = 43;
+            this.btnPay.Click += new System.EventHandler(this.btnPay_Click);
             // 
             // panel24
             // 
@@ -186,9 +187,9 @@
             this.label8.Location = new System.Drawing.Point(302, 127);
             this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(46, 24);
+            this.label8.Size = new System.Drawing.Size(140, 24);
             this.label8.TabIndex = 30;
-            this.label8.Text = "Pay:";
+            this.label8.Text = "Customers pay:";
             // 
             // txtpaymentcustomers
             // 
@@ -201,6 +202,7 @@
             this.txtpaymentcustomers.Size = new System.Drawing.Size(208, 17);
             this.txtpaymentcustomers.TabIndex = 29;
             this.txtpaymentcustomers.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtpaymentcustomers.TextChanged += new System.EventHandler(this.txtpaymentcustomers_TextChanged);
             // 
             // panel9
             // 
@@ -561,10 +563,11 @@
             this.GrivBill.RowTemplate.Height = 28;
             this.GrivBill.Size = new System.Drawing.Size(652, 491);
             this.GrivBill.TabIndex = 39;
+            this.GrivBill.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.GrivBill_CellMouseClick);
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.panel1.BackColor = System.Drawing.Color.DeepSkyBlue;
             this.panel1.Controls.Add(this.btnClose);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
@@ -577,12 +580,13 @@
             this.btnClose.FlatAppearance.BorderSize = 0;
             this.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnClose.Image = ((System.Drawing.Image)(resources.GetObject("btnClose.Image")));
-            this.btnClose.Location = new System.Drawing.Point(1244, 0);
+            this.btnClose.Location = new System.Drawing.Point(1267, 0);
             this.btnClose.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(21, 23);
             this.btnClose.TabIndex = 8;
             this.btnClose.UseVisualStyleBackColor = true;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
             // frmBill
             // 
@@ -600,6 +604,7 @@
             this.Name = "frmBill";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmBill";
+            this.Load += new System.EventHandler(this.frmBill_Load);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.panel3.ResumeLayout(false);
