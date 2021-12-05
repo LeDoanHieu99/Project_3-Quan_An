@@ -120,11 +120,24 @@ namespace BLL
 
             return data;
         }
+
+         public DataTable CountFood()
+        {
+            string query = "select ta.FoodName as 'Food Name',sum(ct.Quantity) as 'Quantity'" +              
+                " from Food as ta,BillDetails as ct,Bill as hd " +
+                "where ta.FoodId=ct.FoodId and ct.BillId=hd.BillId" +
+                " Group by ta.FoodName";
+
+            DataTable data = DbConnection.Instance.ExecuteQuery(query);
+
+            return data;
+        }
+
         public DataTable SearchBillByIdTable(int tableId)
         {
             DataTable data = new DataTable();
             string query = "Select BillId as 'Bill Id'," +
-                "TableId as 'Table Id',Status as 'Status'," +
+                "TableId as 'Table Id',DatePayment as 'Date'," +
                 "Total as 'Total Money' " +
                 "from Bill where TableId= " + tableId + " and Status='Paid'";
             data = DbConnection.Instance.ExecuteQuery(query);
@@ -146,5 +159,14 @@ namespace BLL
             DbConnection.Instance.ExecuteNonQuery(query);
 
         }
+        public DataTable GetDateByBillId(int billIds)
+        {
+            DataTable data = new DataTable();
+            string query = "select DatePayment from Bill where BillId ='" + billIds + "'";
+            data = DbConnection.Instance.ExecuteQuery(query);
+            return data;
+        }
+
+       
     }
 }

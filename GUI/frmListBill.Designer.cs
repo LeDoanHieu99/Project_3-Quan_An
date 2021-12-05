@@ -28,10 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
             this.txtTotal = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.txtStatus = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.label7 = new System.Windows.Forms.Label();
@@ -50,16 +50,19 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.datetimeGetDay = new Bunifu.Framework.UI.BunifuDatepicker();
-            this.bunifuImageButton1 = new Bunifu.Framework.UI.BunifuImageButton();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
+            this.btnImgSearch = new Bunifu.Framework.UI.BunifuImageButton();
+            this.btnImgCountFood = new Bunifu.Framework.UI.BunifuImageButton();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvBillDetail)).BeginInit();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvBill)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnImgSearch)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnImgCountFood)).BeginInit();
             this.SuspendLayout();
             // 
             // txtTotal
@@ -79,7 +82,7 @@
             this.txtTotal.Name = "txtTotal";
             this.txtTotal.Size = new System.Drawing.Size(340, 31);
             this.txtTotal.TabIndex = 20;
-            this.txtTotal.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txtTotal.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // txtStatus
             // 
@@ -98,7 +101,7 @@
             this.txtStatus.Name = "txtStatus";
             this.txtStatus.Size = new System.Drawing.Size(340, 31);
             this.txtStatus.TabIndex = 21;
-            this.txtStatus.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txtStatus.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label7
             // 
@@ -137,7 +140,7 @@
             this.txtBillId.Name = "txtBillId";
             this.txtBillId.Size = new System.Drawing.Size(340, 31);
             this.txtBillId.TabIndex = 16;
-            this.txtBillId.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txtBillId.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // txtTableId
             // 
@@ -156,7 +159,7 @@
             this.txtTableId.Name = "txtTableId";
             this.txtTableId.Size = new System.Drawing.Size(340, 31);
             this.txtTableId.TabIndex = 17;
-            this.txtTableId.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txtTableId.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // bunifuSeparator2
             // 
@@ -195,26 +198,27 @@
             // 
             this.panel1.Controls.Add(this.dtgvBillDetail);
             this.panel1.Controls.Add(this.label3);
-            this.panel1.Location = new System.Drawing.Point(629, 10);
+            this.panel1.Location = new System.Drawing.Point(614, 10);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(519, 633);
+            this.panel1.Size = new System.Drawing.Size(534, 633);
             this.panel1.TabIndex = 10;
             // 
             // dtgvBillDetail
             // 
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.dtgvBillDetail.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.dtgvBillDetail.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle5;
             this.dtgvBillDetail.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dtgvBillDetail.BackgroundColor = System.Drawing.Color.Silver;
+            this.dtgvBillDetail.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dtgvBillDetail.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dtgvBillDetail.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dtgvBillDetail.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle6;
             this.dtgvBillDetail.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dtgvBillDetail.DoubleBuffered = true;
             this.dtgvBillDetail.EnableHeadersVisualStyles = false;
@@ -229,7 +233,7 @@
             this.dtgvBillDetail.RowHeadersVisible = false;
             this.dtgvBillDetail.RowHeadersWidth = 62;
             this.dtgvBillDetail.RowTemplate.Height = 24;
-            this.dtgvBillDetail.Size = new System.Drawing.Size(513, 554);
+            this.dtgvBillDetail.Size = new System.Drawing.Size(528, 554);
             this.dtgvBillDetail.TabIndex = 11;
             // 
             // label3
@@ -254,13 +258,13 @@
             this.groupBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupBox1.Size = new System.Drawing.Size(610, 634);
+            this.groupBox1.Size = new System.Drawing.Size(595, 634);
             this.groupBox1.TabIndex = 9;
             // 
             // DtimeGetDay
             // 
             this.DtimeGetDay.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DtimeGetDay.Location = new System.Drawing.Point(317, 46);
+            this.DtimeGetDay.Location = new System.Drawing.Point(297, 46);
             this.DtimeGetDay.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.DtimeGetDay.Name = "DtimeGetDay";
             this.DtimeGetDay.Size = new System.Drawing.Size(288, 24);
@@ -270,19 +274,20 @@
             // dtgvBill
             // 
             this.dtgvBill.AllowUserToAddRows = false;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.dtgvBill.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.dtgvBill.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle7;
             this.dtgvBill.BackgroundColor = System.Drawing.Color.Silver;
+            this.dtgvBill.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dtgvBill.ClipboardCopyMode = System.Windows.Forms.DataGridViewClipboardCopyMode.EnableAlwaysIncludeHeaderText;
             this.dtgvBill.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dtgvBill.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle8.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dtgvBill.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle8;
             this.dtgvBill.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dtgvBill.DoubleBuffered = true;
             this.dtgvBill.EnableHeadersVisualStyles = false;
@@ -294,7 +299,7 @@
             this.dtgvBill.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.dtgvBill.RowHeadersVisible = false;
             this.dtgvBill.RowTemplate.Height = 24;
-            this.dtgvBill.Size = new System.Drawing.Size(598, 554);
+            this.dtgvBill.Size = new System.Drawing.Size(583, 554);
             this.dtgvBill.TabIndex = 10;
             this.dtgvBill.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dtgvBill_CellMouseClick);
             // 
@@ -333,20 +338,6 @@
             this.datetimeGetDay.Value = new System.DateTime(2021, 11, 25, 22, 37, 32, 423);
             this.datetimeGetDay.onValueChanged += new System.EventHandler(this.datetimeGetDay_onValueChanged);
             // 
-            // bunifuImageButton1
-            // 
-            this.bunifuImageButton1.BackColor = System.Drawing.Color.White;
-            this.bunifuImageButton1.Image = global::GUI.Properties.Resources.loupe;
-            this.bunifuImageButton1.ImageActive = null;
-            this.bunifuImageButton1.Location = new System.Drawing.Point(511, 682);
-            this.bunifuImageButton1.Name = "bunifuImageButton1";
-            this.bunifuImageButton1.Size = new System.Drawing.Size(54, 24);
-            this.bunifuImageButton1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.bunifuImageButton1.TabIndex = 15;
-            this.bunifuImageButton1.TabStop = false;
-            this.bunifuImageButton1.Zoom = 10;
-            this.bunifuImageButton1.Click += new System.EventHandler(this.bunifuImageButton1_Click);
-            // 
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.DeepSkyBlue;
@@ -383,11 +374,52 @@
             this.panel5.Size = new System.Drawing.Size(340, 2);
             this.panel5.TabIndex = 91;
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(677, 657);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 92;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // btnImgSearch
+            // 
+            this.btnImgSearch.BackColor = System.Drawing.Color.White;
+            this.btnImgSearch.Image = global::GUI.Properties.Resources.loupe;
+            this.btnImgSearch.ImageActive = null;
+            this.btnImgSearch.Location = new System.Drawing.Point(511, 682);
+            this.btnImgSearch.Name = "btnImgSearch";
+            this.btnImgSearch.Size = new System.Drawing.Size(54, 24);
+            this.btnImgSearch.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnImgSearch.TabIndex = 93;
+            this.btnImgSearch.TabStop = false;
+            this.btnImgSearch.Zoom = 10;
+            this.btnImgSearch.Click += new System.EventHandler(this.btnImgSearch_Click);
+            // 
+            // btnImgCountFood
+            // 
+            this.btnImgCountFood.BackColor = System.Drawing.Color.White;
+            this.btnImgCountFood.Image = global::GUI.Properties.Resources.png_clipart_computer_icons_salad_food_food_icon_food_heart_thumbnail;
+            this.btnImgCountFood.ImageActive = null;
+            this.btnImgCountFood.Location = new System.Drawing.Point(511, 742);
+            this.btnImgCountFood.Name = "btnImgCountFood";
+            this.btnImgCountFood.Size = new System.Drawing.Size(54, 24);
+            this.btnImgCountFood.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnImgCountFood.TabIndex = 94;
+            this.btnImgCountFood.TabStop = false;
+            this.btnImgCountFood.Zoom = 10;
+            this.btnImgCountFood.Click += new System.EventHandler(this.btnImgCountFood_Click);
+            // 
             // frmListBill
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
+            this.Controls.Add(this.btnImgCountFood);
+            this.Controls.Add(this.btnImgSearch);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.panel5);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel2);
@@ -398,7 +430,6 @@
             this.Controls.Add(this.label6);
             this.Controls.Add(this.txtBillId);
             this.Controls.Add(this.txtTableId);
-            this.Controls.Add(this.bunifuImageButton1);
             this.Controls.Add(this.bunifuSeparator2);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
@@ -413,7 +444,8 @@
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvBill)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnImgSearch)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnImgCountFood)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -427,7 +459,6 @@
         private System.Windows.Forms.Label label6;
         private Bunifu.Framework.UI.BunifuMaterialTextbox txtBillId;
         private Bunifu.Framework.UI.BunifuMaterialTextbox txtTableId;
-        private Bunifu.Framework.UI.BunifuImageButton bunifuImageButton1;
         private Bunifu.Framework.UI.BunifuSeparator bunifuSeparator2;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
@@ -444,5 +475,8 @@
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.DateTimePicker DtimeGetDay;
+        private System.Windows.Forms.Button button1;
+        private Bunifu.Framework.UI.BunifuImageButton btnImgSearch;
+        private Bunifu.Framework.UI.BunifuImageButton btnImgCountFood;
     }
 }

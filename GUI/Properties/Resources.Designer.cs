@@ -473,6 +473,16 @@ namespace GUI.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap png_clipart_computer_icons_salad_food_food_icon_food_heart_thumbnail {
+            get {
+                object obj = ResourceManager.GetObject("png-clipart-computer-icons-salad-food-food-icon-food-heart-thumbnail", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap pngtree_organic_food_logo_fork_and_tree_symbol_healthy_icon_png_image_313491_removebg_preview__2_ {
             get {
                 object obj = ResourceManager.GetObject("pngtree-organic-food-logo-fork-and-tree-symbol-healthy-icon-png-image_313491-remo" +
