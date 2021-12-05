@@ -49,7 +49,7 @@
             this.cboGender.FormattingEnabled = true;
             this.cboGender.Location = new System.Drawing.Point(255, 404);
             this.cboGender.Name = "cboGender";
-            this.cboGender.Size = new System.Drawing.Size(102, 24);
+            this.cboGender.Size = new System.Drawing.Size(150, 24);
             this.cboGender.TabIndex = 78;
             // 
             // txtPosition
@@ -193,8 +193,8 @@
             this.btnAddStaff.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnAddStaff.BackgroundImage")));
             this.btnAddStaff.ButtonText = "Add";
             this.btnAddStaff.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnAddStaff.Font = new System.Drawing.Font("Century Gothic", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAddStaff.ForeColor = System.Drawing.Color.SeaGreen;
+            this.btnAddStaff.Font = new System.Drawing.Font("Century Gothic", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddStaff.ForeColor = System.Drawing.Color.DeepSkyBlue;
             this.btnAddStaff.IdleBorderThickness = 1;
             this.btnAddStaff.IdleCornerRadius = 20;
             this.btnAddStaff.IdleFillColor = System.Drawing.Color.White;

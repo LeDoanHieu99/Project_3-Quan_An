@@ -79,5 +79,17 @@ namespace GUI
             this.Close();
             new frmLogin().Show();
         }
+
+        private void logoutButton_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            new frmLogin().ShowDialog();
+            this.Close();
+        }
+
+        private void quitButton_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

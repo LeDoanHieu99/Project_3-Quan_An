@@ -28,7 +28,7 @@ namespace GUI
         {
             if (txtTypeName.Text == "")
             {
-                MessageBox.Show("Vui lòng nhập thông tin");
+                MessageBox.Show("Please enter information !!");
                 return;
             }
             try

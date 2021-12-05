@@ -37,9 +37,9 @@
             this.label1 = new System.Windows.Forms.Label();
             this.bunifuCustomLabel1 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnClose = new System.Windows.Forms.Button();
             this.btnAddCategorie = new Bunifu.Framework.UI.BunifuThinButton2();
             this.btnAddFood = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.btnClose = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -140,13 +140,27 @@
             this.panel1.Size = new System.Drawing.Size(516, 25);
             this.panel1.TabIndex = 17;
             // 
+            // btnClose
+            // 
+            this.btnClose.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnClose.FlatAppearance.BorderSize = 0;
+            this.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnClose.Image = ((System.Drawing.Image)(resources.GetObject("btnClose.Image")));
+            this.btnClose.Location = new System.Drawing.Point(494, 1);
+            this.btnClose.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnClose.Name = "btnClose";
+            this.btnClose.Size = new System.Drawing.Size(21, 23);
+            this.btnClose.TabIndex = 8;
+            this.btnClose.UseVisualStyleBackColor = false;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
+            // 
             // btnAddCategorie
             // 
             this.btnAddCategorie.ActiveBorderThickness = 1;
             this.btnAddCategorie.ActiveCornerRadius = 20;
-            this.btnAddCategorie.ActiveFillColor = System.Drawing.Color.SeaGreen;
+            this.btnAddCategorie.ActiveFillColor = System.Drawing.Color.DeepSkyBlue;
             this.btnAddCategorie.ActiveForecolor = System.Drawing.Color.White;
-            this.btnAddCategorie.ActiveLineColor = System.Drawing.Color.SeaGreen;
+            this.btnAddCategorie.ActiveLineColor = System.Drawing.Color.DeepSkyBlue;
             this.btnAddCategorie.BackColor = System.Drawing.Color.White;
             this.btnAddCategorie.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnAddCategorie.BackgroundImage")));
             this.btnAddCategorie.ButtonText = "New";
@@ -177,8 +191,8 @@
             this.btnAddFood.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnAddFood.BackgroundImage")));
             this.btnAddFood.ButtonText = "Add";
             this.btnAddFood.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnAddFood.Font = new System.Drawing.Font("Century Gothic", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAddFood.ForeColor = System.Drawing.Color.SeaGreen;
+            this.btnAddFood.Font = new System.Drawing.Font("Century Gothic", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddFood.ForeColor = System.Drawing.Color.DeepSkyBlue;
             this.btnAddFood.IdleBorderThickness = 1;
             this.btnAddFood.IdleCornerRadius = 20;
             this.btnAddFood.IdleFillColor = System.Drawing.Color.White;
@@ -191,20 +205,6 @@
             this.btnAddFood.TabIndex = 27;
             this.btnAddFood.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnAddFood.Click += new System.EventHandler(this.btnAddFood_Click);
-            // 
-            // btnClose
-            // 
-            this.btnClose.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnClose.FlatAppearance.BorderSize = 0;
-            this.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnClose.Image = ((System.Drawing.Image)(resources.GetObject("btnClose.Image")));
-            this.btnClose.Location = new System.Drawing.Point(494, 1);
-            this.btnClose.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(21, 23);
-            this.btnClose.TabIndex = 8;
-            this.btnClose.UseVisualStyleBackColor = false;
-            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
             // frmAddFood
             // 

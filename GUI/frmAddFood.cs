@@ -32,7 +32,7 @@ namespace GUI
         {
             if (txtFoodName.Text == "" || txtFoodPrice.Text == "" || cboCategory.SelectedItem == null)
             {
-                MessageBox.Show("Vui lòng nhập đầy đủ thông tin");
+                MessageBox.Show("Please enter full information !!");
                 return;
             }
             try
@@ -47,7 +47,7 @@ namespace GUI
 
                 if (FoodBILL.Instance.InsertFood(name, price, categoryId) == true)
                 {
-                    MessageBox.Show("Thêm món ăn thành công");                   
+                    MessageBox.Show("Add successful dishes !!");                   
                     txtFoodName.Text = "";
                     txtFoodPrice.Text = "";                
                     cboCategory.Text = "";
@@ -60,10 +60,10 @@ namespace GUI
                 switch (ex.Number)
                 {
                     case 2627: //Mã lỗi này show ra vi phạm khoá chính
-                        MessageBox.Show("Mã món ăn đã tồn tại hoặc tên món ăn bị trùng");
+                        MessageBox.Show("The dish code already exists or the dish name is duplicated !!");
                         break;
                     case 547:
-                        MessageBox.Show("Mã loại không tồn tại ");
+                        MessageBox.Show("Type code does not exist !!");
                         break;
                     default:
                         throw;
@@ -71,7 +71,7 @@ namespace GUI
             }
             catch (FormatException ex)
             {
-                MessageBox.Show("Lỗi định dạng");
+                MessageBox.Show("Format error !!");
             }
         }
 

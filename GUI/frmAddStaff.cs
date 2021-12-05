@@ -23,7 +23,7 @@ namespace GUI
         {
             if(txtNameSraff.Text == "" || txtDate.Text == "" || txtPosition.Text == "" || cboGender.SelectedItem == null)
             {
-                MessageBox.Show("Thông tin còn thiếu");
+                MessageBox.Show("Missing employee information !!");
             }
             else
             {
@@ -35,7 +35,7 @@ namespace GUI
                     DateTime date = Convert.ToDateTime(txtDate.Text);
                     if (Staff_BLL.Instance.InsertStaff(staff_name,position,gerder,date) == true)
                     {
-                        MessageBox.Show("Thêm nhân viên thành công");
+                        MessageBox.Show("Successfully added employees !!");
                     }
                     txtNameSraff.Text = " ";
                     txtDate.Text = " ";
@@ -45,11 +45,11 @@ namespace GUI
                 }
                 catch (FormatException ex)
                 {
-                    MessageBox.Show("Lỗi cú pháp");
+                    MessageBox.Show("Syntax error !!");
                 }
                 catch (SqlException ex)
                 {
-                    MessageBox.Show("Thêm nhân viên thất bại");
+                    MessageBox.Show("Add failed employees !!");
                 }              
             }
         }
@@ -62,7 +62,7 @@ namespace GUI
         private void frmAddStaff_Load(object sender, EventArgs e)
         {
             cboGender.Items.Add("Male");
-            cboGender.Items.Add("female");
+            cboGender.Items.Add("Female");
         }
     }
 }
