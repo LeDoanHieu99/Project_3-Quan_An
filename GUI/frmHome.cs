@@ -14,16 +14,12 @@ namespace GUI
     {
         public frmHome()
         {
-            InitializeComponent();
-            panMove.Height = btnHome.Height;
-            panMove.Top = btnHome.Top;
+            InitializeComponent();          
             btnHome.BackColor = Color.FromArgb(136,232,242);
         }
 
         private void btnHome_Click(object sender, EventArgs e)
         { 
-            panMove.Height = btnHome.Height;
-            panMove.Top = btnHome.Top;
             btnHome.BackColor = Color.FromArgb(136, 232, 242);
 
             frmListHome home = new frmListHome();
@@ -39,8 +35,6 @@ namespace GUI
 
         private void btnFood_Click(object sender, EventArgs e)
         {
-            panMove.Height = btnFood.Height;
-            panMove.Top = btnFood.Top;
             btnFood.BackColor = Color.FromArgb(136, 232, 242);
 
             frmListFood food = new frmListFood();
@@ -56,8 +50,6 @@ namespace GUI
 
         private void btnTable_Click(object sender, EventArgs e)
         {
-            panMove.Height = btnTable.Height;
-            panMove.Top = btnTable.Top;
             btnTable.BackColor = Color.FromArgb(136, 232, 242);
 
             frmListTable table = new frmListTable();
@@ -73,8 +65,6 @@ namespace GUI
 
         private void btnBill_Click(object sender, EventArgs e)
         {
-            panMove.Height = btnBill.Height;
-            panMove.Top = btnBill.Top;
             btnBill.BackColor = Color.FromArgb(136, 232, 242);
 
             frmListBill bill = new frmListBill();
@@ -90,8 +80,6 @@ namespace GUI
 
         private void btnRevenue_Click(object sender, EventArgs e)
         {
-            panMove.Height = btnRevenue.Height;
-            panMove.Top = btnRevenue.Top;
             btnRevenue.BackColor = Color.FromArgb(136, 232, 242);
 
             frmListRevenue revenue = new frmListRevenue();
@@ -107,8 +95,6 @@ namespace GUI
 
         private void btnStaff_Click(object sender, EventArgs e)
         {
-            panMove.Height = btnStaff.Height;
-            panMove.Top = btnStaff.Top;
             btnStaff.BackColor = Color.FromArgb(136, 232, 242);
 
             frmListStaff staff = new frmListStaff();
@@ -129,9 +115,7 @@ namespace GUI
 
         private void btnClose_Click(object sender, EventArgs e)
         {
-            this.Close();
-            new frmLogin().Show();
-            
+            this.Close();            
         }
 
         private void panMainData_Paint(object sender, PaintEventArgs e)

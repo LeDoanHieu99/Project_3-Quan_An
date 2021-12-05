@@ -21,20 +21,15 @@ namespace GUI
             LoadBill();
         }
 
-        int TongTien(int MABAN)
+        int TongTien(int tableIds)
         {
-
-            List<Menu> menus =  MenuBLL.Instance.GetListMenusById(MABAN) ;
-
-
+            List<Menu> menus =  MenuBLL.Instance.GetListMenusById(tableIds) ;
             int tongtien = 0;
             foreach (var i in menus)
             {
                 tongtien += i.TotalMoney;
             }
             return tongtien;  //bi loi
-
-
         }
 
         public void LoadBill()
@@ -97,6 +92,26 @@ namespace GUI
             }
         }
 
+        private void DtimeGetDay_ValueChanged(object sender, EventArgs e)
+        {
+            string date = DtimeGetDay.Value.ToShortDateString();
+            dtgvBill.DataSource = BillBLL.Instance.GetBillByDate(date);
+            dtgvBill.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            for (int i = 0; i < dtgvBill.Rows.Count; i++)
+            {
+                if (i % 2 == 0)
+                {
+                    dtgvBill.Rows[i].DefaultCellStyle.BackColor = Color.FromArgb(179, 213, 242);
+                    dtgvBill.Rows[i].DefaultCellStyle.SelectionBackColor = Color.FromArgb(179, 213, 242);
+                }
+                else
+                {
+                    dtgvBill.Rows[i].DefaultCellStyle.BackColor = Color.White;
+                    dtgvBill.Rows[i].DefaultCellStyle.SelectionBackColor = Color.White;
+                }
+            }
+        }
+
         private void bunifuImageButton1_Click(object sender, EventArgs e)
         {
             try
@@ -129,6 +144,7 @@ namespace GUI
             catch (Exception ex)
             {
                 MessageBox.Show("No bill to search");
+                LoadBill();
             }
         }
 
@@ -152,5 +168,7 @@ namespace GUI
                 MessageBox.Show("You have not entered anything yet !!");
             }
         }
+
+       
     }
 }

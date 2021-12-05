@@ -29,15 +29,14 @@ namespace GUI
             DataRow row = BillBLL.Instance.GetInforBillByIdTable(tableId);
             if (row != null)
             {
-                txtIdBill.Text = ((int)row["Bill Id"]).ToString();
-                txtIdTable.Text = ((int)row["Table Id"]).ToString();
+                txtIdBill.Text = ((int)row["BillId"]).ToString();
+                txtIdTable.Text = ((int)row["TableId"]).ToString();
                 DateTime now = DateTime.Now;
                 txtDate.Text = now.ToString();
                 txtTotal.Text = TotalMoney(tableId).ToString();
 
             }
         }
-
         int TotalMoney(int tableId)
         {
 
@@ -202,8 +201,8 @@ namespace GUI
 
         private void frmBill_Load(object sender, EventArgs e)
         {
-            this.Height = 724;
-            this.Width = 1426;
+            //this.Height = 724;
+            //this.Width = 1426;
         }
 
         private void GrivBill_CellMouseClick(object sender, DataGridViewCellMouseEventArgs e)
@@ -222,8 +221,8 @@ namespace GUI
         {
             try
             {
-                int tienthoi = Convert.ToInt32(txtpaymentcustomers.Text) - Convert.ToInt32(txtTotal.Text);
-                txtChange.Text = tienthoi.ToString();
+                int refundMoney = Convert.ToInt32(txtpaymentcustomers.Text) - Convert.ToInt32(txtTotal.Text);
+                txtChange.Text = refundMoney.ToString();
             }
             catch
             {

@@ -30,7 +30,12 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmListHome));
             this.panListHome = new System.Windows.Forms.Panel();
+            this.label10 = new System.Windows.Forms.Label();
             this.panel10 = new System.Windows.Forms.Panel();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
             this.btnImgStaff = new Bunifu.Framework.UI.BunifuTileButton();
             this.btnImgBill = new Bunifu.Framework.UI.BunifuTileButton();
             this.btnImgTable = new Bunifu.Framework.UI.BunifuTileButton();
@@ -91,23 +96,78 @@
             this.panListHome.Size = new System.Drawing.Size(1159, 820);
             this.panListHome.TabIndex = 0;
             // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(351, 118);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(64, 23);
+            this.label10.TabIndex = 59;
+            this.label10.Text = "Table";
+            // 
             // panel10
             // 
+            this.panel10.Controls.Add(this.label10);
+            this.panel10.Controls.Add(this.label12);
+            this.panel10.Controls.Add(this.label1);
+            this.panel10.Controls.Add(this.label14);
+            this.panel10.Controls.Add(this.label11);
             this.panel10.Controls.Add(this.btnImgStaff);
             this.panel10.Controls.Add(this.btnImgBill);
             this.panel10.Controls.Add(this.btnImgTable);
             this.panel10.Controls.Add(this.btnImgFood);
             this.panel10.Controls.Add(this.btnImgRevenue);
-            this.panel10.Location = new System.Drawing.Point(232, 45);
+            this.panel10.Location = new System.Drawing.Point(231, 50);
             this.panel10.Name = "panel10";
             this.panel10.Size = new System.Drawing.Size(780, 332);
             this.panel10.TabIndex = 58;
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Location = new System.Drawing.Point(621, 118);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(34, 23);
+            this.label12.TabIndex = 59;
+            this.label12.Text = "Bill";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(87, 118);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(60, 23);
+            this.label1.TabIndex = 59;
+            this.label1.Text = "Food";
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.Location = new System.Drawing.Point(505, 292);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(53, 23);
+            this.label14.TabIndex = 59;
+            this.label14.Text = "Staff";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Location = new System.Drawing.Point(209, 292);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(98, 23);
+            this.label11.TabIndex = 59;
+            this.label11.Text = "Revenue";
             // 
             // btnImgStaff
             // 
             this.btnImgStaff.BackColor = System.Drawing.Color.White;
             this.btnImgStaff.color = System.Drawing.Color.White;
-            this.btnImgStaff.colorActive = System.Drawing.Color.WhiteSmoke;
+            this.btnImgStaff.colorActive = System.Drawing.Color.White;
             this.btnImgStaff.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnImgStaff.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnImgStaff.ForeColor = System.Drawing.Color.Black;
@@ -115,7 +175,7 @@
             this.btnImgStaff.ImagePosition = -18;
             this.btnImgStaff.ImageZoom = 65;
             this.btnImgStaff.LabelPosition = 25;
-            this.btnImgStaff.LabelText = "Staff";
+            this.btnImgStaff.LabelText = "";
             this.btnImgStaff.Location = new System.Drawing.Point(415, 180);
             this.btnImgStaff.Margin = new System.Windows.Forms.Padding(6);
             this.btnImgStaff.Name = "btnImgStaff";
@@ -127,7 +187,7 @@
             // 
             this.btnImgBill.BackColor = System.Drawing.Color.White;
             this.btnImgBill.color = System.Drawing.Color.White;
-            this.btnImgBill.colorActive = System.Drawing.Color.WhiteSmoke;
+            this.btnImgBill.colorActive = System.Drawing.Color.White;
             this.btnImgBill.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnImgBill.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnImgBill.ForeColor = System.Drawing.Color.Black;
@@ -135,7 +195,7 @@
             this.btnImgBill.ImagePosition = -18;
             this.btnImgBill.ImageZoom = 65;
             this.btnImgBill.LabelPosition = 25;
-            this.btnImgBill.LabelText = "Bill";
+            this.btnImgBill.LabelText = "";
             this.btnImgBill.Location = new System.Drawing.Point(518, 6);
             this.btnImgBill.Margin = new System.Windows.Forms.Padding(6);
             this.btnImgBill.Name = "btnImgBill";
@@ -147,7 +207,7 @@
             // 
             this.btnImgTable.BackColor = System.Drawing.Color.White;
             this.btnImgTable.color = System.Drawing.Color.White;
-            this.btnImgTable.colorActive = System.Drawing.Color.WhiteSmoke;
+            this.btnImgTable.colorActive = System.Drawing.Color.White;
             this.btnImgTable.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnImgTable.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnImgTable.ForeColor = System.Drawing.Color.Black;
@@ -155,7 +215,7 @@
             this.btnImgTable.ImagePosition = -18;
             this.btnImgTable.ImageZoom = 55;
             this.btnImgTable.LabelPosition = 25;
-            this.btnImgTable.LabelText = "Table";
+            this.btnImgTable.LabelText = "";
             this.btnImgTable.Location = new System.Drawing.Point(260, 6);
             this.btnImgTable.Margin = new System.Windows.Forms.Padding(6);
             this.btnImgTable.Name = "btnImgTable";
@@ -167,15 +227,15 @@
             // 
             this.btnImgFood.BackColor = System.Drawing.Color.White;
             this.btnImgFood.color = System.Drawing.Color.White;
-            this.btnImgFood.colorActive = System.Drawing.Color.WhiteSmoke;
+            this.btnImgFood.colorActive = System.Drawing.Color.White;
             this.btnImgFood.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnImgFood.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnImgFood.ForeColor = System.Drawing.Color.Black;
             this.btnImgFood.Image = ((System.Drawing.Image)(resources.GetObject("btnImgFood.Image")));
             this.btnImgFood.ImagePosition = -18;
-            this.btnImgFood.ImageZoom = 65;
+            this.btnImgFood.ImageZoom = 70;
             this.btnImgFood.LabelPosition = 25;
-            this.btnImgFood.LabelText = "Food";
+            this.btnImgFood.LabelText = "";
             this.btnImgFood.Location = new System.Drawing.Point(6, 6);
             this.btnImgFood.Margin = new System.Windows.Forms.Padding(6);
             this.btnImgFood.Name = "btnImgFood";
@@ -187,7 +247,7 @@
             // 
             this.btnImgRevenue.BackColor = System.Drawing.Color.White;
             this.btnImgRevenue.color = System.Drawing.Color.White;
-            this.btnImgRevenue.colorActive = System.Drawing.Color.WhiteSmoke;
+            this.btnImgRevenue.colorActive = System.Drawing.Color.White;
             this.btnImgRevenue.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnImgRevenue.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnImgRevenue.ForeColor = System.Drawing.Color.Black;
@@ -195,7 +255,7 @@
             this.btnImgRevenue.ImagePosition = -18;
             this.btnImgRevenue.ImageZoom = 65;
             this.btnImgRevenue.LabelPosition = 25;
-            this.btnImgRevenue.LabelText = "Revenue";
+            this.btnImgRevenue.LabelText = "";
             this.btnImgRevenue.Location = new System.Drawing.Point(136, 180);
             this.btnImgRevenue.Margin = new System.Windows.Forms.Padding(6);
             this.btnImgRevenue.Name = "btnImgRevenue";
@@ -265,10 +325,10 @@
             this.panel2.Controls.Add(this.label5);
             this.panel2.Controls.Add(this.lblCountOrder);
             this.panel2.Font = new System.Drawing.Font("Nirmala UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.panel2.Location = new System.Drawing.Point(-1, 638);
+            this.panel2.Location = new System.Drawing.Point(3, 638);
             this.panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(325, 173);
+            this.panel2.Size = new System.Drawing.Size(321, 173);
             this.panel2.TabIndex = 49;
             // 
             // pictureBox2
@@ -306,7 +366,7 @@
             // 
             this.lblCountOrder.AutoSize = true;
             this.lblCountOrder.Font = new System.Drawing.Font("Microsoft Sans Serif", 21F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCountOrder.Location = new System.Drawing.Point(48, 70);
+            this.lblCountOrder.Location = new System.Drawing.Point(53, 73);
             this.lblCountOrder.Name = "lblCountOrder";
             this.lblCountOrder.Size = new System.Drawing.Size(77, 39);
             this.lblCountOrder.TabIndex = 0;
@@ -435,7 +495,7 @@
             // 
             this.labelTime.AutoSize = true;
             this.labelTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelTime.Location = new System.Drawing.Point(1010, 9);
+            this.labelTime.Location = new System.Drawing.Point(824, 11);
             this.labelTime.Name = "labelTime";
             this.labelTime.Size = new System.Drawing.Size(46, 18);
             this.labelTime.TabIndex = 50;
@@ -449,9 +509,11 @@
             this.Controls.Add(this.panListHome);
             this.Name = "frmListHome";
             this.Size = new System.Drawing.Size(1159, 820);
+            this.Load += new System.EventHandler(this.frmListHome_Load);
             this.panListHome.ResumeLayout(false);
             this.panListHome.PerformLayout();
             this.panel10.ResumeLayout(false);
+            this.panel10.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -500,5 +562,10 @@
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label labelTime;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label label11;
     }
 }

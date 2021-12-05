@@ -40,30 +40,39 @@ namespace GUI
 
         private void btnImgFood_Click(object sender, EventArgs e)
         {
+            panListHomeStaff.Controls.Clear();
             frmListFood foods = new frmListFood();
-            this.panListHomeStaff.Controls.Add(foods);
+            panListHomeStaff.Controls.Add(foods);
             foods.BringToFront();
         }
 
         private void btnImgTable_Click(object sender, EventArgs e)
         {
+            panListHomeStaff.Controls.Clear();
             frmListTable tables = new frmListTable();
-            this.panListHomeStaff.Controls.Add(tables);
+            panListHomeStaff.Controls.Add(tables);
             tables.BringToFront();
         }
 
         private void btnImgRevenue_Click(object sender, EventArgs e)
         {
+            panListHomeStaff.Controls.Clear();
             frmListRevenue revenues = new frmListRevenue();
-            this.panListHomeStaff.Controls.Add(revenues);
+            panListHomeStaff.Controls.Add(revenues);
             revenues.BringToFront();
         }
 
         private void btnImgBill_Click(object sender, EventArgs e)
         {
+            panListHomeStaff.Controls.Clear();
             frmListBill bills = new frmListBill();
-            this.panListHomeStaff.Controls.Add(bills);
+            panListHomeStaff.Controls.Add(bills);
             bills.BringToFront();
+        }
+
+        private void frmListHomeStaff_Load_1(object sender, EventArgs e)
+        {
+
         }
     }
 }
